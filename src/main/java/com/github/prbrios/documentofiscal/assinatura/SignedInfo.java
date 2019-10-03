@@ -2,9 +2,7 @@ package com.github.prbrios.documentofiscal.assinatura;
 
 import org.simpleframework.xml.Element;
 
-import br.com.unigex.documentofiscal.DFBase;
-
-public class SignedInfo extends DFBase {
+public class SignedInfo {
     private static final long serialVersionUID = -5878065134465400530L;
 
     @Element(name = "CanonicalizationMethod", required = false)

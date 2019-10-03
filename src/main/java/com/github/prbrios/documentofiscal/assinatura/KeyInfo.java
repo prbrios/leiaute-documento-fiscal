@@ -2,9 +2,7 @@ package com.github.prbrios.documentofiscal.assinatura;
 
 import org.simpleframework.xml.Element;
 
-import br.com.unigex.documentofiscal.DFBase;
-
-public class KeyInfo extends DFBase {
+public class KeyInfo {
     private static final long serialVersionUID = 7949034334524924221L;
 
     @Element(name = "X509Data", required = false)
