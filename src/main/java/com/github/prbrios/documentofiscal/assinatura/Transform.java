@@ -6,8 +6,7 @@ import org.simpleframework.xml.Attribute;
 
 public class Transform {
 
-    @Getter
-    @Setter
+
     @Attribute(name = "Algorithm", required = false)
     private String algorithm;
 

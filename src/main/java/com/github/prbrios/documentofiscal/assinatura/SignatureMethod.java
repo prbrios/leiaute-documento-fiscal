@@ -8,8 +8,7 @@ import org.simpleframework.xml.Attribute;
 
 public class SignatureMethod {
 
-    @Getter
-    @Setter
+
     @Attribute(name = "Algorithm", required = false)
     private String algorithm;
 

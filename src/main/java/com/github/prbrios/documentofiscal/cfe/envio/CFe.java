@@ -19,13 +19,24 @@ public class CFe
      * AC - Grupo das informações do CF-e
      */
     @Element(name = "infCFe", required = false)
-    private InfCFe infCFe;
+    private CFeInfCFe infCFe;
 
     /**
      * SAT - Assinatura XML do CF-e Segundo o Padrão XML Digital Signature
      */
-    @Getter
     @Element(name = "Signature", required = false)
     private Signature signature;
+
+    public CFe() {}
+
+    /**
+     *
+     * @param infCFe
+     * @param signature
+     */
+    public CFe(CFeInfCFe infCFe, Signature signature) {
+        this.infCFe = infCFe;
+        this.signature = signature;
+    }
 
 }

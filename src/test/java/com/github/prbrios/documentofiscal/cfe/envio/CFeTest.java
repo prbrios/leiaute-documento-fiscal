@@ -1,9 +1,9 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
-import static org.junit.Assert.assertTrue;
-
-import com.github.prbrios.documentofiscal.cfe.CFePersister;
+import com.github.prbrios.documentofiscal.DFPersister;
 import org.junit.Test;
+
+import static org.junit.Assert.assertTrue;
 
 public class CFeTest
 {
@@ -11,13 +11,12 @@ public class CFeTest
     @Test
     public void shouldAnswerWithTrue() {
 
-        CFe cfe = new CFe();
-        System.out.println(new CFePersister().write(cfe));
-
         String xml = "<CFe><infCFe><ide><nCFe>10</nCFe></ide></infCFe></CFe>";
-        cfe = new CFePersister().read(xml);
 
-        System.out.println(cfe.getInfCFe().getIde().getNCFe());
+        DFPersister dfp = new DFPersister<CFe>(){};
+        CFe obj = (CFe) dfp.read(xml);
+
+        System.out.println(obj.getInfCFe().getIde().getNCFe());
 
         assertTrue( true );
     }

@@ -8,8 +8,7 @@ import org.simpleframework.xml.Attribute;
 
 public class CanonicalizationMethod {
 
-    @Getter
-    @Setter
+
     @Attribute(name = "Algorithm", required = false)
     private String algorithm;
 
