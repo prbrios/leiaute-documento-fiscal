@@ -7,7 +7,7 @@ import java.io.File;
 import java.io.StringWriter;
 import java.lang.reflect.ParameterizedType;
 
-public class DFPersister<T> {
+public class DFPersister<T> implements IDFPersister<T> {
 
     private final Persister persister;
     private Class<T> theType;
@@ -20,6 +20,7 @@ public class DFPersister<T> {
         this.persister = new Persister(new Format(0));
     }
 
+    @Override
     public T read (final File xml) {
         try {
             return this.persister.read(this.theType, xml);
@@ -28,6 +29,7 @@ public class DFPersister<T> {
         }
     }
 
+    @Override
     public T read (final String xml) {
         try {
             return this.persister.read(this.theType, xml);
@@ -36,6 +38,7 @@ public class DFPersister<T> {
         }
     }
 
+    @Override
     public String write (T obj) {
         try (StringWriter writer = new StringWriter()) {
             this.persister.write(obj, writer);
