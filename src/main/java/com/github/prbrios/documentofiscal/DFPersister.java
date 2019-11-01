@@ -1,6 +1,7 @@
 package com.github.prbrios.documentofiscal;
 
 import org.simpleframework.xml.core.Persister;
+import org.simpleframework.xml.stream.Format;
 
 import java.io.File;
 import java.io.StringWriter;
@@ -16,7 +17,7 @@ public class DFPersister<T> {
         final ParameterizedType type = (ParameterizedType) getClass().getGenericSuperclass();
         this.theType = (Class<T>) (type).getActualTypeArguments()[0];
 
-        this.persister = new Persister();
+        this.persister = new Persister(new Format(0));
     }
 
     public T read (final File xml) {
