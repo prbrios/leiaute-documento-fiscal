@@ -24,7 +24,7 @@ public class CFeInfCFe {
     /**
      * SAT - Versão do leiaute do CF-e
      */
-    @Attribute(name = "Versao", required = false)
+    @Attribute(name = "versao", required = false)
     private String versao;
 
     /**
