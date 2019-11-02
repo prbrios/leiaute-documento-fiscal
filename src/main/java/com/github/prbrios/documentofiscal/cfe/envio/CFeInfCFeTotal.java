@@ -23,6 +23,12 @@ public class CFeInfCFeTotal {
     private CFeInfCFeTotalICMSTot icmsTot;
 
     /**
+     * SAT - Valor total do CF-e
+     */
+    @Element(name = "vCFe", required = false)
+    private String vCFe;
+
+    /**
      * SAT - Grupo de valores totais referentes ao ISSQN
      */
     @Element(name = "ISSQNtot", required = false)

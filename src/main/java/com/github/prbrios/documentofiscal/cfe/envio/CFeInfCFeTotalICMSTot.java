@@ -63,12 +63,6 @@ public class CFeInfCFeTotalICMSTot {
     @Element(name = "vOutro", required = false)
     private String vOutro;
 
-    /**
-     * SAT - Valor total do CF-e
-     */
-    @Element(name = "vCFe", required = false)
-    private String vCFe;
-
     public CFeInfCFeTotalICMSTot() {}
 
     /**
@@ -81,9 +75,8 @@ public class CFeInfCFeTotalICMSTot {
      * @param vPISST
      * @param vCOFINSST
      * @param vOutro
-     * @param vCFe
      */
-    public CFeInfCFeTotalICMSTot(String vICMS, String vProd, String vDesc, String vPIS, String vCOFINS, String vPISST, String vCOFINSST, String vOutro, String vCFe) {
+    public CFeInfCFeTotalICMSTot(String vICMS, String vProd, String vDesc, String vPIS, String vCOFINS, String vPISST, String vCOFINSST, String vOutro) {
         this.vICMS = vICMS;
         this.vProd = vProd;
         this.vDesc = vDesc;
@@ -92,6 +85,5 @@ public class CFeInfCFeTotalICMSTot {
         this.vPISST = vPISST;
         this.vCOFINSST = vCOFINSST;
         this.vOutro = vOutro;
-        this.vCFe = vCFe;
     }
 }
