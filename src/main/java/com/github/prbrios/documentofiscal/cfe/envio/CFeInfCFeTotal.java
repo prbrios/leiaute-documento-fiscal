@@ -49,12 +49,14 @@ public class CFeInfCFeTotal {
     /**
      *
      * @param icmsTot
+     * @param vCFe
      * @param issqnTot
      * @param descAcrEntr
      * @param vCFeLei12741
      */
-    public CFeInfCFeTotal(CFeInfCFeTotalICMSTot icmsTot, CFeInfCFeTotalISSQNTot issqnTot, CFeInfCFeTotalDescAcrEntr descAcrEntr, String vCFeLei12741) {
+    public CFeInfCFeTotal(CFeInfCFeTotalICMSTot icmsTot, String vCFe, CFeInfCFeTotalISSQNTot issqnTot, CFeInfCFeTotalDescAcrEntr descAcrEntr, String vCFeLei12741) {
         this.icmsTot = icmsTot;
+        this.vCFe = vCFe;
         this.issqnTot = issqnTot;
         this.descAcrEntr = descAcrEntr;
         this.vCFeLei12741 = vCFeLei12741;
