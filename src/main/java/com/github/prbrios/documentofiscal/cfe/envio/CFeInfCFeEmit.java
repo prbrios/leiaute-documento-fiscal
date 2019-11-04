@@ -1,8 +1,6 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -20,7 +18,7 @@ public class CFeInfCFeEmit {
      * AC - Informar o CNPJ do emitente, com os zeros n\u00e3o significativos
      */
     @Element(name = "CNPJ", required = false)
-    private String cnpj;
+    private String CNPJ;
 
     /**
      * SAT - Raz\u00e3o social do emitente
@@ -44,13 +42,13 @@ public class CFeInfCFeEmit {
      * AC - Inscrição Estadual
      */
     @Element(name = "IE", required = false)
-    private String ie;
+    private String IE;
 
     /**
      * AC - Inscrição Municipal
      */
     @Element(name = "IM", required = false)
-    private String im;
+    private String IM;
 
     /**
      * SAT - Código de Regime Tributário
@@ -85,12 +83,12 @@ public class CFeInfCFeEmit {
      * @param indRatISSQN
      */
     public CFeInfCFeEmit(String cnpj, String xNome, String xFant, CFeInfCFeEmitEnderEmit enderEmit, String ie, String im, String cRegTrib, String cRegTribISSQN, String indRatISSQN) {
-        this.cnpj = cnpj;
+        this.CNPJ = cnpj;
         this.xNome = xNome;
         this.xFant = xFant;
         this.enderEmit = enderEmit;
-        this.ie = ie;
-        this.im = im;
+        this.IE = ie;
+        this.IM = im;
         this.cRegTrib = cRegTrib;
         this.cRegTribISSQN = cRegTribISSQN;
         this.indRatISSQN = indRatISSQN;

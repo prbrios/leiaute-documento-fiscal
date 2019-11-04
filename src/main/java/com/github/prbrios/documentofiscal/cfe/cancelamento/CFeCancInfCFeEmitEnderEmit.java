@@ -1,7 +1,6 @@
 package com.github.prbrios.documentofiscal.cfe.cancelamento;
 
 import lombok.Data;
-import lombok.Getter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -49,7 +48,7 @@ public class CFeCancInfCFeEmitEnderEmit {
      * SAT - CEP
      */
     @Element(name = "CEP", required = false)
-    private String cep;
+    private String CEP;
 
     public CFeCancInfCFeEmitEnderEmit() {}
 
@@ -68,6 +67,6 @@ public class CFeCancInfCFeEmitEnderEmit {
         this.xCpl = xCpl;
         this.xBairro = xBairro;
         this.xMun = xMun;
-        this.cep = cep;
+        this.CEP = cep;
     }
 }

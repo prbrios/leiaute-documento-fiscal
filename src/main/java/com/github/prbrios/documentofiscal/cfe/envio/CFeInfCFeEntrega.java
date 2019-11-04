@@ -1,8 +1,6 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -50,7 +48,7 @@ public class CFeInfCFeEntrega {
      * AC - UF
      */
     @Element(name = "UF", required = false)
-    private String uf;
+    private String UF;
 
     public CFeInfCFeEntrega() {}
 
@@ -69,6 +67,6 @@ public class CFeInfCFeEntrega {
         this.xCpl = xCpl;
         this.xBairro = xBairro;
         this.xMun = xMun;
-        this.uf = uf;
+        this.UF = uf;
     }
 }

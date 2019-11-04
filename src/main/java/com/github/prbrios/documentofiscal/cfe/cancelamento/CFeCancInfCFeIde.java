@@ -1,8 +1,6 @@
 package com.github.prbrios.documentofiscal.cfe.cancelamento;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -68,7 +66,7 @@ public class CFeCancInfCFeIde {
      * AC - CNPJ Software House
      */
     @Element(name = "CNPJ", required = false)
-    private String cnpj;
+    private String CNPJ;
 
     /**
      * AC - Assinatura do Aplicativo Comercial
@@ -115,7 +113,7 @@ public class CFeCancInfCFeIde {
         this.dEmi = dEmi;
         this.hEmi = hEmi;
         this.cDV = cDV;
-        this.cnpj = cnpj;
+        this.CNPJ = cnpj;
         this.signAC = signAC;
         this.assinaturaQRCODE = assinaturaQRCODE;
         this.numeroCaixa = numeroCaixa;

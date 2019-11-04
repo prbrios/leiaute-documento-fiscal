@@ -3,6 +3,8 @@ package com.github.prbrios.documentofiscal.cfe.envio;
 import com.github.prbrios.documentofiscal.DFPersister;
 import org.junit.Test;
 
+import java.io.File;
+
 import static org.junit.Assert.assertTrue;
 
 public class CFeTest
@@ -14,7 +16,7 @@ public class CFeTest
         String xml = "<CFe><infCFe><ide><nCFe>10</nCFe></ide></infCFe></CFe>";
 
         DFPersister dfp = new DFPersister<CFe>(){};
-        CFe obj = (CFe) dfp.read(xml);
+        CFe obj = (CFe) dfp.read(new File("C:\\temp\\b23191007801078000154592300450200035132133764.xml"));
 
         System.out.println(obj.getInfCFe().getIde().getNCFe());
 

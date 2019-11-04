@@ -1,8 +1,6 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -20,31 +18,31 @@ public class CFeInfCFeDetImpostoPIS {
      * AC - Grupo de PIS tributado pela alíquota
      */
     @Element(name = "PISAliq", required = false)
-    private CFeInfCFeDetImpostoPISPISAliq pisAliq;
+    private CFeInfCFeDetImpostoPISPISAliq PISAliq;
 
     /**
      * AC - Grupo de PIS tributado por Qtde
      */
     @Element(name = "PISQtde", required = false)
-    private CFeInfCFeDetImpostoPISPISQtde pisQtde;
+    private CFeInfCFeDetImpostoPISPISQtde PISQtde;
 
     /**
      * AC - Grupo de PIS não tributado
      */
     @Element(name = "PISNT", required = false)
-    private CFeInfCFeDetImpostoPISPISNT pisnt;
+    private CFeInfCFeDetImpostoPISPISNT PISNT;
 
     /**
      * AC - Grupo de PIS para contribuinte do SIMPLES NACIONAL
      */
     @Element(name = "PISSN", required = false)
-    private CFeInfCFeDetImpostoPISPISSN pissn;
+    private CFeInfCFeDetImpostoPISPISSN PISSN;
 
     /**
      * AC - Grupo de PIS Outras Operações
      */
     @Element(name = "PISOutr", required = false)
-    private CFeInfCFeDetImpostoPISPISOutr pisOutr;
+    private CFeInfCFeDetImpostoPISPISOutr PISOutr;
 
     public CFeInfCFeDetImpostoPIS() {}
 
@@ -57,10 +55,10 @@ public class CFeInfCFeDetImpostoPIS {
      * @param pisOutr
      */
     public CFeInfCFeDetImpostoPIS(CFeInfCFeDetImpostoPISPISAliq pisAliq, CFeInfCFeDetImpostoPISPISQtde pisQtde, CFeInfCFeDetImpostoPISPISNT pisnt, CFeInfCFeDetImpostoPISPISSN pissn, CFeInfCFeDetImpostoPISPISOutr pisOutr) {
-        this.pisAliq = pisAliq;
-        this.pisQtde = pisQtde;
-        this.pisnt = pisnt;
-        this.pissn = pissn;
-        this.pisOutr = pisOutr;
+        this.PISAliq = pisAliq;
+        this.PISQtde = pisQtde;
+        this.PISNT = pisnt;
+        this.PISSN = pissn;
+        this.PISOutr = pisOutr;
     }
 }

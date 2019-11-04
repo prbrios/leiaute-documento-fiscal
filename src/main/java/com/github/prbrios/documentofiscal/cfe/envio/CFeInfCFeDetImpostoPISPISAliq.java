@@ -20,7 +20,7 @@ public class CFeInfCFeDetImpostoPISPISAliq {
      * AC - Código de Situação Tributária do PIS
      */
     @Element(name = "CST", required = false)
-    private String cst;
+    private String CST;
 
     /**
      * AC - Valor da Base de Cálculo do PIS
@@ -44,13 +44,13 @@ public class CFeInfCFeDetImpostoPISPISAliq {
 
     /**
      *
-     * @param cst
+     * @param CST
      * @param vBC
      * @param pPIS
      * @param vPIS
      */
-    public CFeInfCFeDetImpostoPISPISAliq(String cst, String vBC, String pPIS, String vPIS) {
-        this.cst = cst;
+    public CFeInfCFeDetImpostoPISPISAliq(String CST, String vBC, String pPIS, String vPIS) {
+        this.CST = CST;
         this.vBC = vBC;
         this.pPIS = pPIS;
         this.vPIS = vPIS;

@@ -1,8 +1,6 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -20,7 +18,7 @@ public class CFeInfCFeDetImpostoCOFINSCOFINSNT {
      * AC - Código de Situação Tributária
      */
     @Element(name = "CST", required = false)
-    private String cst;
+    private String CST;
 
     public CFeInfCFeDetImpostoCOFINSCOFINSNT() {}
 
@@ -29,6 +27,6 @@ public class CFeInfCFeDetImpostoCOFINSCOFINSNT {
      * @param cst
      */
     public CFeInfCFeDetImpostoCOFINSCOFINSNT(String cst) {
-        this.cst = cst;
+        this.CST = cst;
     }
 }

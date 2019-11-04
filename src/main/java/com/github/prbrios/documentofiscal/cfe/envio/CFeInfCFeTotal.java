@@ -1,8 +1,6 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -20,7 +18,7 @@ public class CFeInfCFeTotal {
      * SAT - Valor total do ICMS
      */
     @Element(name = "ICMSTot", required = false)
-    private CFeInfCFeTotalICMSTot icmsTot;
+    private CFeInfCFeTotalICMSTot ICMSTot;
 
     /**
      * SAT - Valor total do CF-e
@@ -32,13 +30,13 @@ public class CFeInfCFeTotal {
      * SAT - Grupo de valores totais referentes ao ISSQN
      */
     @Element(name = "ISSQNtot", required = false)
-    private CFeInfCFeTotalISSQNTot issqnTot;
+    private CFeInfCFeTotalISSQNTot ISSQNTot;
 
     /**
      * AC - Grupo de valores de entrada de desconto/acréscimo sobre o subtotal
      */
     @Element(name = "DescAcrEntr", required = false)
-    private CFeInfCFeTotalDescAcrEntr descAcrEntr;
+    private CFeInfCFeTotalDescAcrEntr DescAcrEntr;
 
 
     @Element(name = "vCFeLei12741", required = false)
@@ -55,10 +53,10 @@ public class CFeInfCFeTotal {
      * @param vCFeLei12741
      */
     public CFeInfCFeTotal(CFeInfCFeTotalICMSTot icmsTot, String vCFe, CFeInfCFeTotalISSQNTot issqnTot, CFeInfCFeTotalDescAcrEntr descAcrEntr, String vCFeLei12741) {
-        this.icmsTot = icmsTot;
+        this.ICMSTot = icmsTot;
         this.vCFe = vCFe;
-        this.issqnTot = issqnTot;
-        this.descAcrEntr = descAcrEntr;
+        this.ISSQNTot = issqnTot;
+        this.DescAcrEntr = descAcrEntr;
         this.vCFeLei12741 = vCFeLei12741;
     }
 }

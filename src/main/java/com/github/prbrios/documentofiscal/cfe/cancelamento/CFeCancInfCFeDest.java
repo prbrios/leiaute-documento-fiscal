@@ -1,8 +1,6 @@
 package com.github.prbrios.documentofiscal.cfe.cancelamento;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -20,13 +18,13 @@ public class CFeCancInfCFeDest {
      * AC - CNPJ do destinatário
      */
     @Element(name = "CNPJ", required = false)
-    private String cnpj;
+    private String CNPJ;
 
     /**
      * AC - CPF do destinatário
      */
     @Element(name = "CPF", required = false)
-    private String cpf;
+    private String CPF;
 
     public CFeCancInfCFeDest() {}
 
@@ -36,7 +34,7 @@ public class CFeCancInfCFeDest {
      * @param cpf
      */
     public CFeCancInfCFeDest(String cnpj, String cpf) {
-        this.cnpj = cnpj;
-        this.cpf = cpf;
+        this.CNPJ = cnpj;
+        this.CPF = cpf;
     }
 }

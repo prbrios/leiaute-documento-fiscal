@@ -1,7 +1,6 @@
 package com.github.prbrios.documentofiscal.cfe.cancelamento;
 
 import lombok.Data;
-import lombok.Getter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -19,7 +18,7 @@ public class CFeCancInfCFeEmit {
      * SAT - Informar o CNPJ do emitente, com os zeros n\u00e3o significativos
      */
     @Element(name = "CNPJ", required = false)
-    private String cnpj;
+    private String CNPJ;
 
     /**
      * SAT - Raz\u00e3o social do emitente
@@ -43,13 +42,13 @@ public class CFeCancInfCFeEmit {
      * SAT - Inscrição Estadual
      */
     @Element(name = "IE", required = false)
-    private String ie;
+    private String IE;
 
     /**
      * SAT - Inscrição Municipal
      */
     @Element(name = "IM", required = false)
-    private String im;
+    private String IM;
 
     public CFeCancInfCFeEmit() {}
 
@@ -63,11 +62,11 @@ public class CFeCancInfCFeEmit {
      * @param im
      */
     public CFeCancInfCFeEmit(String cnpj, String xNome, String xFant, CFeCancInfCFeEmitEnderEmit enderEmit, String ie, String im) {
-        this.cnpj = cnpj;
+        this.CNPJ = cnpj;
         this.xNome = xNome;
         this.xFant = xFant;
         this.enderEmit = enderEmit;
-        this.ie = ie;
-        this.im = im;
+        this.IE = ie;
+        this.IM = im;
     }
 }

@@ -1,8 +1,6 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -20,13 +18,13 @@ public class CFeInfCFeDetImpostoICMSICMS00 {
      * AC - Origem da mercadoria
      */
     @Element(name = "Orig", required = false)
-    private String orig;
+    private String Orig;
 
     /**
      * AC - Tributação do ICMS = 00, 20, 90
      */
     @Element(name = "CST", required = false)
-    private String cst;
+    private String CST;
 
     /**
      * AC - Alíquota efetiva do imposto
@@ -50,8 +48,8 @@ public class CFeInfCFeDetImpostoICMSICMS00 {
      * @param vICMS
      */
     public CFeInfCFeDetImpostoICMSICMS00(String orig, String cst, String pICMS, String vICMS) {
-        this.orig = orig;
-        this.cst = cst;
+        this.Orig = orig;
+        this.CST = cst;
         this.pICMS = pICMS;
         this.vICMS = vICMS;
     }

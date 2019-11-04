@@ -1,8 +1,6 @@
 package com.github.prbrios.documentofiscal.cfe.cancelamento;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
@@ -27,7 +25,7 @@ public class CFeCancInfCFe {
      * SAT - Identificador da TAG a ser assinada
      */
     @Attribute(name = "Id", required = false)
-    private String id;
+    private String Id;
 
     /**
      * AC - Chave de acesso do CF-e a ser cancelado
@@ -94,7 +92,7 @@ public class CFeCancInfCFe {
      */
     public CFeCancInfCFe(String versao, String id, String chCanc, String dEmi, String hEmi, CFeCancInfCFeIde ide, CFeCancInfCFeEmit emit, CFeCancInfCFeDest dest, CFeCancInfCFeTotal total, CFeCancInfCFeInfAdic infAdic) {
         this.versao = versao;
-        this.id = id;
+        this.Id = id;
         this.chCanc = chCanc;
         this.dEmi = dEmi;
         this.hEmi = hEmi;

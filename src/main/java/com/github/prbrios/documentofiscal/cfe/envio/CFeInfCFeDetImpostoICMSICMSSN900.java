@@ -1,8 +1,6 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -17,7 +15,7 @@ public class CFeInfCFeDetImpostoICMSICMSSN900 {
      * AC - Origem da mercadoria
      */
     @Element(name = "Orig", required = false)
-    private String orig;
+    private String Orig;
 
     /**
      * AC - Código de Situação da Operação – SIMPLES NACIONAL
@@ -47,7 +45,7 @@ public class CFeInfCFeDetImpostoICMSICMSSN900 {
      * @param vICMS
      */
     public CFeInfCFeDetImpostoICMSICMSSN900(String orig, String CSOSN, String pICMS, String vICMS) {
-        this.orig = orig;
+        this.Orig = orig;
         this.CSOSN = CSOSN;
         this.pICMS = pICMS;
         this.vICMS = vICMS;

@@ -1,8 +1,6 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -26,37 +24,37 @@ public class CFeInfCFeDetImposto {
      * AC - Grupo do ICMS da Operação própria e ST
      */
     @Element(name = "ICMS", required = false)
-    private CFeInfCFeDetImpostoICMS icms;
+    private CFeInfCFeDetImpostoICMS ICMS;
 
     /**
      * AC - Grupo do PIS
      */
     @Element(name = "PIS", required = false)
-    private CFeInfCFeDetImpostoPIS pis;
+    private CFeInfCFeDetImpostoPIS PIS;
 
     /**
      * AC - Grupo de PIS Substituição Tributária
      */
     @Element(name = "PISST", required = false)
-    private CFeInfCFeDetImpostoPISST pisst;
+    private CFeInfCFeDetImpostoPISST PISST;
 
     /**
      * AC - Grupo do COFINS
      */
     @Element(name = "COFINS", required = false)
-    private CFeInfCFeDetImpostoCOFINS cofins;
+    private CFeInfCFeDetImpostoCOFINS COFINS;
 
     /**
      * AC - Grupo de COFINS Substituição Tributária
      */
     @Element(name = "COFINSST", required = false)
-    private CFeInfCFeDetImpostoCOFINSST cofinsst;
+    private CFeInfCFeDetImpostoCOFINSST COFINSST;
 
     /**
      * AC - Grupo do ISSQN
      */
     @Element(name = "ISSQN", required = false)
-    private CFeInfCFeDetImpostoISSQN issqn;
+    private CFeInfCFeDetImpostoISSQN ISSQN;
 
     public CFeInfCFeDetImposto() {}
 
@@ -72,11 +70,11 @@ public class CFeInfCFeDetImposto {
      */
     public CFeInfCFeDetImposto(String vItem12741, CFeInfCFeDetImpostoICMS icms, CFeInfCFeDetImpostoPIS pis, CFeInfCFeDetImpostoPISST pisst, CFeInfCFeDetImpostoCOFINS cofins, CFeInfCFeDetImpostoCOFINSST cofinsst, CFeInfCFeDetImpostoISSQN issqn) {
         this.vItem12741 = vItem12741;
-        this.icms = icms;
-        this.pis = pis;
-        this.pisst = pisst;
-        this.cofins = cofins;
-        this.cofinsst = cofinsst;
-        this.issqn = issqn;
+        this.ICMS = icms;
+        this.PIS = pis;
+        this.PISST = pisst;
+        this.COFINS = cofins;
+        this.COFINSST = cofinsst;
+        this.ISSQN = issqn;
     }
 }

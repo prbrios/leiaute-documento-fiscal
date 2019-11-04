@@ -1,8 +1,6 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
@@ -24,7 +22,7 @@ public class CFeInfCFePgto {
      * AC - Grupo de informações dos Meios de Pagamento empregados na quitação do CF-e
      */
     @ElementList(name = "MP", required = false, inline = true)
-    private List<CFeInfCFePgtoMP> mp = new ArrayList<CFeInfCFePgtoMP>();
+    private List<CFeInfCFePgtoMP> MP = new ArrayList<CFeInfCFePgtoMP>();
 
     /**
      * SAT - Valor do troco
@@ -40,7 +38,7 @@ public class CFeInfCFePgto {
      * @param vTroco
      */
     public CFeInfCFePgto(List<CFeInfCFePgtoMP> mp, String vTroco) {
-        this.mp = mp;
+        this.MP = mp;
         this.vTroco = vTroco;
     }
 }

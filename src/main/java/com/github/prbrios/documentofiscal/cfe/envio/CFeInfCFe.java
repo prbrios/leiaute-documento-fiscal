@@ -1,8 +1,6 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
@@ -43,7 +41,7 @@ public class CFeInfCFe {
      * SAT - Informar a chave de acesso do CF-e precedida do literal ‘CFe’, acrescentada a validação do formato
      */
     @Attribute(name = "Id", required = false)
-    private String id;
+    private String Id;
 
     /**
      * AC - Grupo das informações de identificação do CF-e
@@ -114,7 +112,7 @@ public class CFeInfCFe {
         this.versao = versao;
         this.versaoDadosEnt = versaoDadosEnt;
         this.versaoSB = versaoSB;
-        this.id = id;
+        this.Id = id;
         this.ide = ide;
         this.emit = emit;
         this.dest = dest;

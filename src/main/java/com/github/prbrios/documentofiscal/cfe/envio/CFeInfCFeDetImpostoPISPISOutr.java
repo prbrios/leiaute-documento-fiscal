@@ -1,8 +1,6 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -20,7 +18,7 @@ public class CFeInfCFeDetImpostoPISPISOutr {
      * AC - Código de Situação Tributária do PIS
      */
     @Element(name = "CST", required = false)
-    private String cst;
+    private String CST;
 
     /**
      * AC - Valor da Base de Cálculo do PIS
@@ -64,7 +62,7 @@ public class CFeInfCFeDetImpostoPISPISOutr {
      * @param vPIS
      */
     public CFeInfCFeDetImpostoPISPISOutr(String cst, String vBC, String pPIS, String qBCProd, String vAliqProd, String vPIS) {
-        this.cst = cst;
+        this.CST = cst;
         this.vBC = vBC;
         this.pPIS = pPIS;
         this.qBCProd = qBCProd;

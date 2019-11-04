@@ -1,8 +1,6 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -20,7 +18,7 @@ public class CFeInfCFeDetImpostoCOFINSCOFINSOutr {
      * AC - Código de Situação Tributária
      */
     @Element(name = "CST", required = false)
-    private String cst;
+    private String CST;
 
     /**
      * AC - Valor da Base de Cálculo
@@ -64,7 +62,7 @@ public class CFeInfCFeDetImpostoCOFINSCOFINSOutr {
      * @param vCOFINS
      */
     public CFeInfCFeDetImpostoCOFINSCOFINSOutr(String cst, String vBC, String pCOFINS, String qBCProd, String vAliqProd, String vCOFINS) {
-        this.cst = cst;
+        this.CST = cst;
         this.vBC = vBC;
         this.pCOFINS = pCOFINS;
         this.qBCProd = qBCProd;
