@@ -2,6 +2,7 @@ package com.github.prbrios.documentofiscal.cfe.envio;
 
 import lombok.Data;
 import lombok.Getter;
+import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -18,7 +19,7 @@ public class CFeInfCFeInfAdicObsFisco {
     /**
      * SAT - Identificação do campo
      */
-    @Element(name = "xCampo", required = false)
+    @Attribute(name = "xCampo", required = false)
     private String xCampo;
 
     /**
