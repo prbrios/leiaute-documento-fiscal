@@ -30,7 +30,7 @@ public class CFeCancInfCFe {
     /**
      * AC - Chave de acesso do CF-e a ser cancelado
      */
-    @Element(name = "chCanc", required = false)
+    @Attribute(name = "chCanc", required = false)
     private String chCanc;
 
     /**
