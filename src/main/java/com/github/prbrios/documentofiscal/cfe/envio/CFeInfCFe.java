@@ -91,6 +91,12 @@ public class CFeInfCFe {
     @Element(name = "infAdic", required = false)
     private CFeInfCFeInfAdic infAdic;
 
+    /**
+     * SAT - Informações complementares de interesse do fisco
+     */
+    @ElementList(name = "obsFisco", required = false, inline = true)
+    private List<CFeInfCFeInfAdicObsFisco> obsFisco = new ArrayList<CFeInfCFeInfAdicObsFisco>();
+
     public CFeInfCFe() {}
 
     /**
