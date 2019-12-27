@@ -1,5 +1,6 @@
 package com.github.prbrios.documentofiscal.nfe;
 
+import com.github.prbrios.documentofiscal.nfe.retorno.RetEnviNFeProtNFe;
 import lombok.Data;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
@@ -18,7 +19,7 @@ public class NFeProc {
     private NFe NFe;
 
     @Element(name = "protNFe", required = false)
-    private NFeProcProtNFe protNFe;
+    private RetEnviNFeProtNFe protNFe;
 
     public NFeProc() {}
 
@@ -28,7 +29,7 @@ public class NFeProc {
      * @param NFe
      * @param protNFe
      */
-    public NFeProc(String versao, com.github.prbrios.documentofiscal.nfe.NFe NFe, NFeProcProtNFe protNFe) {
+    public NFeProc(String versao, com.github.prbrios.documentofiscal.nfe.NFe NFe, RetEnviNFeProtNFe protNFe) {
         this.versao = versao;
         this.NFe = NFe;
         this.protNFe = protNFe;

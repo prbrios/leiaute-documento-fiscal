@@ -1,4 +1,4 @@
-package com.github.prbrios.documentofiscal.nfe;
+package com.github.prbrios.documentofiscal.nfe.retorno;
 
 import lombok.Data;
 import org.simpleframework.xml.Attribute;
@@ -7,7 +7,7 @@ import org.simpleframework.xml.Root;
 
 @Data
 @Root(name = "infProt")
-class NFeProcProtNFeInfProt {
+public class RetEnviNFeProtNFeInfProt {
 
     @Attribute(name = "Id", required = false)
     private String id;
@@ -42,7 +42,7 @@ class NFeProcProtNFeInfProt {
     @Element(name = "xMsg", required = false)
     private String xMsg;
 
-    public NFeProcProtNFeInfProt() {}
+    public RetEnviNFeProtNFeInfProt() {}
 
     /**
      *
@@ -58,7 +58,7 @@ class NFeProcProtNFeInfProt {
      * @param cMsg
      * @param xMsg
      */
-    public NFeProcProtNFeInfProt(String id, String tpAmb, String verAplic, String chNFe, String dhRecbto, String nProt, String digVal, String cStat, String xMotivo, String cMsg, String xMsg) {
+    public RetEnviNFeProtNFeInfProt(String id, String tpAmb, String verAplic, String chNFe, String dhRecbto, String nProt, String digVal, String cStat, String xMotivo, String cMsg, String xMsg) {
         this.id = id;
         this.tpAmb = tpAmb;
         this.verAplic = verAplic;

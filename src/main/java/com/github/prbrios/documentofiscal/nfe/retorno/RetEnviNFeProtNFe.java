@@ -1,4 +1,4 @@
-package com.github.prbrios.documentofiscal.nfe;
+package com.github.prbrios.documentofiscal.nfe.retorno;
 
 import lombok.Data;
 import org.simpleframework.xml.Attribute;
@@ -9,22 +9,22 @@ import org.simpleframework.xml.Root;
 @Data
 @Root(name = "protNFe")
 @Namespace(reference = "http://www.portalfiscal.inf.br/nfe")
-public class NFeProcProtNFe {
+public class RetEnviNFeProtNFe {
 
     @Attribute(name = "versao", required = false)
     private String versao;
 
     @Element(name = "infProt", required = false)
-    private NFeProcProtNFeInfProt infProt;
+    private RetEnviNFeProtNFeInfProt infProt;
 
-    public NFeProcProtNFe() {}
+    public RetEnviNFeProtNFe() {}
 
     /**
      *
      * @param versao
      * @param infProt
      */
-    public NFeProcProtNFe(String versao, NFeProcProtNFeInfProt infProt) {
+    public RetEnviNFeProtNFe(String versao, RetEnviNFeProtNFeInfProt infProt) {
         this.versao = versao;
         this.infProt = infProt;
     }
