@@ -20,8 +20,8 @@ public class CTe {
 	@Element(name = "infCte", required = false)
 	private CTeInfCte infCte;
 
-	@ElementList(name = "infCTeSupl", required = false, inline = true)
-	private List<CTeInfCTeSupl> infCTeSupl = new ArrayList<CTeInfCTeSupl>();
+	@Element(name = "infCTeSupl", required = false)
+	private CTeInfCTeSupl infCTeSupl;
 
 	@Element(name = "Signature", required = false)
 	private Signature signature;

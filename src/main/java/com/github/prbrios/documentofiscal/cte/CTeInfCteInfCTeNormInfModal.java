@@ -24,5 +24,7 @@ public class CTeInfCteInfCTeNormInfModal {
 	@Element(name = "ferrov", required = false)
 	private CTeInfCteInfCTeNormInfModalFerrov ferrov;
 
+	@Element(name = "rodo", required = false)
+	private CTeInfCteInfCTeNormInfModalRodo rodo;
 
 }

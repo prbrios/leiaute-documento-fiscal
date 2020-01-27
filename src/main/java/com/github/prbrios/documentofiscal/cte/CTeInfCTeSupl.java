@@ -8,7 +8,7 @@ import org.simpleframework.xml.Root;
 @Root(name = "infCTeSupl")
 public class CTeInfCTeSupl {
 
-	@Element(name = "qrCodeCTe", required = false)
-	private String qrCodeCTe;
+	@Element(name = "qrCodCTe", required = false)
+	private String qrCodCTe;
 
 }
