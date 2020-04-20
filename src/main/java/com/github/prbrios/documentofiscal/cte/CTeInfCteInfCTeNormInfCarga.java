@@ -24,7 +24,7 @@ public class CTeInfCteInfCTeNormInfCarga {
 	@ElementList(name = "infQ", required = false, inline = true)
 	private List<CTeInfCteInfCTeNormInfCargaInfQ> infQ = new ArrayList<CTeInfCteInfCTeNormInfCargaInfQ>();
 
-	@ElementList(name = "vCargaAverb", required = false)
+	@Element(name = "vCargaAverb", required = false)
 	private String vCargaAverb;
 
 }
