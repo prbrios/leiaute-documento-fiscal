@@ -1,5 +1,6 @@
 package com.github.prbrios.documentofiscal;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.simpleframework.xml.core.Persister;
 import org.simpleframework.xml.stream.Format;
 
@@ -44,6 +45,26 @@ public class DFPersister<T> implements IDFPersister<T> {
             this.persister.write(obj, writer);
             return writer.toString();
         }catch (final Exception e){
+            throw new IllegalStateException(e.getMessage(), e);
+        }
+    }
+
+    @Override
+    public T readFromJSON(String json) {
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            return mapper.readValue(json, theType);
+        } catch (Exception e) {
+            throw new IllegalStateException(e.getMessage(), e);
+        }
+    }
+
+    @Override
+    public String writeToJSON(T obj) {
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            return mapper.writeValueAsString(obj);
+        } catch (Exception e) {
             throw new IllegalStateException(e.getMessage(), e);
         }
     }

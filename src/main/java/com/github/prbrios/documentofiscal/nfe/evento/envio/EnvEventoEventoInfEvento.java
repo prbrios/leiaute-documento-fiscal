@@ -9,7 +9,7 @@ import org.simpleframework.xml.Root;
 @Root(name = "infEvento")
 public class EnvEventoEventoInfEvento {
 
-    @Attribute(name = "id", required = false)
+    @Attribute(name = "Id", required = false)
     private String id;
 
     @Element(name = "cOrgao", required = false)

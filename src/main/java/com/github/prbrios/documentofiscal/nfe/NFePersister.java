@@ -23,4 +23,14 @@ public class NFePersister implements IDFPersister<NFe> {
         return new DFPersister<NFe>(){}.write(obj);
     }
 
+    @Override
+    public NFe readFromJSON(String json) {
+        return null;
+    }
+
+    @Override
+    public String writeToJSON(NFe obj) {
+        return null;
+    }
+
 }

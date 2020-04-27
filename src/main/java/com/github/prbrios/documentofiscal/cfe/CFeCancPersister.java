@@ -24,4 +24,14 @@ public class CFeCancPersister implements IDFPersister<CFeCanc> {
         return new DFPersister<CFeCanc>(){}.write(obj);
     }
 
+    @Override
+    public CFeCanc readFromJSON(String json) {
+        return null;
+    }
+
+    @Override
+    public String writeToJSON(CFeCanc obj) {
+        return null;
+    }
+
 }

@@ -21,6 +21,12 @@ public class EnvEventoEventoInfEventoDetEvento {
     @Element(name = "xJust", required = false)
     private String xJust;
 
+    @Element(name = "xCorrecao", required = false)
+    private String xCorrecao;
+
+    @Element(name = "xCondUso", required = false)
+    private String xCondUso;
+
     public EnvEventoEventoInfEventoDetEvento() {}
 
     /**
@@ -35,5 +41,23 @@ public class EnvEventoEventoInfEventoDetEvento {
         this.descEvento = descEvento;
         this.nProt = nProt;
         this.xJust = xJust;
+    }
+
+    /**
+     *
+     * @param versao
+     * @param descEvento
+     * @param nProt
+     * @param xJust
+     * @param xCorrecao
+     * @param xCondUso
+     */
+    public EnvEventoEventoInfEventoDetEvento(String versao, String descEvento, String nProt, String xJust, String xCorrecao, String xCondUso) {
+        this.versao = versao;
+        this.descEvento = descEvento;
+        this.nProt = nProt;
+        this.xJust = xJust;
+        this.xCorrecao = xCorrecao;
+        this.xCondUso = xCondUso;
     }
 }

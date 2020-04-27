@@ -17,7 +17,7 @@ public class EnvEvento {
     @Element(name = "idLote", required = false)
     private String idLote;
 
-    @ElementList(name = "evento", required = false)
+    @ElementList(name = "evento", required = false, inline = true)
     private List<EnvEventoEvento> eventos = new ArrayList<EnvEventoEvento>();
 
     public EnvEvento(){}

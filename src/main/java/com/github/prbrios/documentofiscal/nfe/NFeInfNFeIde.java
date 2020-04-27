@@ -1,5 +1,8 @@
 package com.github.prbrios.documentofiscal.nfe;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
 import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
@@ -8,76 +11,123 @@ import org.simpleframework.xml.Root;
 import java.util.ArrayList;
 import java.util.List;
 
+@JsonRootName("ide")
 @Data
 @Root(name = "ide")
 public class NFeInfNFeIde {
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("cuf")
     @Element(name = "cUF", required = false)
     private String cUF;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("cnf")
     @Element(name = "cNF", required = false)
     private String cNF;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("natop")
     @Element(name = "natOp", required = false)
     private String natOp;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("mod")
     @Element(name = "mod", required = false)
     private String mod;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("serie")
     @Element(name = "serie", required = false)
     private String serie;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("nnf")
     @Element(name = "nNF", required = false)
     private String nNF;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("dhemi")
     @Element(name = "dhEmi", required = false)
     private String dhEmi;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("dhsaient")
     @Element(name = "dhSaiEnt", required = false)
     private String dhSaiEnt;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("tpnf")
     @Element(name = "tpNF", required = false)
     private String tpNF;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("iddest")
     @Element(name = "idDest", required = false)
     private String idDest;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("cmunfg")
     @Element(name = "cMunFG", required = false)
     private String cMunFG;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("tpimp")
     @Element(name = "tpImp", required = false)
     private String tpImp;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("tpemis")
     @Element(name = "tpEmis", required = false)
     private String tpEmis;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("cdv")
     @Element(name = "cDV", required = false)
     private String cDV;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("tpamb")
     @Element(name = "tpAmb", required = false)
     private String tpAmb;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("finnfe")
     @Element(name = "finNFe", required = false)
     private String finNFe;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("indfinal")
     @Element(name = "indFinal", required = false)
     private String indFinal;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("indpres")
     @Element(name = "indPres", required = false)
     private String indPres;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("procemi")
     @Element(name = "procEmi", required = false)
     private String procEmi;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("verproc")
     @Element(name = "verProc", required = false)
     private String verProc;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("dhcont")
     @Element(name = "dhCont", required = false)
     private String dhCont;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("xjust")
     @Element(name = "xJust", required = false)
     private String xJust;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("nfref")
     @ElementList(name = "NFref", required = false, inline = true)
     private List<NFeInfNFeIdeNFref> nFref = new ArrayList<NFeInfNFeIdeNFref>();
 

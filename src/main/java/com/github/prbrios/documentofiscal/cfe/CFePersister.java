@@ -23,4 +23,14 @@ public class CFePersister implements IDFPersister<CFe> {
         return new DFPersister<CFe>(){}.write(obj);
     }
 
+    @Override
+    public CFe readFromJSON(String json) {
+        return null;
+    }
+
+    @Override
+    public String writeToJSON(CFe obj) {
+        return null;
+    }
+
 }

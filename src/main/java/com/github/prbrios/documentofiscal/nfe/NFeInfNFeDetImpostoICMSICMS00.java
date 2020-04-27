@@ -1,35 +1,54 @@
 package com.github.prbrios.documentofiscal.nfe;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
 import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
+@JsonRootName("icms00")
 @Data
 @Root(name = "ICMS00")
 public class NFeInfNFeDetImpostoICMSICMS00 {
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("orig")
     @Element(name = "orig", required = false)
     private String orig;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("cst")
     @Element(name = "CST", required = false)
     private String CST;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("modbc")
     @Element(name = "modBC", required = false)
     private String modBC;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("vbc")
     @Element(name = "vBC", required = false)
     private String vBC;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("picms")
     @Element(name = "pICMS", required = false)
     private String pICMS;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("vicms")
     @Element(name = "vICMS", required = false)
     private String vICMS;
 
-
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("pfcp")
     @Element(name = "pFCP", required = false)
     private String pFCP;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("vfcp")
     @Element(name = "vFCP", required = false)
     private String vFCP;
 

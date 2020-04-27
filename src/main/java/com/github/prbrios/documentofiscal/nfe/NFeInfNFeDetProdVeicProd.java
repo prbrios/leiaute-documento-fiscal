@@ -1,82 +1,134 @@
 package com.github.prbrios.documentofiscal.nfe;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
 import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
+@JsonRootName("veicprod")
 @Data
 @Root(name = "veicProd")
 public class NFeInfNFeDetProdVeicProd {
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("tpop")
     @Element(name = "tpOp", required = false)
     private String tpOp;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("chassi")
     @Element(name = "chassi", required = false)
     private String chassi;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("ccor")
     @Element(name = "cCor", required = false)
     private String cCor;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("xcor")
     @Element(name = "xCor", required = false)
     private String xCor;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("pot")
     @Element(name = "pot", required = false)
     private String pot;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("cilin")
     @Element(name = "cilin", required = false)
     private String cilin;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("pesol")
     @Element(name = "pesoL", required = false)
     private String pesoL;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("pesob")
     @Element(name = "pesoB", required = false)
     private String pesoB;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("nserie")
     @Element(name = "nSerie", required = false)
     private String nSerie;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("tpcomb")
     @Element(name = "tpComb", required = false)
     private String tpComb;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("nmotor")
     @Element(name = "nMotor", required = false)
     private String nMotor;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("cmt")
     @Element(name = "CMT", required = false)
     private String CMT;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("dist")
     @Element(name = "dist", required = false)
     private String dist;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("anomod")
     @Element(name = "anoMod", required = false)
     private String anoMod;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("anofab")
     @Element(name = "anoFab", required = false)
     private String anoFab;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("tppint")
     @Element(name = "tpPint", required = false)
     private String tpPint;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("tpveic")
     @Element(name = "tpVeic", required = false)
     private String tpVeic;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("espveic")
     @Element(name = "espVeic", required = false)
     private String espVeic;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("vin")
     @Element(name = "VIN", required = false)
     private String VIN;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("condveic")
     @Element(name = "condVeic", required = false)
     private String condVeic;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("cmod")
     @Element(name = "cMod", required = false)
     private String cMod;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("ccordenatran")
     @Element(name = "cCorDENATRAN", required = false)
     private String cCorDENATRAN;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("lota")
     @Element(name = "lota", required = false)
     private String lota;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("tprest")
     @Element(name = "tpRest", required = false)
     private String tpRest;
 
