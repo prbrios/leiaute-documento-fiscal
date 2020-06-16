@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("deduc")
-@Data
 @Root(name = "deduc")
 public class NFeInfNFeCanaDeduc {
 
@@ -34,4 +32,20 @@ public class NFeInfNFeCanaDeduc {
         this.vDed = vDed;
     }
 
+	public String getxDed() {
+		return xDed;
+	}
+
+	public void setxDed(String xDed) {
+		this.xDed = xDed;
+	}
+
+	public String getvDed() {
+		return vDed;
+	}
+
+	public void setvDed(String vDed) {
+		this.vDed = vDed;
+	}
+    
 }

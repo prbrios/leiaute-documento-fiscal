@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("rastro")
-@Data
 @Root(name = "rastro")
 public class NFeInfNFeDetProdRastro {
 
@@ -54,5 +52,45 @@ public class NFeInfNFeDetProdRastro {
         this.dVal = dVal;
         this.cAgreg = cAgreg;
     }
+
+	public String getnLote() {
+		return nLote;
+	}
+
+	public void setnLote(String nLote) {
+		this.nLote = nLote;
+	}
+
+	public String getqLote() {
+		return qLote;
+	}
+
+	public void setqLote(String qLote) {
+		this.qLote = qLote;
+	}
+
+	public String getdFab() {
+		return dFab;
+	}
+
+	public void setdFab(String dFab) {
+		this.dFab = dFab;
+	}
+
+	public String getdVal() {
+		return dVal;
+	}
+
+	public void setdVal(String dVal) {
+		this.dVal = dVal;
+	}
+
+	public String getcAgreg() {
+		return cAgreg;
+	}
+
+	public void setcAgreg(String cAgreg) {
+		this.cAgreg = cAgreg;
+	}
 
 }

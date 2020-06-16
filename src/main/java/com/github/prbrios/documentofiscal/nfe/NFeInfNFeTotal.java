@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("total")
-@Data
 @Root(name = "total")
 public class NFeInfNFeTotal {
 
@@ -40,5 +38,29 @@ public class NFeInfNFeTotal {
         this.ISSQNtot = ISSQNtot;
         this.retTrib = retTrib;
     }
+
+	public NFeInfNFeTotalICMSTot getICMSTot() {
+		return ICMSTot;
+	}
+
+	public void setICMSTot(NFeInfNFeTotalICMSTot iCMSTot) {
+		ICMSTot = iCMSTot;
+	}
+
+	public NFeInfNFeTotalISSQNtot getISSQNtot() {
+		return ISSQNtot;
+	}
+
+	public void setISSQNtot(NFeInfNFeTotalISSQNtot iSSQNtot) {
+		ISSQNtot = iSSQNtot;
+	}
+
+	public NFeInfNFeTotalRetTrib getRetTrib() {
+		return retTrib;
+	}
+
+	public void setRetTrib(NFeInfNFeTotalRetTrib retTrib) {
+		this.retTrib = retTrib;
+	}
 
 }

@@ -1,13 +1,11 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 /**
  * TAG de Grupo cRegTrib=1 – Simples Nacional e CSOSN=900
  */
-@Data
 @Root(name = "ICMSSN900")
 public class CFeInfCFeDetImpostoICMSICMSSN900 {
 
@@ -50,4 +48,37 @@ public class CFeInfCFeDetImpostoICMSICMSSN900 {
         this.pICMS = pICMS;
         this.vICMS = vICMS;
     }
+
+	public String getOrig() {
+		return Orig;
+	}
+
+	public void setOrig(String orig) {
+		Orig = orig;
+	}
+
+	public String getCSOSN() {
+		return CSOSN;
+	}
+
+	public void setCSOSN(String cSOSN) {
+		CSOSN = cSOSN;
+	}
+
+	public String getpICMS() {
+		return pICMS;
+	}
+
+	public void setpICMS(String pICMS) {
+		this.pICMS = pICMS;
+	}
+
+	public String getvICMS() {
+		return vICMS;
+	}
+
+	public void setvICMS(String vICMS) {
+		this.vICMS = vICMS;
+	}
+    
 }

@@ -3,13 +3,11 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("det")
-@Data
 @Root(name = "det")
 public class NFeInfNFeDet {
 
@@ -55,5 +53,45 @@ public class NFeInfNFeDet {
         this.impostoDevol = impostoDevol;
         this.infAdProd = infAdProd;
     }
+
+	public String getnItem() {
+		return nItem;
+	}
+
+	public void setnItem(String nItem) {
+		this.nItem = nItem;
+	}
+
+	public NFeInfNFeDetProd getProd() {
+		return prod;
+	}
+
+	public void setProd(NFeInfNFeDetProd prod) {
+		this.prod = prod;
+	}
+
+	public NFeInfNFeDetImposto getImposto() {
+		return imposto;
+	}
+
+	public void setImposto(NFeInfNFeDetImposto imposto) {
+		this.imposto = imposto;
+	}
+
+	public NFeInfNFeDetImpostoDevol getImpostoDevol() {
+		return impostoDevol;
+	}
+
+	public void setImpostoDevol(NFeInfNFeDetImpostoDevol impostoDevol) {
+		this.impostoDevol = impostoDevol;
+	}
+
+	public String getInfAdProd() {
+		return infAdProd;
+	}
+
+	public void setInfAdProd(String infAdProd) {
+		this.infAdProd = infAdProd;
+	}
 
 }

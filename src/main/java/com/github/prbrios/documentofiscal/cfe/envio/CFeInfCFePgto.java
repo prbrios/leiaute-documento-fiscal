@@ -1,12 +1,11 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
-import lombok.Data;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Grupo de informações sobre pagamento do CF-e
@@ -14,7 +13,6 @@ import java.util.List;
  * @author prbrios@gmail.com
  * @since 01/10/2019
  */
-@Data
 @Root(name = "pgto")
 public class CFeInfCFePgto {
 
@@ -41,4 +39,21 @@ public class CFeInfCFePgto {
         this.MP = mp;
         this.vTroco = vTroco;
     }
+
+	public List<CFeInfCFePgtoMP> getMP() {
+		return MP;
+	}
+
+	public void setMP(List<CFeInfCFePgtoMP> mP) {
+		MP = mP;
+	}
+
+	public String getvTroco() {
+		return vTroco;
+	}
+
+	public void setvTroco(String vTroco) {
+		this.vTroco = vTroco;
+	}
+    
 }

@@ -1,14 +1,11 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Grupo de informações adicionais
@@ -16,7 +13,6 @@ import java.util.List;
  * @author prbrios@gmail.com
  * @since 01/10/2019
  */
-@Data
 @Root(name = "infAdic")
 public class CFeInfCFeInfAdic {
 
@@ -43,4 +39,21 @@ public class CFeInfCFeInfAdic {
         this.infCpl = infCpl;
         this.obsFisco = obsFisco;
     }
+
+	public String getInfCpl() {
+		return infCpl;
+	}
+
+	public void setInfCpl(String infCpl) {
+		this.infCpl = infCpl;
+	}
+
+	public List<CFeInfCFeInfAdicObsFisco> getObsFisco() {
+		return obsFisco;
+	}
+
+	public void setObsFisco(List<CFeInfCFeInfAdicObsFisco> obsFisco) {
+		this.obsFisco = obsFisco;
+	}
+    
 }

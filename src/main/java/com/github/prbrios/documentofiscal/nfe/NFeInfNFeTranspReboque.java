@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("reboque")
-@Data
 @Root(name = "reboque")
 public class NFeInfNFeTranspReboque {
 
@@ -40,5 +38,29 @@ public class NFeInfNFeTranspReboque {
         this.UF = UF;
         this.RNTC = RNTC;
     }
+
+	public String getPlaca() {
+		return placa;
+	}
+
+	public void setPlaca(String placa) {
+		this.placa = placa;
+	}
+
+	public String getUF() {
+		return UF;
+	}
+
+	public void setUF(String uF) {
+		UF = uF;
+	}
+
+	public String getRNTC() {
+		return RNTC;
+	}
+
+	public void setRNTC(String rNTC) {
+		RNTC = rNTC;
+	}
 
 }

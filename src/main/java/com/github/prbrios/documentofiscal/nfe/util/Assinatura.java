@@ -40,7 +40,11 @@ public class Assinatura {
     }
 
     private static final String C14N_TRANSFORM_METHOD = "http://www.w3.org/TR/2001/REC-xml-c14n-20010315";
-    private static final String[] ELEMENTOS_ASSINAVEIS = new String[]{"infEvento", "infCanc", "infNFe", "infInut", "infMDFe", "infCte"};
+    
+    // Elementos do Reinf
+    // - evtInfoContri
+    
+    private static final String[] ELEMENTOS_ASSINAVEIS = new String[]{"infEvento", "infCanc", "infNFe", "infInut", "infMDFe", "infCte", "evtInfoContri"};
 
     public String assinar(final String conteudoXml) throws Exception {
         return this.assinar(conteudoXml, Assinatura.ELEMENTOS_ASSINAVEIS);

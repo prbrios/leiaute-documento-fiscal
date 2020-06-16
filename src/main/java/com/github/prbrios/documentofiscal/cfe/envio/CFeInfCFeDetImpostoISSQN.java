@@ -1,15 +1,8 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-/**
- *
- */
-@Data
 @Root(name = "ISSQN")
 public class CFeInfCFeDetImpostoISSQN {
 
@@ -92,4 +85,77 @@ public class CFeInfCFeDetImpostoISSQN {
         this.cNatOp = cNatOp;
         this.indIncFisc = indIncFisc;
     }
+
+	public String getvDeducISSQN() {
+		return vDeducISSQN;
+	}
+
+	public void setvDeducISSQN(String vDeducISSQN) {
+		this.vDeducISSQN = vDeducISSQN;
+	}
+
+	public String getvBC() {
+		return vBC;
+	}
+
+	public void setvBC(String vBC) {
+		this.vBC = vBC;
+	}
+
+	public String getvAliq() {
+		return vAliq;
+	}
+
+	public void setvAliq(String vAliq) {
+		this.vAliq = vAliq;
+	}
+
+	public String getvISSQN() {
+		return vISSQN;
+	}
+
+	public void setvISSQN(String vISSQN) {
+		this.vISSQN = vISSQN;
+	}
+
+	public String getcMunFG() {
+		return cMunFG;
+	}
+
+	public void setcMunFG(String cMunFG) {
+		this.cMunFG = cMunFG;
+	}
+
+	public String getcListServ() {
+		return cListServ;
+	}
+
+	public void setcListServ(String cListServ) {
+		this.cListServ = cListServ;
+	}
+
+	public String getcServTribMun() {
+		return cServTribMun;
+	}
+
+	public void setcServTribMun(String cServTribMun) {
+		this.cServTribMun = cServTribMun;
+	}
+
+	public String getcNatOp() {
+		return cNatOp;
+	}
+
+	public void setcNatOp(String cNatOp) {
+		this.cNatOp = cNatOp;
+	}
+
+	public String getIndIncFisc() {
+		return indIncFisc;
+	}
+
+	public void setIndIncFisc(String indIncFisc) {
+		this.indIncFisc = indIncFisc;
+	}
+
 }

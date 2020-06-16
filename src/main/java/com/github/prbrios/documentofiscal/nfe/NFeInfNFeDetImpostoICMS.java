@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("icms")
-@Data
 @Root(name = "ICMS")
 public class NFeInfNFeDetImpostoICMS {
 
@@ -138,5 +136,141 @@ public class NFeInfNFeDetImpostoICMS {
         this.ICMSSN500 = ICMSSN500;
         this.ICMSSN900 = ICMSSN900;
     }
+
+	public NFeInfNFeDetImpostoICMSICMS00 getICMS00() {
+		return ICMS00;
+	}
+
+	public void setICMS00(NFeInfNFeDetImpostoICMSICMS00 iCMS00) {
+		ICMS00 = iCMS00;
+	}
+
+	public NFeInfNFeDetImpostoICMSICMS10 getICMS10() {
+		return ICMS10;
+	}
+
+	public void setICMS10(NFeInfNFeDetImpostoICMSICMS10 iCMS10) {
+		ICMS10 = iCMS10;
+	}
+
+	public NFeInfNFeDetImpostoICMSICMS20 getICMS20() {
+		return ICMS20;
+	}
+
+	public void setICMS20(NFeInfNFeDetImpostoICMSICMS20 iCMS20) {
+		ICMS20 = iCMS20;
+	}
+
+	public NFeInfNFeDetImpostoICMSICMS30 getICMS30() {
+		return ICMS30;
+	}
+
+	public void setICMS30(NFeInfNFeDetImpostoICMSICMS30 iCMS30) {
+		ICMS30 = iCMS30;
+	}
+
+	public NFeInfNFeDetImpostoICMSICMS40 getICMS40() {
+		return ICMS40;
+	}
+
+	public void setICMS40(NFeInfNFeDetImpostoICMSICMS40 iCMS40) {
+		ICMS40 = iCMS40;
+	}
+
+	public NFeInfNFeDetImpostoICMSICMS51 getICMS51() {
+		return ICMS51;
+	}
+
+	public void setICMS51(NFeInfNFeDetImpostoICMSICMS51 iCMS51) {
+		ICMS51 = iCMS51;
+	}
+
+	public NFeInfNFeDetImpostoICMSICMS60 getICMS60() {
+		return ICMS60;
+	}
+
+	public void setICMS60(NFeInfNFeDetImpostoICMSICMS60 iCMS60) {
+		ICMS60 = iCMS60;
+	}
+
+	public NFeInfNFeDetImpostoICMSICMS70 getICMS70() {
+		return ICMS70;
+	}
+
+	public void setICMS70(NFeInfNFeDetImpostoICMSICMS70 iCMS70) {
+		ICMS70 = iCMS70;
+	}
+
+	public NFeInfNFeDetImpostoICMSICMS90 getICMS90() {
+		return ICMS90;
+	}
+
+	public void setICMS90(NFeInfNFeDetImpostoICMSICMS90 iCMS90) {
+		ICMS90 = iCMS90;
+	}
+
+	public NFeInfNFeDetImpostoICMSICMSPart getICMSPart() {
+		return ICMSPart;
+	}
+
+	public void setICMSPart(NFeInfNFeDetImpostoICMSICMSPart iCMSPart) {
+		ICMSPart = iCMSPart;
+	}
+
+	public NFeInfNFeDetImpostoICMSICMSST getICMSST() {
+		return ICMSST;
+	}
+
+	public void setICMSST(NFeInfNFeDetImpostoICMSICMSST iCMSST) {
+		ICMSST = iCMSST;
+	}
+
+	public NFeInfNFeDetImpostoICMSICMSSN101 getICMSSN101() {
+		return ICMSSN101;
+	}
+
+	public void setICMSSN101(NFeInfNFeDetImpostoICMSICMSSN101 iCMSSN101) {
+		ICMSSN101 = iCMSSN101;
+	}
+
+	public NFeInfNFeDetImpostoICMSICMSSN102 getICMSSN102() {
+		return ICMSSN102;
+	}
+
+	public void setICMSSN102(NFeInfNFeDetImpostoICMSICMSSN102 iCMSSN102) {
+		ICMSSN102 = iCMSSN102;
+	}
+
+	public NFeInfNFeDetImpostoICMSICMSSN201 getICMSSN201() {
+		return ICMSSN201;
+	}
+
+	public void setICMSSN201(NFeInfNFeDetImpostoICMSICMSSN201 iCMSSN201) {
+		ICMSSN201 = iCMSSN201;
+	}
+
+	public NFeInfNFeDetImpostoICMSICMSSN202 getICMSSN202() {
+		return ICMSSN202;
+	}
+
+	public void setICMSSN202(NFeInfNFeDetImpostoICMSICMSSN202 iCMSSN202) {
+		ICMSSN202 = iCMSSN202;
+	}
+
+	public NFeInfNFeDetImpostoICMSICMSSN500 getICMSSN500() {
+		return ICMSSN500;
+	}
+
+	public void setICMSSN500(NFeInfNFeDetImpostoICMSICMSSN500 iCMSSN500) {
+		ICMSSN500 = iCMSSN500;
+	}
+
+	public NFeInfNFeDetImpostoICMSICMSSN900 getICMSSN900() {
+		return ICMSSN900;
+	}
+
+	public void setICMSSN900(NFeInfNFeDetImpostoICMSICMSSN900 iCMSSN900) {
+		ICMSSN900 = iCMSSN900;
+	}
 
 }

@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("icms30")
-@Data
 @Root(name = "ICMS30")
 public class NFeInfNFeDetImpostoICMSICMS30 {
 
@@ -110,5 +108,109 @@ public class NFeInfNFeDetImpostoICMSICMS30 {
         this.vICMSDeson = vICMSDeson;
         this.motDesICMS = motDesICMS;
     }
+
+	public String getOrig() {
+		return orig;
+	}
+
+	public void setOrig(String orig) {
+		this.orig = orig;
+	}
+
+	public String getCST() {
+		return CST;
+	}
+
+	public void setCST(String cST) {
+		CST = cST;
+	}
+
+	public String getModBCST() {
+		return modBCST;
+	}
+
+	public void setModBCST(String modBCST) {
+		this.modBCST = modBCST;
+	}
+
+	public String getpMVAST() {
+		return pMVAST;
+	}
+
+	public void setpMVAST(String pMVAST) {
+		this.pMVAST = pMVAST;
+	}
+
+	public String getpRedBCST() {
+		return pRedBCST;
+	}
+
+	public void setpRedBCST(String pRedBCST) {
+		this.pRedBCST = pRedBCST;
+	}
+
+	public String getvBCST() {
+		return vBCST;
+	}
+
+	public void setvBCST(String vBCST) {
+		this.vBCST = vBCST;
+	}
+
+	public String getpICMSST() {
+		return pICMSST;
+	}
+
+	public void setpICMSST(String pICMSST) {
+		this.pICMSST = pICMSST;
+	}
+
+	public String getvICMSST() {
+		return vICMSST;
+	}
+
+	public void setvICMSST(String vICMSST) {
+		this.vICMSST = vICMSST;
+	}
+
+	public String getvBCFCPST() {
+		return vBCFCPST;
+	}
+
+	public void setvBCFCPST(String vBCFCPST) {
+		this.vBCFCPST = vBCFCPST;
+	}
+
+	public String getpFCPST() {
+		return pFCPST;
+	}
+
+	public void setpFCPST(String pFCPST) {
+		this.pFCPST = pFCPST;
+	}
+
+	public String getvFCPST() {
+		return vFCPST;
+	}
+
+	public void setvFCPST(String vFCPST) {
+		this.vFCPST = vFCPST;
+	}
+
+	public String getvICMSDeson() {
+		return vICMSDeson;
+	}
+
+	public void setvICMSDeson(String vICMSDeson) {
+		this.vICMSDeson = vICMSDeson;
+	}
+
+	public String getMotDesICMS() {
+		return motDesICMS;
+	}
+
+	public void setMotDesICMS(String motDesICMS) {
+		this.motDesICMS = motDesICMS;
+	}
 
 }

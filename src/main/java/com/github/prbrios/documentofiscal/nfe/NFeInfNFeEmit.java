@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("emit")
-@Data
 @Root(name = "emit")
 public class NFeInfNFeEmit {
 
@@ -89,5 +87,85 @@ public class NFeInfNFeEmit {
         this.CNAE = CNAE;
         this.CRT = CRT;
     }
+
+	public String getCNPJ() {
+		return CNPJ;
+	}
+
+	public void setCNPJ(String cNPJ) {
+		CNPJ = cNPJ;
+	}
+
+	public String getCPF() {
+		return CPF;
+	}
+
+	public void setCPF(String cPF) {
+		CPF = cPF;
+	}
+
+	public String getxNome() {
+		return xNome;
+	}
+
+	public void setxNome(String xNome) {
+		this.xNome = xNome;
+	}
+
+	public String getxFant() {
+		return xFant;
+	}
+
+	public void setxFant(String xFant) {
+		this.xFant = xFant;
+	}
+
+	public NFeInfNFeEmitEnderEmit getEnderEmit() {
+		return enderEmit;
+	}
+
+	public void setEnderEmit(NFeInfNFeEmitEnderEmit enderEmit) {
+		this.enderEmit = enderEmit;
+	}
+
+	public String getIE() {
+		return IE;
+	}
+
+	public void setIE(String iE) {
+		IE = iE;
+	}
+
+	public String getIEST() {
+		return IEST;
+	}
+
+	public void setIEST(String iEST) {
+		IEST = iEST;
+	}
+
+	public String getIM() {
+		return IM;
+	}
+
+	public void setIM(String iM) {
+		IM = iM;
+	}
+
+	public String getCNAE() {
+		return CNAE;
+	}
+
+	public void setCNAE(String cNAE) {
+		CNAE = cNAE;
+	}
+
+	public String getCRT() {
+		return CRT;
+	}
+
+	public void setCRT(String cRT) {
+		CRT = cRT;
+	}
 
 }

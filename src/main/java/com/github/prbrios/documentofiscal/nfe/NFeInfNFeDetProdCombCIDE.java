@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("cide")
-@Data
 @Root(name = "CIDE")
 public class NFeInfNFeDetProdCombCIDE {
 
@@ -40,5 +38,29 @@ public class NFeInfNFeDetProdCombCIDE {
         this.vAliqProd = vAliqProd;
         this.vCIDE = vCIDE;
     }
+
+	public String getqBCProd() {
+		return qBCProd;
+	}
+
+	public void setqBCProd(String qBCProd) {
+		this.qBCProd = qBCProd;
+	}
+
+	public String getvAliqProd() {
+		return vAliqProd;
+	}
+
+	public void setvAliqProd(String vAliqProd) {
+		this.vAliqProd = vAliqProd;
+	}
+
+	public String getvCIDE() {
+		return vCIDE;
+	}
+
+	public void setvCIDE(String vCIDE) {
+		this.vCIDE = vCIDE;
+	}
 
 }

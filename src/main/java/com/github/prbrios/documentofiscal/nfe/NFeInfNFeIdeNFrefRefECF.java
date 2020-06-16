@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("refecf")
-@Data
 @Root(name = "refECF")
 public class NFeInfNFeIdeNFrefRefECF {
 
@@ -40,5 +38,29 @@ public class NFeInfNFeIdeNFrefRefECF {
         this.nECF = nECF;
         this.nCOO = nCOO;
     }
+
+	public String getMod() {
+		return mod;
+	}
+
+	public void setMod(String mod) {
+		this.mod = mod;
+	}
+
+	public String getnECF() {
+		return nECF;
+	}
+
+	public void setnECF(String nECF) {
+		this.nECF = nECF;
+	}
+
+	public String getnCOO() {
+		return nCOO;
+	}
+
+	public void setnCOO(String nCOO) {
+		this.nCOO = nCOO;
+	}
 
 }

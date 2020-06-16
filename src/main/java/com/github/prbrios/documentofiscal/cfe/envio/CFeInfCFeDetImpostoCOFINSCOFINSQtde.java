@@ -1,6 +1,5 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -10,7 +9,6 @@ import org.simpleframework.xml.Root;
  * @author prbrios@gmail.com
  * @since 01/10/2019
  */
-@Data
 @Root(name = "COFINSQtde")
 public class CFeInfCFeDetImpostoCOFINSCOFINSQtde {
 
@@ -53,4 +51,37 @@ public class CFeInfCFeDetImpostoCOFINSCOFINSQtde {
         this.vAliqProd = vAliqProd;
         this.vCOFINS = vCOFINS;
     }
+
+	public String getCST() {
+		return CST;
+	}
+
+	public void setCST(String cST) {
+		CST = cST;
+	}
+
+	public String getqBCProd() {
+		return qBCProd;
+	}
+
+	public void setqBCProd(String qBCProd) {
+		this.qBCProd = qBCProd;
+	}
+
+	public String getvAliqProd() {
+		return vAliqProd;
+	}
+
+	public void setvAliqProd(String vAliqProd) {
+		this.vAliqProd = vAliqProd;
+	}
+
+	public String getvCOFINS() {
+		return vCOFINS;
+	}
+
+	public void setvCOFINS(String vCOFINS) {
+		this.vCOFINS = vCOFINS;
+	}
+    
 }

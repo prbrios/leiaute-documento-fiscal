@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("infresptec")
-@Data
 @Root(name = "infRespTec")
 public class NFeInfNFeInfRespTec {
 
@@ -61,5 +59,53 @@ public class NFeInfNFeInfRespTec {
         this.idCSRT = idCSRT;
         this.hashCSRT = hashCSRT;
     }
+
+	public String getCNPJ() {
+		return CNPJ;
+	}
+
+	public void setCNPJ(String cNPJ) {
+		CNPJ = cNPJ;
+	}
+
+	public String getxContato() {
+		return xContato;
+	}
+
+	public void setxContato(String xContato) {
+		this.xContato = xContato;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getFone() {
+		return fone;
+	}
+
+	public void setFone(String fone) {
+		this.fone = fone;
+	}
+
+	public String getIdCSRT() {
+		return idCSRT;
+	}
+
+	public void setIdCSRT(String idCSRT) {
+		this.idCSRT = idCSRT;
+	}
+
+	public String getHashCSRT() {
+		return hashCSRT;
+	}
+
+	public void setHashCSRT(String hashCSRT) {
+		this.hashCSRT = hashCSRT;
+	}
 
 }

@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("compra")
-@Data
 @Root(name = "compra")
 public class NFeInfNFeCompra {
 
@@ -40,5 +38,29 @@ public class NFeInfNFeCompra {
         this.xPed = xPed;
         this.xCont = xCont;
     }
+
+	public String getxNEmp() {
+		return xNEmp;
+	}
+
+	public void setxNEmp(String xNEmp) {
+		this.xNEmp = xNEmp;
+	}
+
+	public String getxPed() {
+		return xPed;
+	}
+
+	public void setxPed(String xPed) {
+		this.xPed = xPed;
+	}
+
+	public String getxCont() {
+		return xCont;
+	}
+
+	public void setxCont(String xCont) {
+		this.xCont = xCont;
+	}
 
 }

@@ -1,6 +1,5 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -10,7 +9,6 @@ import org.simpleframework.xml.Root;
  * @author prbrios@gmail.com
  * @since 01/10/2019
  */
-@Data
 @Root(name = "entrega")
 public class CFeInfCFeEntrega {
 
@@ -69,4 +67,53 @@ public class CFeInfCFeEntrega {
         this.xMun = xMun;
         this.UF = uf;
     }
+
+	public String getxLgr() {
+		return xLgr;
+	}
+
+	public void setxLgr(String xLgr) {
+		this.xLgr = xLgr;
+	}
+
+	public String getNro() {
+		return nro;
+	}
+
+	public void setNro(String nro) {
+		this.nro = nro;
+	}
+
+	public String getxCpl() {
+		return xCpl;
+	}
+
+	public void setxCpl(String xCpl) {
+		this.xCpl = xCpl;
+	}
+
+	public String getxBairro() {
+		return xBairro;
+	}
+
+	public void setxBairro(String xBairro) {
+		this.xBairro = xBairro;
+	}
+
+	public String getxMun() {
+		return xMun;
+	}
+
+	public void setxMun(String xMun) {
+		this.xMun = xMun;
+	}
+
+	public String getUF() {
+		return UF;
+	}
+
+	public void setUF(String uF) {
+		UF = uF;
+	}
+    
 }

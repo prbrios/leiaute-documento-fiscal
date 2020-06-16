@@ -1,8 +1,5 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -12,7 +9,6 @@ import org.simpleframework.xml.Root;
  * @author prbrios@gmail.com
  * @since 01/10/2019
  */
-@Data
 @Root(name = "prod")
 public class CFeInfCFeDetProd {
 
@@ -151,4 +147,133 @@ public class CFeInfCFeDetProd {
         this.vRatAcr = vRatAcr;
         this.obsFiscoDet = obsFiscoDet;
     }
+
+	public String getcProd() {
+		return cProd;
+	}
+
+	public void setcProd(String cProd) {
+		this.cProd = cProd;
+	}
+
+	public String getcEAN() {
+		return cEAN;
+	}
+
+	public void setcEAN(String cEAN) {
+		this.cEAN = cEAN;
+	}
+
+	public String getxProd() {
+		return xProd;
+	}
+
+	public void setxProd(String xProd) {
+		this.xProd = xProd;
+	}
+
+	public String getNCM() {
+		return NCM;
+	}
+
+	public void setNCM(String nCM) {
+		NCM = nCM;
+	}
+
+	public String getCFOP() {
+		return CFOP;
+	}
+
+	public void setCFOP(String cFOP) {
+		CFOP = cFOP;
+	}
+
+	public String getuCom() {
+		return uCom;
+	}
+
+	public void setuCom(String uCom) {
+		this.uCom = uCom;
+	}
+
+	public String getqCom() {
+		return qCom;
+	}
+
+	public void setqCom(String qCom) {
+		this.qCom = qCom;
+	}
+
+	public String getvUnCom() {
+		return vUnCom;
+	}
+
+	public void setvUnCom(String vUnCom) {
+		this.vUnCom = vUnCom;
+	}
+
+	public String getvProd() {
+		return vProd;
+	}
+
+	public void setvProd(String vProd) {
+		this.vProd = vProd;
+	}
+
+	public String getIndRegra() {
+		return indRegra;
+	}
+
+	public void setIndRegra(String indRegra) {
+		this.indRegra = indRegra;
+	}
+
+	public String getvDesc() {
+		return vDesc;
+	}
+
+	public void setvDesc(String vDesc) {
+		this.vDesc = vDesc;
+	}
+
+	public String getvOutro() {
+		return vOutro;
+	}
+
+	public void setvOutro(String vOutro) {
+		this.vOutro = vOutro;
+	}
+
+	public String getvItem() {
+		return vItem;
+	}
+
+	public void setvItem(String vItem) {
+		this.vItem = vItem;
+	}
+
+	public String getvRatDesc() {
+		return vRatDesc;
+	}
+
+	public void setvRatDesc(String vRatDesc) {
+		this.vRatDesc = vRatDesc;
+	}
+
+	public String getvRatAcr() {
+		return vRatAcr;
+	}
+
+	public void setvRatAcr(String vRatAcr) {
+		this.vRatAcr = vRatAcr;
+	}
+
+	public CFeInfCFeDetProdObsFiscoDet getObsFiscoDet() {
+		return obsFiscoDet;
+	}
+
+	public void setObsFiscoDet(CFeInfCFeDetProdObsFiscoDet obsFiscoDet) {
+		this.obsFiscoDet = obsFiscoDet;
+	}
+    
 }

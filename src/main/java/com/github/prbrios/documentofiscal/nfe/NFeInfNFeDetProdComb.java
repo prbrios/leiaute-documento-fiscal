@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("comb")
-@Data
 @Root(name = "comb")
 public class NFeInfNFeDetProdComb {
 
@@ -96,5 +94,93 @@ public class NFeInfNFeDetProdComb {
         this.CIDE = CIDE;
         this.encerrante = encerrante;
     }
+
+	public String getcProdANP() {
+		return cProdANP;
+	}
+
+	public void setcProdANP(String cProdANP) {
+		this.cProdANP = cProdANP;
+	}
+
+	public String getDescANP() {
+		return descANP;
+	}
+
+	public void setDescANP(String descANP) {
+		this.descANP = descANP;
+	}
+
+	public String getpGLP() {
+		return pGLP;
+	}
+
+	public void setpGLP(String pGLP) {
+		this.pGLP = pGLP;
+	}
+
+	public String getpGNn() {
+		return pGNn;
+	}
+
+	public void setpGNn(String pGNn) {
+		this.pGNn = pGNn;
+	}
+
+	public String getpGNi() {
+		return pGNi;
+	}
+
+	public void setpGNi(String pGNi) {
+		this.pGNi = pGNi;
+	}
+
+	public String getvPart() {
+		return vPart;
+	}
+
+	public void setvPart(String vPart) {
+		this.vPart = vPart;
+	}
+
+	public String getCODIF() {
+		return CODIF;
+	}
+
+	public void setCODIF(String cODIF) {
+		CODIF = cODIF;
+	}
+
+	public String getqTemp() {
+		return qTemp;
+	}
+
+	public void setqTemp(String qTemp) {
+		this.qTemp = qTemp;
+	}
+
+	public String getUFCons() {
+		return UFCons;
+	}
+
+	public void setUFCons(String uFCons) {
+		UFCons = uFCons;
+	}
+
+	public NFeInfNFeDetProdCombCIDE getCIDE() {
+		return CIDE;
+	}
+
+	public void setCIDE(NFeInfNFeDetProdCombCIDE cIDE) {
+		CIDE = cIDE;
+	}
+
+	public NFeInfNFeDetProdCombEncerrante getEncerrante() {
+		return encerrante;
+	}
+
+	public void setEncerrante(NFeInfNFeDetProdCombEncerrante encerrante) {
+		this.encerrante = encerrante;
+	}
 
 }

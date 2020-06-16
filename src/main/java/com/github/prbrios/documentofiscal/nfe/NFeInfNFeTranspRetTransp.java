@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("rettransp")
-@Data
 @Root(name = "retTransp")
 public class NFeInfNFeTranspRetTransp {
 
@@ -61,5 +59,53 @@ public class NFeInfNFeTranspRetTransp {
         this.CFOP = CFOP;
         this.cMunFG = cMunFG;
     }
+
+	public String getvServ() {
+		return vServ;
+	}
+
+	public void setvServ(String vServ) {
+		this.vServ = vServ;
+	}
+
+	public String getvBCRet() {
+		return vBCRet;
+	}
+
+	public void setvBCRet(String vBCRet) {
+		this.vBCRet = vBCRet;
+	}
+
+	public String getpICMSRet() {
+		return pICMSRet;
+	}
+
+	public void setpICMSRet(String pICMSRet) {
+		this.pICMSRet = pICMSRet;
+	}
+
+	public String getvICMSRet() {
+		return vICMSRet;
+	}
+
+	public void setvICMSRet(String vICMSRet) {
+		this.vICMSRet = vICMSRet;
+	}
+
+	public String getCFOP() {
+		return CFOP;
+	}
+
+	public void setCFOP(String cFOP) {
+		CFOP = cFOP;
+	}
+
+	public String getcMunFG() {
+		return cMunFG;
+	}
+
+	public void setcMunFG(String cMunFG) {
+		this.cMunFG = cMunFG;
+	}
 
 }

@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("icmssn102")
-@Data
 @Root(name = "ICMSSN102")
 public class NFeInfNFeDetImpostoICMSICMSSN102 {
 
@@ -33,5 +31,21 @@ public class NFeInfNFeDetImpostoICMSICMSSN102 {
         this.orig = orig;
         this.CSOSN = CSOSN;
     }
+
+	public String getOrig() {
+		return orig;
+	}
+
+	public void setOrig(String orig) {
+		this.orig = orig;
+	}
+
+	public String getCSOSN() {
+		return CSOSN;
+	}
+
+	public void setCSOSN(String cSOSN) {
+		CSOSN = cSOSN;
+	}
 
 }

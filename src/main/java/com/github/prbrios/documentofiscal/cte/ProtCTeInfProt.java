@@ -1,11 +1,9 @@
 package com.github.prbrios.documentofiscal.cte;
 
-import lombok.Data;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Data
 @Root(name = "infProt")
 public class ProtCTeInfProt {
 
@@ -35,5 +33,77 @@ public class ProtCTeInfProt {
 
 	@Element(name = "xMotivo", required = false)
 	private String xMotivo;
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getTpAmb() {
+		return tpAmb;
+	}
+
+	public void setTpAmb(String tpAmb) {
+		this.tpAmb = tpAmb;
+	}
+
+	public String getVerAplic() {
+		return verAplic;
+	}
+
+	public void setVerAplic(String verAplic) {
+		this.verAplic = verAplic;
+	}
+
+	public String getChCTe() {
+		return chCTe;
+	}
+
+	public void setChCTe(String chCTe) {
+		this.chCTe = chCTe;
+	}
+
+	public String getDhRecbto() {
+		return dhRecbto;
+	}
+
+	public void setDhRecbto(String dhRecbto) {
+		this.dhRecbto = dhRecbto;
+	}
+
+	public String getnProt() {
+		return nProt;
+	}
+
+	public void setnProt(String nProt) {
+		this.nProt = nProt;
+	}
+
+	public String getDigVal() {
+		return digVal;
+	}
+
+	public void setDigVal(String digVal) {
+		this.digVal = digVal;
+	}
+
+	public String getcStat() {
+		return cStat;
+	}
+
+	public void setcStat(String cStat) {
+		this.cStat = cStat;
+	}
+
+	public String getxMotivo() {
+		return xMotivo;
+	}
+
+	public void setxMotivo(String xMotivo) {
+		this.xMotivo = xMotivo;
+	}
 
 }

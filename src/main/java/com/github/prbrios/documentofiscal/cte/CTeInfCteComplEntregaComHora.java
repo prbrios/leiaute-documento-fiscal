@@ -1,10 +1,8 @@
 package com.github.prbrios.documentofiscal.cte;
 
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Data
 @Root(name = "comHora")
 public class CTeInfCteComplEntregaComHora {
 
@@ -14,4 +12,20 @@ public class CTeInfCteComplEntregaComHora {
 	@Element(name = "hProg", required = false)
 	private String hProg;
 
+	public String getTpHor() {
+		return tpHor;
+	}
+
+	public void setTpHor(String tpHor) {
+		this.tpHor = tpHor;
+	}
+
+	public String gethProg() {
+		return hProg;
+	}
+
+	public void sethProg(String hProg) {
+		this.hProg = hProg;
+	}
+	
 }

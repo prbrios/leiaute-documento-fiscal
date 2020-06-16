@@ -1,14 +1,12 @@
 package com.github.prbrios.documentofiscal.cte;
 
-import lombok.Data;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
-import java.util.ArrayList;
-import java.util.List;
-
-@Data
 @Root(name = "cobr")
 public class CTeInfCteInfCTeNormCobr {
 
@@ -18,5 +16,21 @@ public class CTeInfCteInfCTeNormCobr {
 	@ElementList(name = "dup", required = false, inline = true)
 	private List<CTeInfCteInfCTeNormCobrDup> dup
 			= new ArrayList<CTeInfCteInfCTeNormCobrDup>();
+
+	public CTeInfCteInfCTeNormCobrFat getFat() {
+		return fat;
+	}
+
+	public void setFat(CTeInfCteInfCTeNormCobrFat fat) {
+		this.fat = fat;
+	}
+
+	public List<CTeInfCteInfCTeNormCobrDup> getDup() {
+		return dup;
+	}
+
+	public void setDup(List<CTeInfCteInfCTeNormCobrDup> dup) {
+		this.dup = dup;
+	}
 
 }

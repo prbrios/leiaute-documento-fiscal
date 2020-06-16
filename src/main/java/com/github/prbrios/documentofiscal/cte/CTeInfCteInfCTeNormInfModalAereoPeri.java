@@ -1,10 +1,8 @@
 package com.github.prbrios.documentofiscal.cte;
 
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Data
 @Root(name = "peri")
 public class CTeInfCteInfCTeNormInfModalAereoPeri {
 
@@ -16,5 +14,29 @@ public class CTeInfCteInfCTeNormInfModalAereoPeri {
 
 	@Element(name = "infTotAP", required = false)
 	private CTeInfCteInfCTeNormInfModalAereoPeriInfTotAP infTotAP;
+
+	public String getnONU() {
+		return nONU;
+	}
+
+	public void setnONU(String nONU) {
+		this.nONU = nONU;
+	}
+
+	public String getqTotEmb() {
+		return qTotEmb;
+	}
+
+	public void setqTotEmb(String qTotEmb) {
+		this.qTotEmb = qTotEmb;
+	}
+
+	public CTeInfCteInfCTeNormInfModalAereoPeriInfTotAP getInfTotAP() {
+		return infTotAP;
+	}
+
+	public void setInfTotAP(CTeInfCteInfCTeNormInfModalAereoPeriInfTotAP infTotAP) {
+		this.infTotAP = infTotAP;
+	}
 
 }

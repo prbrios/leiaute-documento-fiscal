@@ -1,11 +1,9 @@
 package com.github.prbrios.documentofiscal.cfe.cancelamento;
 
-import lombok.Data;
-import lombok.Getter;
+import java.util.List;
+
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
-
-import java.util.List;
 
 /**
  * Grupo de Informações Adicionais
@@ -13,7 +11,6 @@ import java.util.List;
  * @author prbrios@gmail.com
  * @since 01/10/2019
  */
-@Data
 @Root(name = "infAdic")
 public class CFeCancInfCFeInfAdic {
 
@@ -32,4 +29,13 @@ public class CFeCancInfCFeInfAdic {
     public CFeCancInfCFeInfAdic(List<CFeCancInfCFeInfAdicObsFisco> obsFisco) {
         this.obsFisco = obsFisco;
     }
+
+	public List<CFeCancInfCFeInfAdicObsFisco> getObsFisco() {
+		return obsFisco;
+	}
+
+	public void setObsFisco(List<CFeCancInfCFeInfAdicObsFisco> obsFisco) {
+		this.obsFisco = obsFisco;
+	}
+    
 }

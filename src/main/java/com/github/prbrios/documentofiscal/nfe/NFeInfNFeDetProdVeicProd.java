@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("veicprod")
-@Data
 @Root(name = "veicProd")
 public class NFeInfNFeDetProdVeicProd {
 
@@ -187,5 +185,197 @@ public class NFeInfNFeDetProdVeicProd {
         this.lota = lota;
         this.tpRest = tpRest;
     }
+
+	public String getTpOp() {
+		return tpOp;
+	}
+
+	public void setTpOp(String tpOp) {
+		this.tpOp = tpOp;
+	}
+
+	public String getChassi() {
+		return chassi;
+	}
+
+	public void setChassi(String chassi) {
+		this.chassi = chassi;
+	}
+
+	public String getcCor() {
+		return cCor;
+	}
+
+	public void setcCor(String cCor) {
+		this.cCor = cCor;
+	}
+
+	public String getxCor() {
+		return xCor;
+	}
+
+	public void setxCor(String xCor) {
+		this.xCor = xCor;
+	}
+
+	public String getPot() {
+		return pot;
+	}
+
+	public void setPot(String pot) {
+		this.pot = pot;
+	}
+
+	public String getCilin() {
+		return cilin;
+	}
+
+	public void setCilin(String cilin) {
+		this.cilin = cilin;
+	}
+
+	public String getPesoL() {
+		return pesoL;
+	}
+
+	public void setPesoL(String pesoL) {
+		this.pesoL = pesoL;
+	}
+
+	public String getPesoB() {
+		return pesoB;
+	}
+
+	public void setPesoB(String pesoB) {
+		this.pesoB = pesoB;
+	}
+
+	public String getnSerie() {
+		return nSerie;
+	}
+
+	public void setnSerie(String nSerie) {
+		this.nSerie = nSerie;
+	}
+
+	public String getTpComb() {
+		return tpComb;
+	}
+
+	public void setTpComb(String tpComb) {
+		this.tpComb = tpComb;
+	}
+
+	public String getnMotor() {
+		return nMotor;
+	}
+
+	public void setnMotor(String nMotor) {
+		this.nMotor = nMotor;
+	}
+
+	public String getCMT() {
+		return CMT;
+	}
+
+	public void setCMT(String cMT) {
+		CMT = cMT;
+	}
+
+	public String getDist() {
+		return dist;
+	}
+
+	public void setDist(String dist) {
+		this.dist = dist;
+	}
+
+	public String getAnoMod() {
+		return anoMod;
+	}
+
+	public void setAnoMod(String anoMod) {
+		this.anoMod = anoMod;
+	}
+
+	public String getAnoFab() {
+		return anoFab;
+	}
+
+	public void setAnoFab(String anoFab) {
+		this.anoFab = anoFab;
+	}
+
+	public String getTpPint() {
+		return tpPint;
+	}
+
+	public void setTpPint(String tpPint) {
+		this.tpPint = tpPint;
+	}
+
+	public String getTpVeic() {
+		return tpVeic;
+	}
+
+	public void setTpVeic(String tpVeic) {
+		this.tpVeic = tpVeic;
+	}
+
+	public String getEspVeic() {
+		return espVeic;
+	}
+
+	public void setEspVeic(String espVeic) {
+		this.espVeic = espVeic;
+	}
+
+	public String getVIN() {
+		return VIN;
+	}
+
+	public void setVIN(String vIN) {
+		VIN = vIN;
+	}
+
+	public String getCondVeic() {
+		return condVeic;
+	}
+
+	public void setCondVeic(String condVeic) {
+		this.condVeic = condVeic;
+	}
+
+	public String getcMod() {
+		return cMod;
+	}
+
+	public void setcMod(String cMod) {
+		this.cMod = cMod;
+	}
+
+	public String getcCorDENATRAN() {
+		return cCorDENATRAN;
+	}
+
+	public void setcCorDENATRAN(String cCorDENATRAN) {
+		this.cCorDENATRAN = cCorDENATRAN;
+	}
+
+	public String getLota() {
+		return lota;
+	}
+
+	public void setLota(String lota) {
+		this.lota = lota;
+	}
+
+	public String getTpRest() {
+		return tpRest;
+	}
+
+	public void setTpRest(String tpRest) {
+		this.tpRest = tpRest;
+	}
 
 }

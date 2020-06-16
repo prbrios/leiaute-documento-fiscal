@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("med")
-@Data
 @Root(name = "med")
 public class NFeInfNFeDetProdMed {
 
@@ -40,5 +38,29 @@ public class NFeInfNFeDetProdMed {
         this.xMotivoIsencao = xMotivoIsencao;
         this.vPMC = vPMC;
     }
+
+	public String getcProdANVISA() {
+		return cProdANVISA;
+	}
+
+	public void setcProdANVISA(String cProdANVISA) {
+		this.cProdANVISA = cProdANVISA;
+	}
+
+	public String getxMotivoIsencao() {
+		return xMotivoIsencao;
+	}
+
+	public void setxMotivoIsencao(String xMotivoIsencao) {
+		this.xMotivoIsencao = xMotivoIsencao;
+	}
+
+	public String getvPMC() {
+		return vPMC;
+	}
+
+	public void setvPMC(String vPMC) {
+		this.vPMC = vPMC;
+	}
 
 }

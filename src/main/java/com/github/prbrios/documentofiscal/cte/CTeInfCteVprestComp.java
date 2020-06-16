@@ -1,10 +1,8 @@
 package com.github.prbrios.documentofiscal.cte;
 
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Data
 @Root(name = "Comp")
 public class CTeInfCteVprestComp {
 
@@ -13,5 +11,21 @@ public class CTeInfCteVprestComp {
 
 	@Element(name = "vComp", required = false)
 	private String vComp;
+
+	public String getxNome() {
+		return xNome;
+	}
+
+	public void setxNome(String xNome) {
+		this.xNome = xNome;
+	}
+
+	public String getvComp() {
+		return vComp;
+	}
+
+	public void setvComp(String vComp) {
+		this.vComp = vComp;
+	}
 
 }

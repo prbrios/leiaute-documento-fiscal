@@ -1,14 +1,12 @@
 package com.github.prbrios.documentofiscal.cte;
 
-import lombok.Data;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
-import java.util.ArrayList;
-import java.util.List;
-
-@Data
 @Root(name = "infCTeNorm")
 public class CTeInfCteInfCTeNorm {
 
@@ -40,5 +38,77 @@ public class CTeInfCteInfCTeNorm {
 
 	@Element(name = "infServVinc", required = false)
 	private CTeInfCteInfCTeNormInfServVinc infServVinc;
+
+	public CTeInfCteInfCTeNormInfCarga getInfCarga() {
+		return infCarga;
+	}
+
+	public void setInfCarga(CTeInfCteInfCTeNormInfCarga infCarga) {
+		this.infCarga = infCarga;
+	}
+
+	public CTeInfCteInfCTeNormInfDoc getInfDoc() {
+		return infDoc;
+	}
+
+	public void setInfDoc(CTeInfCteInfCTeNormInfDoc infDoc) {
+		this.infDoc = infDoc;
+	}
+
+	public CTeInfCteInfCTeNormDocAnt getDocAnt() {
+		return docAnt;
+	}
+
+	public void setDocAnt(CTeInfCteInfCTeNormDocAnt docAnt) {
+		this.docAnt = docAnt;
+	}
+
+	public CTeInfCteInfCTeNormInfModal getInfModal() {
+		return infModal;
+	}
+
+	public void setInfModal(CTeInfCteInfCTeNormInfModal infModal) {
+		this.infModal = infModal;
+	}
+
+	public List<CTeInfCteInfCTeNormVeicNovos> getVeicNovos() {
+		return veicNovos;
+	}
+
+	public void setVeicNovos(List<CTeInfCteInfCTeNormVeicNovos> veicNovos) {
+		this.veicNovos = veicNovos;
+	}
+
+	public CTeInfCteInfCTeNormCobr getCobr() {
+		return cobr;
+	}
+
+	public void setCobr(CTeInfCteInfCTeNormCobr cobr) {
+		this.cobr = cobr;
+	}
+
+	public CTeInfCteInfCTeNormInfCteSub getInfCteSub() {
+		return infCteSub;
+	}
+
+	public void setInfCteSub(CTeInfCteInfCTeNormInfCteSub infCteSub) {
+		this.infCteSub = infCteSub;
+	}
+
+	public CTeInfCteInfCTeNormInfGlobalizado getInfGlobalizado() {
+		return infGlobalizado;
+	}
+
+	public void setInfGlobalizado(CTeInfCteInfCTeNormInfGlobalizado infGlobalizado) {
+		this.infGlobalizado = infGlobalizado;
+	}
+
+	public CTeInfCteInfCTeNormInfServVinc getInfServVinc() {
+		return infServVinc;
+	}
+
+	public void setInfServVinc(CTeInfCteInfCTeNormInfServVinc infServVinc) {
+		this.infServVinc = infServVinc;
+	}
 
 }

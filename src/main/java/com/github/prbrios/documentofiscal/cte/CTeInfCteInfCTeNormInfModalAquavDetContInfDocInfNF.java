@@ -1,11 +1,8 @@
 package com.github.prbrios.documentofiscal.cte;
 
-import lombok.Data;
 import org.simpleframework.xml.Element;
-import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
-@Data
 @Root(name = "infNF")
 public class CTeInfCteInfCTeNormInfModalAquavDetContInfDocInfNF {
 
@@ -17,5 +14,29 @@ public class CTeInfCteInfCTeNormInfModalAquavDetContInfDocInfNF {
 
 	@Element(name = "unidRat", required = false)
 	private String unidRat;
+
+	public String getSerie() {
+		return serie;
+	}
+
+	public void setSerie(String serie) {
+		this.serie = serie;
+	}
+
+	public String getnDoc() {
+		return nDoc;
+	}
+
+	public void setnDoc(String nDoc) {
+		this.nDoc = nDoc;
+	}
+
+	public String getUnidRat() {
+		return unidRat;
+	}
+
+	public void setUnidRat(String unidRat) {
+		this.unidRat = unidRat;
+	}
 
 }

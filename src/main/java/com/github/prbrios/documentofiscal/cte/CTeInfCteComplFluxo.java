@@ -1,10 +1,8 @@
 package com.github.prbrios.documentofiscal.cte;
 
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Data
 @Root(name = "fluxo")
 public class CTeInfCteComplFluxo {
 
@@ -20,4 +18,36 @@ public class CTeInfCteComplFluxo {
 	@Element(name = "xRota", required = false)
 	private String xRota;
 
+	public String getxOrig() {
+		return xOrig;
+	}
+
+	public void setxOrig(String xOrig) {
+		this.xOrig = xOrig;
+	}
+
+	public CTeInfCteComplFluxoPass getPass() {
+		return pass;
+	}
+
+	public void setPass(CTeInfCteComplFluxoPass pass) {
+		this.pass = pass;
+	}
+
+	public String getxDest() {
+		return xDest;
+	}
+
+	public void setxDest(String xDest) {
+		this.xDest = xDest;
+	}
+
+	public String getxRota() {
+		return xRota;
+	}
+
+	public void setxRota(String xRota) {
+		this.xRota = xRota;
+	}
+	
 }

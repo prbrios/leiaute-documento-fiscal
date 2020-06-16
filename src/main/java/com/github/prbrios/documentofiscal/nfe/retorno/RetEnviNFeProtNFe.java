@@ -1,16 +1,15 @@
 package com.github.prbrios.documentofiscal.nfe.retorno;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Namespace;
 import org.simpleframework.xml.Root;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
+
 @JsonRootName("protnfe")
-@Data
 @Root(name = "protNFe")
 @Namespace(reference = "http://www.portalfiscal.inf.br/nfe")
 public class RetEnviNFeProtNFe {
@@ -36,5 +35,21 @@ public class RetEnviNFeProtNFe {
         this.versao = versao;
         this.infProt = infProt;
     }
+
+	public String getVersao() {
+		return versao;
+	}
+
+	public void setVersao(String versao) {
+		this.versao = versao;
+	}
+
+	public RetEnviNFeProtNFeInfProt getInfProt() {
+		return infProt;
+	}
+
+	public void setInfProt(RetEnviNFeProtNFeInfProt infProt) {
+		this.infProt = infProt;
+	}
 
 }

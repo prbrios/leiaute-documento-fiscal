@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("lacres")
-@Data
 @Root(name = "lacres")
 public class NFeInfNFeTranspVolLacres {
 
@@ -26,5 +24,13 @@ public class NFeInfNFeTranspVolLacres {
     public NFeInfNFeTranspVolLacres(String nLacre) {
         this.nLacre = nLacre;
     }
+
+	public String getnLacre() {
+		return nLacre;
+	}
+
+	public void setnLacre(String nLacre) {
+		this.nLacre = nLacre;
+	}
 
 }

@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("adi")
-@Data
 @Root(name = "adi")
 public class NFeInfNFeDetProdDIAdi {
 
@@ -54,5 +52,45 @@ public class NFeInfNFeDetProdDIAdi {
         this.vDescDI = vDescDI;
         this.nDraw = nDraw;
     }
+
+	public String getnAdicao() {
+		return nAdicao;
+	}
+
+	public void setnAdicao(String nAdicao) {
+		this.nAdicao = nAdicao;
+	}
+
+	public String getnSeqAdic() {
+		return nSeqAdic;
+	}
+
+	public void setnSeqAdic(String nSeqAdic) {
+		this.nSeqAdic = nSeqAdic;
+	}
+
+	public String getcFabricante() {
+		return cFabricante;
+	}
+
+	public void setcFabricante(String cFabricante) {
+		this.cFabricante = cFabricante;
+	}
+
+	public String getvDescDI() {
+		return vDescDI;
+	}
+
+	public void setvDescDI(String vDescDI) {
+		this.vDescDI = vDescDI;
+	}
+
+	public String getnDraw() {
+		return nDraw;
+	}
+
+	public void setnDraw(String nDraw) {
+		this.nDraw = nDraw;
+	}
 
 }

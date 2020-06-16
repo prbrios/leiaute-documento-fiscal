@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("detpag")
-@Data
 @Root(name = "detPag")
 public class NFeInfNFePagDetPag {
 
@@ -47,5 +45,37 @@ public class NFeInfNFePagDetPag {
         this.vPag = vPag;
         this.card = card;
     }
+
+	public String getIndPag() {
+		return indPag;
+	}
+
+	public void setIndPag(String indPag) {
+		this.indPag = indPag;
+	}
+
+	public String gettPag() {
+		return tPag;
+	}
+
+	public void settPag(String tPag) {
+		this.tPag = tPag;
+	}
+
+	public String getvPag() {
+		return vPag;
+	}
+
+	public void setvPag(String vPag) {
+		this.vPag = vPag;
+	}
+
+	public NFeInfNFePagDetPagCard getCard() {
+		return card;
+	}
+
+	public void setCard(NFeInfNFePagDetPagCard card) {
+		this.card = card;
+	}
 
 }

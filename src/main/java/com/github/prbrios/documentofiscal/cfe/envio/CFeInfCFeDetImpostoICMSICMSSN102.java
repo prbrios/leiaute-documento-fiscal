@@ -1,6 +1,5 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -10,7 +9,6 @@ import org.simpleframework.xml.Root;
  * @author prbrios@gmail.com
  * @since 01/10/2019
  */
-@Data
 @Root(name = "ICMSSN102")
 public class CFeInfCFeDetImpostoICMSICMSSN102 {
 
@@ -37,4 +35,21 @@ public class CFeInfCFeDetImpostoICMSICMSSN102 {
         this.Orig = orig;
         this.CSOSN = csosn;
     }
+
+	public String getOrig() {
+		return Orig;
+	}
+
+	public void setOrig(String orig) {
+		Orig = orig;
+	}
+
+	public String getCSOSN() {
+		return CSOSN;
+	}
+
+	public void setCSOSN(String cSOSN) {
+		CSOSN = cSOSN;
+	}
+    
 }

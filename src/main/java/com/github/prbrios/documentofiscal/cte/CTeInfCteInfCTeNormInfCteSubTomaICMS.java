@@ -1,10 +1,8 @@
 package com.github.prbrios.documentofiscal.cte;
 
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Data
 @Root(name = "tomaICMS")
 public class CTeInfCteInfCTeNormInfCteSubTomaICMS {
 
@@ -16,4 +14,29 @@ public class CTeInfCteInfCTeNormInfCteSubTomaICMS {
 
 	@Element(name = "refCte", required = false)
 	private String refCte;
+
+	public String getRefNFe() {
+		return refNFe;
+	}
+
+	public void setRefNFe(String refNFe) {
+		this.refNFe = refNFe;
+	}
+
+	public CTeInfCteInfCTeNormInfCteSubTomaICMSRefNF getRefNF() {
+		return refNF;
+	}
+
+	public void setRefNF(CTeInfCteInfCTeNormInfCteSubTomaICMSRefNF refNF) {
+		this.refNF = refNF;
+	}
+
+	public String getRefCte() {
+		return refCte;
+	}
+
+	public void setRefCte(String refCte) {
+		this.refCte = refCte;
+	}
+	
 }

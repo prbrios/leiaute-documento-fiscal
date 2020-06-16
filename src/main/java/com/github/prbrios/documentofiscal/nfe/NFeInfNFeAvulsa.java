@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("avulsa")
-@Data
 @Root(name = "avulsa")
 public class NFeInfNFeAvulsa {
 
@@ -96,5 +94,93 @@ public class NFeInfNFeAvulsa {
         this.repEmi = repEmi;
         this.dPag = dPag;
     }
+
+	public String getCNPJ() {
+		return CNPJ;
+	}
+
+	public void setCNPJ(String cNPJ) {
+		CNPJ = cNPJ;
+	}
+
+	public String getxOrgao() {
+		return xOrgao;
+	}
+
+	public void setxOrgao(String xOrgao) {
+		this.xOrgao = xOrgao;
+	}
+
+	public String getMatr() {
+		return matr;
+	}
+
+	public void setMatr(String matr) {
+		this.matr = matr;
+	}
+
+	public String getxAgente() {
+		return xAgente;
+	}
+
+	public void setxAgente(String xAgente) {
+		this.xAgente = xAgente;
+	}
+
+	public String getFone() {
+		return fone;
+	}
+
+	public void setFone(String fone) {
+		this.fone = fone;
+	}
+
+	public String getUF() {
+		return UF;
+	}
+
+	public void setUF(String uF) {
+		UF = uF;
+	}
+
+	public String getnDAR() {
+		return nDAR;
+	}
+
+	public void setnDAR(String nDAR) {
+		this.nDAR = nDAR;
+	}
+
+	public String getdEmi() {
+		return dEmi;
+	}
+
+	public void setdEmi(String dEmi) {
+		this.dEmi = dEmi;
+	}
+
+	public String getvDAR() {
+		return vDAR;
+	}
+
+	public void setvDAR(String vDAR) {
+		this.vDAR = vDAR;
+	}
+
+	public String getRepEmi() {
+		return repEmi;
+	}
+
+	public void setRepEmi(String repEmi) {
+		this.repEmi = repEmi;
+	}
+
+	public String getdPag() {
+		return dPag;
+	}
+
+	public void setdPag(String dPag) {
+		this.dPag = dPag;
+	}
 
 }

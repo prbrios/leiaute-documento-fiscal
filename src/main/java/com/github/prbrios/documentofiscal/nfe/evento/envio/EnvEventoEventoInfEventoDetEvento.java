@@ -1,11 +1,9 @@
 package com.github.prbrios.documentofiscal.nfe.evento.envio;
 
-import lombok.Data;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Data
 @Root(name = "detEvento")
 public class EnvEventoEventoInfEventoDetEvento {
 
@@ -60,4 +58,53 @@ public class EnvEventoEventoInfEventoDetEvento {
         this.xCorrecao = xCorrecao;
         this.xCondUso = xCondUso;
     }
+
+	public String getVersao() {
+		return versao;
+	}
+
+	public void setVersao(String versao) {
+		this.versao = versao;
+	}
+
+	public String getDescEvento() {
+		return descEvento;
+	}
+
+	public void setDescEvento(String descEvento) {
+		this.descEvento = descEvento;
+	}
+
+	public String getnProt() {
+		return nProt;
+	}
+
+	public void setnProt(String nProt) {
+		this.nProt = nProt;
+	}
+
+	public String getxJust() {
+		return xJust;
+	}
+
+	public void setxJust(String xJust) {
+		this.xJust = xJust;
+	}
+
+	public String getxCorrecao() {
+		return xCorrecao;
+	}
+
+	public void setxCorrecao(String xCorrecao) {
+		this.xCorrecao = xCorrecao;
+	}
+
+	public String getxCondUso() {
+		return xCondUso;
+	}
+
+	public void setxCondUso(String xCondUso) {
+		this.xCondUso = xCondUso;
+	}
+
 }

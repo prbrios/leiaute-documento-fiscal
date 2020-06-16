@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("exporta")
-@Data
 @Root(name = "exporta")
 public class NFeInfNFeExporta {
 
@@ -40,5 +38,29 @@ public class NFeInfNFeExporta {
         this.xLocExporta = xLocExporta;
         this.xLocDespacho = xLocDespacho;
     }
+
+	public String getUFSaidaPais() {
+		return UFSaidaPais;
+	}
+
+	public void setUFSaidaPais(String uFSaidaPais) {
+		UFSaidaPais = uFSaidaPais;
+	}
+
+	public String getxLocExporta() {
+		return xLocExporta;
+	}
+
+	public void setxLocExporta(String xLocExporta) {
+		this.xLocExporta = xLocExporta;
+	}
+
+	public String getxLocDespacho() {
+		return xLocDespacho;
+	}
+
+	public void setxLocDespacho(String xLocDespacho) {
+		this.xLocDespacho = xLocDespacho;
+	}
 
 }

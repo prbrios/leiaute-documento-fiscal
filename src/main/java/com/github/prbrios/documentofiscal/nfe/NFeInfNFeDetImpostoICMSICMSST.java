@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("icmsst")
-@Data
 @Root(name = "ICMSST")
 public class NFeInfNFeDetImpostoICMSICMSST {
 
@@ -128,5 +126,125 @@ public class NFeInfNFeDetImpostoICMSICMSST {
         this.pICMSEfet = pICMSEfet;
         this.vICMSEfet = vICMSEfet;
     }
+
+	public String getOrig() {
+		return orig;
+	}
+
+	public void setOrig(String orig) {
+		this.orig = orig;
+	}
+
+	public String getCST() {
+		return CST;
+	}
+
+	public void setCST(String cST) {
+		CST = cST;
+	}
+
+	public String getvBCSTRet() {
+		return vBCSTRet;
+	}
+
+	public void setvBCSTRet(String vBCSTRet) {
+		this.vBCSTRet = vBCSTRet;
+	}
+
+	public String getpST() {
+		return pST;
+	}
+
+	public void setpST(String pST) {
+		this.pST = pST;
+	}
+
+	public String getvICMSSubstituto() {
+		return vICMSSubstituto;
+	}
+
+	public void setvICMSSubstituto(String vICMSSubstituto) {
+		this.vICMSSubstituto = vICMSSubstituto;
+	}
+
+	public String getvICMSSTRet() {
+		return vICMSSTRet;
+	}
+
+	public void setvICMSSTRet(String vICMSSTRet) {
+		this.vICMSSTRet = vICMSSTRet;
+	}
+
+	public String getvBCFCPSTRet() {
+		return vBCFCPSTRet;
+	}
+
+	public void setvBCFCPSTRet(String vBCFCPSTRet) {
+		this.vBCFCPSTRet = vBCFCPSTRet;
+	}
+
+	public String getpFCPSTRet() {
+		return pFCPSTRet;
+	}
+
+	public void setpFCPSTRet(String pFCPSTRet) {
+		this.pFCPSTRet = pFCPSTRet;
+	}
+
+	public String getvFCPSTRet() {
+		return vFCPSTRet;
+	}
+
+	public void setvFCPSTRet(String vFCPSTRet) {
+		this.vFCPSTRet = vFCPSTRet;
+	}
+
+	public String getvBCSTDest() {
+		return vBCSTDest;
+	}
+
+	public void setvBCSTDest(String vBCSTDest) {
+		this.vBCSTDest = vBCSTDest;
+	}
+
+	public String getvICMSSTDest() {
+		return vICMSSTDest;
+	}
+
+	public void setvICMSSTDest(String vICMSSTDest) {
+		this.vICMSSTDest = vICMSSTDest;
+	}
+
+	public String getpRedBCEfet() {
+		return pRedBCEfet;
+	}
+
+	public void setpRedBCEfet(String pRedBCEfet) {
+		this.pRedBCEfet = pRedBCEfet;
+	}
+
+	public String getvBCEfet() {
+		return vBCEfet;
+	}
+
+	public void setvBCEfet(String vBCEfet) {
+		this.vBCEfet = vBCEfet;
+	}
+
+	public String getpICMSEfet() {
+		return pICMSEfet;
+	}
+
+	public void setpICMSEfet(String pICMSEfet) {
+		this.pICMSEfet = pICMSEfet;
+	}
+
+	public String getvICMSEfet() {
+		return vICMSEfet;
+	}
+
+	public void setvICMSEfet(String vICMSEfet) {
+		this.vICMSEfet = vICMSEfet;
+	}
 
 }

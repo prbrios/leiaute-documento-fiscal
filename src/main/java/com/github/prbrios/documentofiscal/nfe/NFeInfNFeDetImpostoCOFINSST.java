@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("cofinsst")
-@Data
 @Root(name = "COFINSST")
 public class NFeInfNFeDetImpostoCOFINSST {
 
@@ -54,5 +52,45 @@ public class NFeInfNFeDetImpostoCOFINSST {
         this.vAliqProd = vAliqProd;
         this.vCOFINS = vCOFINS;
     }
+
+	public String getvBC() {
+		return vBC;
+	}
+
+	public void setvBC(String vBC) {
+		this.vBC = vBC;
+	}
+
+	public String getpCOFINS() {
+		return pCOFINS;
+	}
+
+	public void setpCOFINS(String pCOFINS) {
+		this.pCOFINS = pCOFINS;
+	}
+
+	public String getqBCProd() {
+		return qBCProd;
+	}
+
+	public void setqBCProd(String qBCProd) {
+		this.qBCProd = qBCProd;
+	}
+
+	public String getvAliqProd() {
+		return vAliqProd;
+	}
+
+	public void setvAliqProd(String vAliqProd) {
+		this.vAliqProd = vAliqProd;
+	}
+
+	public String getvCOFINS() {
+		return vCOFINS;
+	}
+
+	public void setvCOFINS(String vCOFINS) {
+		this.vCOFINS = vCOFINS;
+	}
 
 }

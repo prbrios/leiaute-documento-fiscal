@@ -1,6 +1,5 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -10,7 +9,6 @@ import org.simpleframework.xml.Root;
  * @author prbrios@gmail.com
  * @since 01/10/2019
  */
-@Data
 @Root(name = "PIS")
 public class CFeInfCFeDetImpostoPIS {
 
@@ -61,4 +59,45 @@ public class CFeInfCFeDetImpostoPIS {
         this.PISSN = pissn;
         this.PISOutr = pisOutr;
     }
+
+	public CFeInfCFeDetImpostoPISPISAliq getPISAliq() {
+		return PISAliq;
+	}
+
+	public void setPISAliq(CFeInfCFeDetImpostoPISPISAliq pISAliq) {
+		PISAliq = pISAliq;
+	}
+
+	public CFeInfCFeDetImpostoPISPISQtde getPISQtde() {
+		return PISQtde;
+	}
+
+	public void setPISQtde(CFeInfCFeDetImpostoPISPISQtde pISQtde) {
+		PISQtde = pISQtde;
+	}
+
+	public CFeInfCFeDetImpostoPISPISNT getPISNT() {
+		return PISNT;
+	}
+
+	public void setPISNT(CFeInfCFeDetImpostoPISPISNT pISNT) {
+		PISNT = pISNT;
+	}
+
+	public CFeInfCFeDetImpostoPISPISSN getPISSN() {
+		return PISSN;
+	}
+
+	public void setPISSN(CFeInfCFeDetImpostoPISPISSN pISSN) {
+		PISSN = pISSN;
+	}
+
+	public CFeInfCFeDetImpostoPISPISOutr getPISOutr() {
+		return PISOutr;
+	}
+
+	public void setPISOutr(CFeInfCFeDetImpostoPISPISOutr pISOutr) {
+		PISOutr = pISOutr;
+	}
+    
 }

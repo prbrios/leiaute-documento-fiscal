@@ -1,14 +1,12 @@
 package com.github.prbrios.documentofiscal.cte;
 
-import lombok.Data;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
-import java.util.ArrayList;
-import java.util.List;
-
-@Data
 @Root(name = "infNFe")
 public class CTeInfCteInfCTeNormInfDocInfNFe {
 
@@ -28,4 +26,45 @@ public class CTeInfCteInfCTeNormInfDocInfNFe {
 	@ElementList(name = "infUnidTransp", required = false, inline = true)
 	private List<CTeInfCteInfCTeNormInfDocInfNFeInfUnidTransp> infUnidTransp
 			= new ArrayList<CTeInfCteInfCTeNormInfDocInfNFeInfUnidTransp>();
+
+	public String getChave() {
+		return chave;
+	}
+
+	public void setChave(String chave) {
+		this.chave = chave;
+	}
+
+	public String getPIN() {
+		return PIN;
+	}
+
+	public void setPIN(String pIN) {
+		PIN = pIN;
+	}
+
+	public String getdPrev() {
+		return dPrev;
+	}
+
+	public void setdPrev(String dPrev) {
+		this.dPrev = dPrev;
+	}
+
+	public List<CTeInfCteInfCTeNormInfDocInfNFeInfUnidCarga> getInfUnidCarga() {
+		return infUnidCarga;
+	}
+
+	public void setInfUnidCarga(List<CTeInfCteInfCTeNormInfDocInfNFeInfUnidCarga> infUnidCarga) {
+		this.infUnidCarga = infUnidCarga;
+	}
+
+	public List<CTeInfCteInfCTeNormInfDocInfNFeInfUnidTransp> getInfUnidTransp() {
+		return infUnidTransp;
+	}
+
+	public void setInfUnidTransp(List<CTeInfCteInfCTeNormInfDocInfNFeInfUnidTransp> infUnidTransp) {
+		this.infUnidTransp = infUnidTransp;
+	}
+
 }

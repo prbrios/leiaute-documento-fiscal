@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("obscont")
-@Data
 @Root(name = "obsCont")
 public class NFeInfNFeInfAdicObsCont {
 
@@ -33,5 +31,21 @@ public class NFeInfNFeInfAdicObsCont {
         this.xTexto = xTexto;
         this.xCampo = xCampo;
     }
+
+	public String getxTexto() {
+		return xTexto;
+	}
+
+	public void setxTexto(String xTexto) {
+		this.xTexto = xTexto;
+	}
+
+	public String getxCampo() {
+		return xCampo;
+	}
+
+	public void setxCampo(String xCampo) {
+		this.xCampo = xCampo;
+	}
 
 }

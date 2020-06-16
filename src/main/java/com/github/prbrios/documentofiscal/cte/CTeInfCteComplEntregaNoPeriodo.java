@@ -1,10 +1,8 @@
 package com.github.prbrios.documentofiscal.cte;
 
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Data
 @Root(name = "noPeriodo")
 public class CTeInfCteComplEntregaNoPeriodo {
 
@@ -17,4 +15,28 @@ public class CTeInfCteComplEntregaNoPeriodo {
 	@Element(name = "dFim", required = false)
 	private String dFim;
 
+	public String getTpPer() {
+		return tpPer;
+	}
+
+	public void setTpPer(String tpPer) {
+		this.tpPer = tpPer;
+	}
+
+	public String getDini() {
+		return dini;
+	}
+
+	public void setDini(String dini) {
+		this.dini = dini;
+	}
+
+	public String getdFim() {
+		return dFim;
+	}
+
+	public void setdFim(String dFim) {
+		this.dFim = dFim;
+	}
+	
 }

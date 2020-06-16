@@ -1,14 +1,12 @@
 package com.github.prbrios.documentofiscal.cte;
 
-import lombok.Data;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
-import java.util.ArrayList;
-import java.util.List;
-
-@Data
 @Root(name = "infOutros")
 public class CTeInfCteInfCTeNormInfDocInfOutros {
 
@@ -37,5 +35,69 @@ public class CTeInfCteInfCTeNormInfDocInfOutros {
 	@ElementList(name = "indUnidTransp", required = false, inline = true)
 	private List<CTeInfCteInfCTeNormInfDocInfOutrosInfUnidTransp> infUnidTransp
 			= new ArrayList<CTeInfCteInfCTeNormInfDocInfOutrosInfUnidTransp>();
+
+	public String getTpDoc() {
+		return tpDoc;
+	}
+
+	public void setTpDoc(String tpDoc) {
+		this.tpDoc = tpDoc;
+	}
+
+	public String getDescOutros() {
+		return descOutros;
+	}
+
+	public void setDescOutros(String descOutros) {
+		this.descOutros = descOutros;
+	}
+
+	public String getnDoc() {
+		return nDoc;
+	}
+
+	public void setnDoc(String nDoc) {
+		this.nDoc = nDoc;
+	}
+
+	public String getdEmi() {
+		return dEmi;
+	}
+
+	public void setdEmi(String dEmi) {
+		this.dEmi = dEmi;
+	}
+
+	public String getvDocFisc() {
+		return vDocFisc;
+	}
+
+	public void setvDocFisc(String vDocFisc) {
+		this.vDocFisc = vDocFisc;
+	}
+
+	public String getdPrev() {
+		return dPrev;
+	}
+
+	public void setdPrev(String dPrev) {
+		this.dPrev = dPrev;
+	}
+
+	public List<CTeInfCteInfCTeNormInfDocInfOutrosInfUnidCarga> getInfUnidCarga() {
+		return infUnidCarga;
+	}
+
+	public void setInfUnidCarga(List<CTeInfCteInfCTeNormInfDocInfOutrosInfUnidCarga> infUnidCarga) {
+		this.infUnidCarga = infUnidCarga;
+	}
+
+	public List<CTeInfCteInfCTeNormInfDocInfOutrosInfUnidTransp> getInfUnidTransp() {
+		return infUnidTransp;
+	}
+
+	public void setInfUnidTransp(List<CTeInfCteInfCTeNormInfDocInfOutrosInfUnidTransp> infUnidTransp) {
+		this.infUnidTransp = infUnidTransp;
+	}
 
 }

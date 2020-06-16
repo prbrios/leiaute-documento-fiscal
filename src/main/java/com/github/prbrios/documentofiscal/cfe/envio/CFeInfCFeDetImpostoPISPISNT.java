@@ -1,6 +1,5 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -10,7 +9,6 @@ import org.simpleframework.xml.Root;
  * @author prbrios@gmail.com
  * @since 01/10/2019
  */
-@Data
 @Root(name = "PISNT")
 public class CFeInfCFeDetImpostoPISPISNT {
 
@@ -29,4 +27,13 @@ public class CFeInfCFeDetImpostoPISPISNT {
     public CFeInfCFeDetImpostoPISPISNT(String cst) {
         this.CST = cst;
     }
+
+	public String getCST() {
+		return CST;
+	}
+
+	public void setCST(String cST) {
+		CST = cST;
+	}
+    
 }

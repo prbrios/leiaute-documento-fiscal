@@ -1,6 +1,5 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -10,7 +9,6 @@ import org.simpleframework.xml.Root;
  * @author prbrios@gmail.com
  * @since 01/10/2019
  */
-@Data
 @Root(name = "ide")
 public class CFeInfCFeIde {
 
@@ -124,4 +122,109 @@ public class CFeInfCFeIde {
         this.assinaturaQRCODE = assinaturaQRCODE;
         this.numeroCaixa = numeroCaixa;
     }
+
+	public String getcUF() {
+		return cUF;
+	}
+
+	public void setcUF(String cUF) {
+		this.cUF = cUF;
+	}
+
+	public String getcNF() {
+		return cNF;
+	}
+
+	public void setcNF(String cNF) {
+		this.cNF = cNF;
+	}
+
+	public String getMod() {
+		return mod;
+	}
+
+	public void setMod(String mod) {
+		this.mod = mod;
+	}
+
+	public String getNserieSAT() {
+		return nserieSAT;
+	}
+
+	public void setNserieSAT(String nserieSAT) {
+		this.nserieSAT = nserieSAT;
+	}
+
+	public String getnCFe() {
+		return nCFe;
+	}
+
+	public void setnCFe(String nCFe) {
+		this.nCFe = nCFe;
+	}
+
+	public String getdEmi() {
+		return dEmi;
+	}
+
+	public void setdEmi(String dEmi) {
+		this.dEmi = dEmi;
+	}
+
+	public String gethEmi() {
+		return hEmi;
+	}
+
+	public void sethEmi(String hEmi) {
+		this.hEmi = hEmi;
+	}
+
+	public String getcDV() {
+		return cDV;
+	}
+
+	public void setcDV(String cDV) {
+		this.cDV = cDV;
+	}
+
+	public String getTpAmb() {
+		return tpAmb;
+	}
+
+	public void setTpAmb(String tpAmb) {
+		this.tpAmb = tpAmb;
+	}
+
+	public String getCNPJ() {
+		return CNPJ;
+	}
+
+	public void setCNPJ(String cNPJ) {
+		CNPJ = cNPJ;
+	}
+
+	public String getSignAC() {
+		return signAC;
+	}
+
+	public void setSignAC(String signAC) {
+		this.signAC = signAC;
+	}
+
+	public String getAssinaturaQRCODE() {
+		return assinaturaQRCODE;
+	}
+
+	public void setAssinaturaQRCODE(String assinaturaQRCODE) {
+		this.assinaturaQRCODE = assinaturaQRCODE;
+	}
+
+	public String getNumeroCaixa() {
+		return numeroCaixa;
+	}
+
+	public void setNumeroCaixa(String numeroCaixa) {
+		this.numeroCaixa = numeroCaixa;
+	}
+    
 }

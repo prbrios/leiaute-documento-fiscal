@@ -1,10 +1,8 @@
 package com.github.prbrios.documentofiscal.cte;
 
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Data
 @Root(name = "infQ")
 public class CTeInfCteInfCTeNormInfCargaInfQ {
 
@@ -16,5 +14,29 @@ public class CTeInfCteInfCTeNormInfCargaInfQ {
 
 	@Element(name = "qCarga", required = false)
 	private String qCarga;
+
+	public String getcUnid() {
+		return cUnid;
+	}
+
+	public void setcUnid(String cUnid) {
+		this.cUnid = cUnid;
+	}
+
+	public String getTpMed() {
+		return tpMed;
+	}
+
+	public void setTpMed(String tpMed) {
+		this.tpMed = tpMed;
+	}
+
+	public String getqCarga() {
+		return qCarga;
+	}
+
+	public void setqCarga(String qCarga) {
+		this.qCarga = qCarga;
+	}
 
 }

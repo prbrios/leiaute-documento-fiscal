@@ -1,11 +1,9 @@
 package com.github.prbrios.documentofiscal.cte;
 
-import lombok.Data;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Data
 @Root(name = "infModal")
 public class CTeInfCteInfCTeNormInfModal {
 
@@ -26,5 +24,53 @@ public class CTeInfCteInfCTeNormInfModal {
 
 	@Element(name = "rodo", required = false)
 	private CTeInfCteInfCTeNormInfModalRodo rodo;
+
+	public String getVersaoModal() {
+		return versaoModal;
+	}
+
+	public void setVersaoModal(String versaoModal) {
+		this.versaoModal = versaoModal;
+	}
+
+	public CTeInfCteInfCTeNormInfModalAereo getAereo() {
+		return aereo;
+	}
+
+	public void setAereo(CTeInfCteInfCTeNormInfModalAereo aereo) {
+		this.aereo = aereo;
+	}
+
+	public CTeInfCteInfCTeNormInfModalAquav getAquav() {
+		return aquav;
+	}
+
+	public void setAquav(CTeInfCteInfCTeNormInfModalAquav aquav) {
+		this.aquav = aquav;
+	}
+
+	public CTeInfCteInfCTeNormInfModalDuto getDuto() {
+		return duto;
+	}
+
+	public void setDuto(CTeInfCteInfCTeNormInfModalDuto duto) {
+		this.duto = duto;
+	}
+
+	public CTeInfCteInfCTeNormInfModalFerrov getFerrov() {
+		return ferrov;
+	}
+
+	public void setFerrov(CTeInfCteInfCTeNormInfModalFerrov ferrov) {
+		this.ferrov = ferrov;
+	}
+
+	public CTeInfCteInfCTeNormInfModalRodo getRodo() {
+		return rodo;
+	}
+
+	public void setRodo(CTeInfCteInfCTeNormInfModalRodo rodo) {
+		this.rodo = rodo;
+	}
 
 }

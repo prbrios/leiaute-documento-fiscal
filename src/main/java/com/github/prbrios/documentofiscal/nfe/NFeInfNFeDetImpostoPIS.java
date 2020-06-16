@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("pis")
-@Data
 @Root(name = "PIS")
 public class NFeInfNFeDetImpostoPIS {
 
@@ -47,5 +45,37 @@ public class NFeInfNFeDetImpostoPIS {
         this.PISNT = PISNT;
         this.PISOutr = PISOutr;
     }
+
+	public NFeInfNFeDetImpostoPISPISAliq getPISAliq() {
+		return PISAliq;
+	}
+
+	public void setPISAliq(NFeInfNFeDetImpostoPISPISAliq pISAliq) {
+		PISAliq = pISAliq;
+	}
+
+	public NFeInfNFeDetImpostoPISPISQtde getPISQtde() {
+		return PISQtde;
+	}
+
+	public void setPISQtde(NFeInfNFeDetImpostoPISPISQtde pISQtde) {
+		PISQtde = pISQtde;
+	}
+
+	public NFeInfNFeDetImpostoPISPISNT getPISNT() {
+		return PISNT;
+	}
+
+	public void setPISNT(NFeInfNFeDetImpostoPISPISNT pISNT) {
+		PISNT = pISNT;
+	}
+
+	public NFeInfNFeDetImpostoPISPISOutr getPISOutr() {
+		return PISOutr;
+	}
+
+	public void setPISOutr(NFeInfNFeDetImpostoPISPISOutr pISOutr) {
+		PISOutr = pISOutr;
+	}
 
 }

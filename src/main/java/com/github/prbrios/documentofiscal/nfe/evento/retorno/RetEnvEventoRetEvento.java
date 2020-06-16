@@ -1,11 +1,9 @@
 package com.github.prbrios.documentofiscal.nfe.evento.retorno;
 
-import lombok.Data;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Data
 @Root(name = "retEvento")
 public class RetEnvEventoRetEvento {
 
@@ -14,5 +12,21 @@ public class RetEnvEventoRetEvento {
 
     @Element(name = "infEvento", required = false)
     private RetEnvEventoRetEventoInfEvento infEvento;
+
+	public String getVersao() {
+		return versao;
+	}
+
+	public void setVersao(String versao) {
+		this.versao = versao;
+	}
+
+	public RetEnvEventoRetEventoInfEvento getInfEvento() {
+		return infEvento;
+	}
+
+	public void setInfEvento(RetEnvEventoRetEventoInfEvento infEvento) {
+		this.infEvento = infEvento;
+	}
 
 }

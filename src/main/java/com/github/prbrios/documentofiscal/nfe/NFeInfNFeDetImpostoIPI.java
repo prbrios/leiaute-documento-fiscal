@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("ipi")
-@Data
 @Root(name = "IPI")
 public class NFeInfNFeDetImpostoIPI {
 
@@ -61,5 +59,53 @@ public class NFeInfNFeDetImpostoIPI {
         this.IPITrib = IPITrib;
         this.IPINT = IPINT;
     }
+
+	public String getCNPJProd() {
+		return CNPJProd;
+	}
+
+	public void setCNPJProd(String cNPJProd) {
+		CNPJProd = cNPJProd;
+	}
+
+	public String getcSelo() {
+		return cSelo;
+	}
+
+	public void setcSelo(String cSelo) {
+		this.cSelo = cSelo;
+	}
+
+	public String getqSelo() {
+		return qSelo;
+	}
+
+	public void setqSelo(String qSelo) {
+		this.qSelo = qSelo;
+	}
+
+	public String getcEnq() {
+		return cEnq;
+	}
+
+	public void setcEnq(String cEnq) {
+		this.cEnq = cEnq;
+	}
+
+	public NFeInfNFeDetImpostoIPIIPITrib getIPITrib() {
+		return IPITrib;
+	}
+
+	public void setIPITrib(NFeInfNFeDetImpostoIPIIPITrib iPITrib) {
+		IPITrib = iPITrib;
+	}
+
+	public NFeInfNFeDetImpostoIPIIPINT getIPINT() {
+		return IPINT;
+	}
+
+	public void setIPINT(NFeInfNFeDetImpostoIPIIPINT iPINT) {
+		IPINT = iPINT;
+	}
 
 }

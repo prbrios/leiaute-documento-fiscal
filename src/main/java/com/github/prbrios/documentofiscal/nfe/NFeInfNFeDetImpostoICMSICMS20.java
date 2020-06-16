@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("icms20")
-@Data
 @Root(name = "ICMS20")
 public class NFeInfNFeDetImpostoICMSICMS20 {
 
@@ -103,5 +101,101 @@ public class NFeInfNFeDetImpostoICMSICMS20 {
         this.vICMSDeson = vICMSDeson;
         this.motDesICMS = motDesICMS;
     }
+
+	public String getOrig() {
+		return orig;
+	}
+
+	public void setOrig(String orig) {
+		this.orig = orig;
+	}
+
+	public String getCST() {
+		return CST;
+	}
+
+	public void setCST(String cST) {
+		CST = cST;
+	}
+
+	public String getModBC() {
+		return modBC;
+	}
+
+	public void setModBC(String modBC) {
+		this.modBC = modBC;
+	}
+
+	public String getpRedBC() {
+		return pRedBC;
+	}
+
+	public void setpRedBC(String pRedBC) {
+		this.pRedBC = pRedBC;
+	}
+
+	public String getvBC() {
+		return vBC;
+	}
+
+	public void setvBC(String vBC) {
+		this.vBC = vBC;
+	}
+
+	public String getpICMS() {
+		return pICMS;
+	}
+
+	public void setpICMS(String pICMS) {
+		this.pICMS = pICMS;
+	}
+
+	public String getvICMS() {
+		return vICMS;
+	}
+
+	public void setvICMS(String vICMS) {
+		this.vICMS = vICMS;
+	}
+
+	public String getvBCFCP() {
+		return vBCFCP;
+	}
+
+	public void setvBCFCP(String vBCFCP) {
+		this.vBCFCP = vBCFCP;
+	}
+
+	public String getpFCP() {
+		return pFCP;
+	}
+
+	public void setpFCP(String pFCP) {
+		this.pFCP = pFCP;
+	}
+
+	public String getvFCP() {
+		return vFCP;
+	}
+
+	public void setvFCP(String vFCP) {
+		this.vFCP = vFCP;
+	}
+
+	public String getvICMSDeson() {
+		return vICMSDeson;
+	}
+
+	public void setvICMSDeson(String vICMSDeson) {
+		this.vICMSDeson = vICMSDeson;
+	}
+
+	public String getMotDesICMS() {
+		return motDesICMS;
+	}
+
+	public void setMotDesICMS(String motDesICMS) {
+		this.motDesICMS = motDesICMS;
+	}
 
 }

@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("imposto")
-@Data
 @Root(name = "imposto")
 public class NFeInfNFeDetImposto {
 
@@ -89,5 +87,85 @@ public class NFeInfNFeDetImposto {
         this.COFINSST = COFINSST;
         this.ICMSUFDest = ICMSUFDest;
     }
+
+	public String getvTotTrib() {
+		return vTotTrib;
+	}
+
+	public void setvTotTrib(String vTotTrib) {
+		this.vTotTrib = vTotTrib;
+	}
+
+	public NFeInfNFeDetImpostoICMS getICMS() {
+		return ICMS;
+	}
+
+	public void setICMS(NFeInfNFeDetImpostoICMS iCMS) {
+		ICMS = iCMS;
+	}
+
+	public NFeInfNFeDetImpostoIPI getIPI() {
+		return IPI;
+	}
+
+	public void setIPI(NFeInfNFeDetImpostoIPI iPI) {
+		IPI = iPI;
+	}
+
+	public NFeInfNFeDetImpostoII getII() {
+		return II;
+	}
+
+	public void setII(NFeInfNFeDetImpostoII iI) {
+		II = iI;
+	}
+
+	public NFeInfNFeDetImpostoISSQN getISSQN() {
+		return ISSQN;
+	}
+
+	public void setISSQN(NFeInfNFeDetImpostoISSQN iSSQN) {
+		ISSQN = iSSQN;
+	}
+
+	public NFeInfNFeDetImpostoPIS getPIS() {
+		return PIS;
+	}
+
+	public void setPIS(NFeInfNFeDetImpostoPIS pIS) {
+		PIS = pIS;
+	}
+
+	public NFeInfNFeDetImpostoPISST getPISST() {
+		return PISST;
+	}
+
+	public void setPISST(NFeInfNFeDetImpostoPISST pISST) {
+		PISST = pISST;
+	}
+
+	public NFeInfNFeDetImpostoCOFINS getCOFINS() {
+		return COFINS;
+	}
+
+	public void setCOFINS(NFeInfNFeDetImpostoCOFINS cOFINS) {
+		COFINS = cOFINS;
+	}
+
+	public NFeInfNFeDetImpostoCOFINSST getCOFINSST() {
+		return COFINSST;
+	}
+
+	public void setCOFINSST(NFeInfNFeDetImpostoCOFINSST cOFINSST) {
+		COFINSST = cOFINSST;
+	}
+
+	public NFeInfNFeDetImpostoICMSUFDest getICMSUFDest() {
+		return ICMSUFDest;
+	}
+
+	public void setICMSUFDest(NFeInfNFeDetImpostoICMSUFDest iCMSUFDest) {
+		ICMSUFDest = iCMSUFDest;
+	}
 
 }

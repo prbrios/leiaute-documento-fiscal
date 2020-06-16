@@ -1,10 +1,8 @@
 package com.github.prbrios.documentofiscal.cte;
 
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Data
 @Root(name = "refNF")
 public class CTeInfCteInfCTeNormInfCteSubTomaICMSRefNF {
 
@@ -31,5 +29,69 @@ public class CTeInfCteInfCTeNormInfCteSubTomaICMSRefNF {
 
 	@Element(name = "dEmi", required = false)
 	private String dEmi;
+
+	public String getCNPJ() {
+		return CNPJ;
+	}
+
+	public void setCNPJ(String cNPJ) {
+		CNPJ = cNPJ;
+	}
+
+	public String getCPF() {
+		return CPF;
+	}
+
+	public void setCPF(String cPF) {
+		CPF = cPF;
+	}
+
+	public String getMod() {
+		return mod;
+	}
+
+	public void setMod(String mod) {
+		this.mod = mod;
+	}
+
+	public String getSerie() {
+		return serie;
+	}
+
+	public void setSerie(String serie) {
+		this.serie = serie;
+	}
+
+	public String getSubserie() {
+		return subserie;
+	}
+
+	public void setSubserie(String subserie) {
+		this.subserie = subserie;
+	}
+
+	public String getNro() {
+		return nro;
+	}
+
+	public void setNro(String nro) {
+		this.nro = nro;
+	}
+
+	public String getValor() {
+		return valor;
+	}
+
+	public void setValor(String valor) {
+		this.valor = valor;
+	}
+
+	public String getdEmi() {
+		return dEmi;
+	}
+
+	public void setdEmi(String dEmi) {
+		this.dEmi = dEmi;
+	}
 
 }

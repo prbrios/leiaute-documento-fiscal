@@ -1,10 +1,8 @@
 package com.github.prbrios.documentofiscal.cte;
 
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Data
 @Root(name = "Entrega")
 public class CTeInfCteComplEntrega {
 
@@ -26,4 +24,52 @@ public class CTeInfCteComplEntrega {
 	@Element(name = "noInter", required = false)
 	private CTeInfCteComplEntregaNoInter noInter;
 
+	public CTeInfCteComplEntregaSemdata getSemData() {
+		return semData;
+	}
+
+	public void setSemData(CTeInfCteComplEntregaSemdata semData) {
+		this.semData = semData;
+	}
+
+	public CTeInfCteComplEntregaComData getComData() {
+		return comData;
+	}
+
+	public void setComData(CTeInfCteComplEntregaComData comData) {
+		this.comData = comData;
+	}
+
+	public CTeInfCteComplEntregaNoPeriodo getNoPeriodo() {
+		return noPeriodo;
+	}
+
+	public void setNoPeriodo(CTeInfCteComplEntregaNoPeriodo noPeriodo) {
+		this.noPeriodo = noPeriodo;
+	}
+
+	public CTeInfCteComplEntregaSemHora getSemHora() {
+		return semHora;
+	}
+
+	public void setSemHora(CTeInfCteComplEntregaSemHora semHora) {
+		this.semHora = semHora;
+	}
+
+	public CTeInfCteComplEntregaComHora getComHora() {
+		return comHora;
+	}
+
+	public void setComHora(CTeInfCteComplEntregaComHora comHora) {
+		this.comHora = comHora;
+	}
+
+	public CTeInfCteComplEntregaNoInter getNoInter() {
+		return noInter;
+	}
+
+	public void setNoInter(CTeInfCteComplEntregaNoInter noInter) {
+		this.noInter = noInter;
+	}
+	
 }

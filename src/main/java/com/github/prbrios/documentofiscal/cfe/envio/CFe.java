@@ -1,17 +1,15 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
-import com.github.prbrios.documentofiscal.assinatura.Signature;
-import lombok.Data;
-import lombok.Getter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
+
+import com.github.prbrios.documentofiscal.assinatura.Signature;
 
 /**
  * AC - TAG raiz do CF-e
  * @author prbrios@gmail.com
  * @since 01/10/2019
  */
-@Data
 @Root(name = "CFe")
 public class CFe
 {
@@ -38,5 +36,21 @@ public class CFe
         this.infCFe = infCFe;
         this.signature = signature;
     }
+
+	public CFeInfCFe getInfCFe() {
+		return infCFe;
+	}
+
+	public void setInfCFe(CFeInfCFe infCFe) {
+		this.infCFe = infCFe;
+	}
+
+	public Signature getSignature() {
+		return signature;
+	}
+
+	public void setSignature(Signature signature) {
+		this.signature = signature;
+	}
 
 }

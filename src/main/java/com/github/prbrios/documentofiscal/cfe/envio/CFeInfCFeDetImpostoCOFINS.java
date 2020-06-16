@@ -1,8 +1,5 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -12,7 +9,6 @@ import org.simpleframework.xml.Root;
  * @author prbrios@gmail.com
  * @since 01/10/2019
  */
-@Data
 @Root(name = "COFINS")
 public class CFeInfCFeDetImpostoCOFINS {
 
@@ -63,4 +59,45 @@ public class CFeInfCFeDetImpostoCOFINS {
         this.COFINSSN = COFINSSN;
         this.COFINSOutr = COFINSOutr;
     }
+
+	public CFeInfCFeDetImpostoCOFINSCOFINSAliq getCOFINSAliq() {
+		return COFINSAliq;
+	}
+
+	public void setCOFINSAliq(CFeInfCFeDetImpostoCOFINSCOFINSAliq cOFINSAliq) {
+		COFINSAliq = cOFINSAliq;
+	}
+
+	public CFeInfCFeDetImpostoCOFINSCOFINSQtde getCOFINSQtde() {
+		return COFINSQtde;
+	}
+
+	public void setCOFINSQtde(CFeInfCFeDetImpostoCOFINSCOFINSQtde cOFINSQtde) {
+		COFINSQtde = cOFINSQtde;
+	}
+
+	public CFeInfCFeDetImpostoCOFINSCOFINSNT getCOFINSnt() {
+		return COFINSnt;
+	}
+
+	public void setCOFINSnt(CFeInfCFeDetImpostoCOFINSCOFINSNT cOFINSnt) {
+		COFINSnt = cOFINSnt;
+	}
+
+	public CFeInfCFeDetImpostoCOFINSCOFINSSN getCOFINSSN() {
+		return COFINSSN;
+	}
+
+	public void setCOFINSSN(CFeInfCFeDetImpostoCOFINSCOFINSSN cOFINSSN) {
+		COFINSSN = cOFINSSN;
+	}
+
+	public CFeInfCFeDetImpostoCOFINSCOFINSOutr getCOFINSOutr() {
+		return COFINSOutr;
+	}
+
+	public void setCOFINSOutr(CFeInfCFeDetImpostoCOFINSCOFINSOutr cOFINSOutr) {
+		COFINSOutr = cOFINSOutr;
+	}
+
 }

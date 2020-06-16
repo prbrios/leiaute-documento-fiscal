@@ -1,11 +1,10 @@
 package com.github.prbrios.documentofiscal.cfe;
 
+import java.io.File;
+
 import com.github.prbrios.documentofiscal.DFPersister;
 import com.github.prbrios.documentofiscal.IDFPersister;
 import com.github.prbrios.documentofiscal.cfe.cancelamento.CFeCanc;
-import com.github.prbrios.documentofiscal.cfe.envio.CFe;
-
-import java.io.File;
 
 public class CFeCancPersister implements IDFPersister<CFeCanc> {
 

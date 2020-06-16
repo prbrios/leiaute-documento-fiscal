@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("fat")
-@Data
 @Root(name = "fat")
 public class NFeInfNFeCobrFat {
 
@@ -47,5 +45,37 @@ public class NFeInfNFeCobrFat {
         this.vDesc = vDesc;
         this.vLiq = vLiq;
     }
+
+	public String getnFat() {
+		return nFat;
+	}
+
+	public void setnFat(String nFat) {
+		this.nFat = nFat;
+	}
+
+	public String getvOrig() {
+		return vOrig;
+	}
+
+	public void setvOrig(String vOrig) {
+		this.vOrig = vOrig;
+	}
+
+	public String getvDesc() {
+		return vDesc;
+	}
+
+	public void setvDesc(String vDesc) {
+		this.vDesc = vDesc;
+	}
+
+	public String getvLiq() {
+		return vLiq;
+	}
+
+	public void setvLiq(String vLiq) {
+		this.vLiq = vLiq;
+	}
 
 }

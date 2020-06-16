@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("issqntot")
-@Data
 @Root(name = "ISSQNtot")
 public class NFeInfNFeTotalISSQNtot {
 
@@ -103,5 +101,101 @@ public class NFeInfNFeTotalISSQNtot {
         this.vISSRet = vISSRet;
         this.cRegTrib = cRegTrib;
     }
+
+	public String getvServ() {
+		return vServ;
+	}
+
+	public void setvServ(String vServ) {
+		this.vServ = vServ;
+	}
+
+	public String getvBC() {
+		return vBC;
+	}
+
+	public void setvBC(String vBC) {
+		this.vBC = vBC;
+	}
+
+	public String getvISS() {
+		return vISS;
+	}
+
+	public void setvISS(String vISS) {
+		this.vISS = vISS;
+	}
+
+	public String getvPIS() {
+		return vPIS;
+	}
+
+	public void setvPIS(String vPIS) {
+		this.vPIS = vPIS;
+	}
+
+	public String getvCOFINS() {
+		return vCOFINS;
+	}
+
+	public void setvCOFINS(String vCOFINS) {
+		this.vCOFINS = vCOFINS;
+	}
+
+	public String getdCompet() {
+		return dCompet;
+	}
+
+	public void setdCompet(String dCompet) {
+		this.dCompet = dCompet;
+	}
+
+	public String getvDeducao() {
+		return vDeducao;
+	}
+
+	public void setvDeducao(String vDeducao) {
+		this.vDeducao = vDeducao;
+	}
+
+	public String getvOutro() {
+		return vOutro;
+	}
+
+	public void setvOutro(String vOutro) {
+		this.vOutro = vOutro;
+	}
+
+	public String getvDescIncond() {
+		return vDescIncond;
+	}
+
+	public void setvDescIncond(String vDescIncond) {
+		this.vDescIncond = vDescIncond;
+	}
+
+	public String getvDescCond() {
+		return vDescCond;
+	}
+
+	public void setvDescCond(String vDescCond) {
+		this.vDescCond = vDescCond;
+	}
+
+	public String getvISSRet() {
+		return vISSRet;
+	}
+
+	public void setvISSRet(String vISSRet) {
+		this.vISSRet = vISSRet;
+	}
+
+	public String getcRegTrib() {
+		return cRegTrib;
+	}
+
+	public void setcRegTrib(String cRegTrib) {
+		this.cRegTrib = cRegTrib;
+	}
 
 }

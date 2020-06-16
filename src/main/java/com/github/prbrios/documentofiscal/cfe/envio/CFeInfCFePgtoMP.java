@@ -1,8 +1,5 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -12,7 +9,6 @@ import org.simpleframework.xml.Root;
  * @author prbrios@gmail.com
  * @since 01/10/2019
  */
-@Data
 @Root(name = "MP")
 public class CFeInfCFePgtoMP {
 
@@ -47,4 +43,29 @@ public class CFeInfCFePgtoMP {
         this.vMP = vMP;
         this.cAdmC = cAdmC;
     }
+
+	public String getcMP() {
+		return cMP;
+	}
+
+	public void setcMP(String cMP) {
+		this.cMP = cMP;
+	}
+
+	public String getvMP() {
+		return vMP;
+	}
+
+	public void setvMP(String vMP) {
+		this.vMP = vMP;
+	}
+
+	public String getcAdmC() {
+		return cAdmC;
+	}
+
+	public void setcAdmC(String cAdmC) {
+		this.cAdmC = cAdmC;
+	}
+    
 }

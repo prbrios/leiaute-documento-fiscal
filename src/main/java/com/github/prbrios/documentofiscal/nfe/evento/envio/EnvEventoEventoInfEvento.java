@@ -1,11 +1,9 @@
 package com.github.prbrios.documentofiscal.nfe.evento.envio;
 
-import lombok.Data;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Data
 @Root(name = "infEvento")
 public class EnvEventoEventoInfEvento {
 
@@ -71,4 +69,94 @@ public class EnvEventoEventoInfEvento {
         this.verEvento = verEvento;
         this.detEvento = detEvento;
     }
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getcOrgao() {
+		return cOrgao;
+	}
+
+	public void setcOrgao(String cOrgao) {
+		this.cOrgao = cOrgao;
+	}
+
+	public String getTpAmb() {
+		return tpAmb;
+	}
+
+	public void setTpAmb(String tpAmb) {
+		this.tpAmb = tpAmb;
+	}
+
+	public String getCNPJ() {
+		return CNPJ;
+	}
+
+	public void setCNPJ(String cNPJ) {
+		CNPJ = cNPJ;
+	}
+
+	public String getCPF() {
+		return CPF;
+	}
+
+	public void setCPF(String cPF) {
+		CPF = cPF;
+	}
+
+	public String getChNFe() {
+		return chNFe;
+	}
+
+	public void setChNFe(String chNFe) {
+		this.chNFe = chNFe;
+	}
+
+	public String getDhEvento() {
+		return dhEvento;
+	}
+
+	public void setDhEvento(String dhEvento) {
+		this.dhEvento = dhEvento;
+	}
+
+	public String getTpEvento() {
+		return tpEvento;
+	}
+
+	public void setTpEvento(String tpEvento) {
+		this.tpEvento = tpEvento;
+	}
+
+	public String getnSeqEvento() {
+		return nSeqEvento;
+	}
+
+	public void setnSeqEvento(String nSeqEvento) {
+		this.nSeqEvento = nSeqEvento;
+	}
+
+	public String getVerEvento() {
+		return verEvento;
+	}
+
+	public void setVerEvento(String verEvento) {
+		this.verEvento = verEvento;
+	}
+
+	public EnvEventoEventoInfEventoDetEvento getDetEvento() {
+		return detEvento;
+	}
+
+	public void setDetEvento(EnvEventoEventoInfEventoDetEvento detEvento) {
+		this.detEvento = detEvento;
+	}
+    
+    
 }

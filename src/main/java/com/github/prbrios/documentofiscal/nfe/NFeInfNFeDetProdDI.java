@@ -3,7 +3,6 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
@@ -12,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @JsonRootName("di")
-@Data
 @Root(name = "DI")
 public class NFeInfNFeDetProdDI {
 
@@ -107,5 +105,101 @@ public class NFeInfNFeDetProdDI {
         this.cExportador = cExportador;
         this.adi = adi;
     }
+
+	public String getnDI() {
+		return nDI;
+	}
+
+	public void setnDI(String nDI) {
+		this.nDI = nDI;
+	}
+
+	public String getdDI() {
+		return dDI;
+	}
+
+	public void setdDI(String dDI) {
+		this.dDI = dDI;
+	}
+
+	public String getxLocDesemb() {
+		return xLocDesemb;
+	}
+
+	public void setxLocDesemb(String xLocDesemb) {
+		this.xLocDesemb = xLocDesemb;
+	}
+
+	public String getUFDesemb() {
+		return UFDesemb;
+	}
+
+	public void setUFDesemb(String uFDesemb) {
+		UFDesemb = uFDesemb;
+	}
+
+	public String getdDesemb() {
+		return dDesemb;
+	}
+
+	public void setdDesemb(String dDesemb) {
+		this.dDesemb = dDesemb;
+	}
+
+	public String getTpViaTransp() {
+		return tpViaTransp;
+	}
+
+	public void setTpViaTransp(String tpViaTransp) {
+		this.tpViaTransp = tpViaTransp;
+	}
+
+	public String getvAFRMM() {
+		return vAFRMM;
+	}
+
+	public void setvAFRMM(String vAFRMM) {
+		this.vAFRMM = vAFRMM;
+	}
+
+	public String getTpIntermedio() {
+		return tpIntermedio;
+	}
+
+	public void setTpIntermedio(String tpIntermedio) {
+		this.tpIntermedio = tpIntermedio;
+	}
+
+	public String getCNPJ() {
+		return CNPJ;
+	}
+
+	public void setCNPJ(String cNPJ) {
+		CNPJ = cNPJ;
+	}
+
+	public String getUFTerceiro() {
+		return UFTerceiro;
+	}
+
+	public void setUFTerceiro(String uFTerceiro) {
+		UFTerceiro = uFTerceiro;
+	}
+
+	public String getcExportador() {
+		return cExportador;
+	}
+
+	public void setcExportador(String cExportador) {
+		this.cExportador = cExportador;
+	}
+
+	public List<NFeInfNFeDetProdDIAdi> getAdi() {
+		return adi;
+	}
+
+	public void setAdi(List<NFeInfNFeDetProdDIAdi> adi) {
+		this.adi = adi;
+	}
 
 }

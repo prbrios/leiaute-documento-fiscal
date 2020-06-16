@@ -1,10 +1,8 @@
 package com.github.prbrios.documentofiscal.cte;
 
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Data
 @Root(name = "ICMSOutraUF")
 public class CTeInfCteImpICMSICMSOutraUF {
 
@@ -22,5 +20,45 @@ public class CTeInfCteImpICMSICMSOutraUF {
 
 	@Element(name = "vICMSOutraUF", required = false)
 	private String vICMSOutraUF;
+
+	public String getCST() {
+		return CST;
+	}
+
+	public void setCST(String cST) {
+		CST = cST;
+	}
+
+	public String getpRedBCOutraUF() {
+		return pRedBCOutraUF;
+	}
+
+	public void setpRedBCOutraUF(String pRedBCOutraUF) {
+		this.pRedBCOutraUF = pRedBCOutraUF;
+	}
+
+	public String getvBCOutraUF() {
+		return vBCOutraUF;
+	}
+
+	public void setvBCOutraUF(String vBCOutraUF) {
+		this.vBCOutraUF = vBCOutraUF;
+	}
+
+	public String getpICMSOutraUF() {
+		return pICMSOutraUF;
+	}
+
+	public void setpICMSOutraUF(String pICMSOutraUF) {
+		this.pICMSOutraUF = pICMSOutraUF;
+	}
+
+	public String getvICMSOutraUF() {
+		return vICMSOutraUF;
+	}
+
+	public void setvICMSOutraUF(String vICMSOutraUF) {
+		this.vICMSOutraUF = vICMSOutraUF;
+	}
 
 }

@@ -3,7 +3,6 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
@@ -12,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @JsonRootName("cana")
-@Data
 @Root(name = "cana")
 public class NFeInfNFeCana {
 
@@ -93,5 +91,85 @@ public class NFeInfNFeCana {
         this.vTotDed = vTotDed;
         this.vLiqFor = vLiqFor;
     }
+
+	public String getSafra() {
+		return safra;
+	}
+
+	public void setSafra(String safra) {
+		this.safra = safra;
+	}
+
+	public String getRef() {
+		return ref;
+	}
+
+	public void setRef(String ref) {
+		this.ref = ref;
+	}
+
+	public List<NFeInfNFeCanaForDia> getForDia() {
+		return forDia;
+	}
+
+	public void setForDia(List<NFeInfNFeCanaForDia> forDia) {
+		this.forDia = forDia;
+	}
+
+	public String getqTotMes() {
+		return qTotMes;
+	}
+
+	public void setqTotMes(String qTotMes) {
+		this.qTotMes = qTotMes;
+	}
+
+	public String getqTotAnt() {
+		return qTotAnt;
+	}
+
+	public void setqTotAnt(String qTotAnt) {
+		this.qTotAnt = qTotAnt;
+	}
+
+	public String getqTotGer() {
+		return qTotGer;
+	}
+
+	public void setqTotGer(String qTotGer) {
+		this.qTotGer = qTotGer;
+	}
+
+	public List<NFeInfNFeCanaDeduc> getDeduc() {
+		return deduc;
+	}
+
+	public void setDeduc(List<NFeInfNFeCanaDeduc> deduc) {
+		this.deduc = deduc;
+	}
+
+	public String getvFor() {
+		return vFor;
+	}
+
+	public void setvFor(String vFor) {
+		this.vFor = vFor;
+	}
+
+	public String getvTotDed() {
+		return vTotDed;
+	}
+
+	public void setvTotDed(String vTotDed) {
+		this.vTotDed = vTotDed;
+	}
+
+	public String getvLiqFor() {
+		return vLiqFor;
+	}
+
+	public void setvLiqFor(String vLiqFor) {
+		this.vLiqFor = vLiqFor;
+	}
 
 }

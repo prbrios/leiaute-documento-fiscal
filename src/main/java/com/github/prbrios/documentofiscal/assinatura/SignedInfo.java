@@ -3,7 +3,9 @@ package com.github.prbrios.documentofiscal.assinatura;
 import org.simpleframework.xml.Element;
 
 public class SignedInfo {
-    private static final long serialVersionUID = -5878065134465400530L;
+	
+    @SuppressWarnings("unused")
+	private static final long serialVersionUID = -5878065134465400530L;
 
     @Element(name = "CanonicalizationMethod", required = false)
     private CanonicalizationMethod canonicalizationMethod;
@@ -37,4 +39,5 @@ public class SignedInfo {
     public void setReference(final Reference reference) {
         this.reference = reference;
     }
+
 }

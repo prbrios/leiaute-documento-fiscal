@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("icms51")
-@Data
 @Root(name = "ICMS51")
 public class NFeInfNFeDetImpostoICMSICMS51 {
 
@@ -110,5 +108,109 @@ public class NFeInfNFeDetImpostoICMSICMS51 {
         this.pFCP = pFCP;
         this.vFCP = vFCP;
     }
+
+	public String getOrig() {
+		return orig;
+	}
+
+	public void setOrig(String orig) {
+		this.orig = orig;
+	}
+
+	public String getCST() {
+		return CST;
+	}
+
+	public void setCST(String cST) {
+		CST = cST;
+	}
+
+	public String getModBC() {
+		return modBC;
+	}
+
+	public void setModBC(String modBC) {
+		this.modBC = modBC;
+	}
+
+	public String getpRedBC() {
+		return pRedBC;
+	}
+
+	public void setpRedBC(String pRedBC) {
+		this.pRedBC = pRedBC;
+	}
+
+	public String getvBC() {
+		return vBC;
+	}
+
+	public void setvBC(String vBC) {
+		this.vBC = vBC;
+	}
+
+	public String getpICMS() {
+		return pICMS;
+	}
+
+	public void setpICMS(String pICMS) {
+		this.pICMS = pICMS;
+	}
+
+	public String getvICMSOp() {
+		return vICMSOp;
+	}
+
+	public void setvICMSOp(String vICMSOp) {
+		this.vICMSOp = vICMSOp;
+	}
+
+	public String getpDif() {
+		return pDif;
+	}
+
+	public void setpDif(String pDif) {
+		this.pDif = pDif;
+	}
+
+	public String getvICMSDif() {
+		return vICMSDif;
+	}
+
+	public void setvICMSDif(String vICMSDif) {
+		this.vICMSDif = vICMSDif;
+	}
+
+	public String getvICMS() {
+		return vICMS;
+	}
+
+	public void setvICMS(String vICMS) {
+		this.vICMS = vICMS;
+	}
+
+	public String getvBCFCP() {
+		return vBCFCP;
+	}
+
+	public void setvBCFCP(String vBCFCP) {
+		this.vBCFCP = vBCFCP;
+	}
+
+	public String getpFCP() {
+		return pFCP;
+	}
+
+	public void setpFCP(String pFCP) {
+		this.pFCP = pFCP;
+	}
+
+	public String getvFCP() {
+		return vFCP;
+	}
+
+	public void setvFCP(String vFCP) {
+		this.vFCP = vFCP;
+	}
 
 }

@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("icmssn900")
-@Data
 @Root(name = "ICMSSN900")
 public class NFeInfNFeDetImpostoICMSICMSSN900 {
 
@@ -149,5 +147,149 @@ public class NFeInfNFeDetImpostoICMSICMSSN900 {
         this.pCredSN = pCredSN;
         this.vCredICMSSN = vCredICMSSN;
     }
+
+	public String getOrig() {
+		return orig;
+	}
+
+	public void setOrig(String orig) {
+		this.orig = orig;
+	}
+
+	public String getCSOSN() {
+		return CSOSN;
+	}
+
+	public void setCSOSN(String cSOSN) {
+		CSOSN = cSOSN;
+	}
+
+	public String getModBC() {
+		return modBC;
+	}
+
+	public void setModBC(String modBC) {
+		this.modBC = modBC;
+	}
+
+	public String getvBC() {
+		return vBC;
+	}
+
+	public void setvBC(String vBC) {
+		this.vBC = vBC;
+	}
+
+	public String getpRedBC() {
+		return pRedBC;
+	}
+
+	public void setpRedBC(String pRedBC) {
+		this.pRedBC = pRedBC;
+	}
+
+	public String getpICMS() {
+		return pICMS;
+	}
+
+	public void setpICMS(String pICMS) {
+		this.pICMS = pICMS;
+	}
+
+	public String getvICMS() {
+		return vICMS;
+	}
+
+	public void setvICMS(String vICMS) {
+		this.vICMS = vICMS;
+	}
+
+	public String getModBCST() {
+		return modBCST;
+	}
+
+	public void setModBCST(String modBCST) {
+		this.modBCST = modBCST;
+	}
+
+	public String getpMVAST() {
+		return pMVAST;
+	}
+
+	public void setpMVAST(String pMVAST) {
+		this.pMVAST = pMVAST;
+	}
+
+	public String getpRedBCST() {
+		return pRedBCST;
+	}
+
+	public void setpRedBCST(String pRedBCST) {
+		this.pRedBCST = pRedBCST;
+	}
+
+	public String getvBCST() {
+		return vBCST;
+	}
+
+	public void setvBCST(String vBCST) {
+		this.vBCST = vBCST;
+	}
+
+	public String getpICMSST() {
+		return pICMSST;
+	}
+
+	public void setpICMSST(String pICMSST) {
+		this.pICMSST = pICMSST;
+	}
+
+	public String getvICMSST() {
+		return vICMSST;
+	}
+
+	public void setvICMSST(String vICMSST) {
+		this.vICMSST = vICMSST;
+	}
+
+	public String getvBCFCPST() {
+		return vBCFCPST;
+	}
+
+	public void setvBCFCPST(String vBCFCPST) {
+		this.vBCFCPST = vBCFCPST;
+	}
+
+	public String getpFCPST() {
+		return pFCPST;
+	}
+
+	public void setpFCPST(String pFCPST) {
+		this.pFCPST = pFCPST;
+	}
+
+	public String getvFCPST() {
+		return vFCPST;
+	}
+
+	public void setvFCPST(String vFCPST) {
+		this.vFCPST = vFCPST;
+	}
+
+	public String getpCredSN() {
+		return pCredSN;
+	}
+
+	public void setpCredSN(String pCredSN) {
+		this.pCredSN = pCredSN;
+	}
+
+	public String getvCredICMSSN() {
+		return vCredICMSSN;
+	}
+
+	public void setvCredICMSSN(String vCredICMSSN) {
+		this.vCredICMSSN = vCredICMSSN;
+	}
 
 }

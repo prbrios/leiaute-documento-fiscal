@@ -1,14 +1,12 @@
 package com.github.prbrios.documentofiscal.cte;
 
-import lombok.Data;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
-import java.util.ArrayList;
-import java.util.List;
-
-@Data
 @Root(name = "aquav")
 public class CTeInfCteInfCTeNormInfModalAquav {
 
@@ -38,4 +36,59 @@ public class CTeInfCteInfCTeNormInfModalAquav {
 	private List<CTeInfCteInfCTeNormInfModalAquavDetCont> detCont
 			= new ArrayList<CTeInfCteInfCTeNormInfModalAquavDetCont>();
 	private String tpNav;
+	public String getvPrest() {
+		return vPrest;
+	}
+	public void setvPrest(String vPrest) {
+		this.vPrest = vPrest;
+	}
+	public String getvAFRMM() {
+		return vAFRMM;
+	}
+	public void setvAFRMM(String vAFRMM) {
+		this.vAFRMM = vAFRMM;
+	}
+	public String getxNavio() {
+		return xNavio;
+	}
+	public void setxNavio(String xNavio) {
+		this.xNavio = xNavio;
+	}
+	public List<CTeInfCteInfCTeNormInfModalAquavBalsa> getBalsa() {
+		return balsa;
+	}
+	public void setBalsa(List<CTeInfCteInfCTeNormInfModalAquavBalsa> balsa) {
+		this.balsa = balsa;
+	}
+	public String getnViag() {
+		return nViag;
+	}
+	public void setnViag(String nViag) {
+		this.nViag = nViag;
+	}
+	public String getDirec() {
+		return direc;
+	}
+	public void setDirec(String direc) {
+		this.direc = direc;
+	}
+	public String getIrin() {
+		return irin;
+	}
+	public void setIrin(String irin) {
+		this.irin = irin;
+	}
+	public List<CTeInfCteInfCTeNormInfModalAquavDetCont> getDetCont() {
+		return detCont;
+	}
+	public void setDetCont(List<CTeInfCteInfCTeNormInfModalAquavDetCont> detCont) {
+		this.detCont = detCont;
+	}
+	public String getTpNav() {
+		return tpNav;
+	}
+	public void setTpNav(String tpNav) {
+		this.tpNav = tpNav;
+	}
+	
 }

@@ -1,6 +1,5 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -10,7 +9,6 @@ import org.simpleframework.xml.Root;
  * @author prbrios@gmail.com
  * @since 01/10/2019
  */
-@Data
 @Root(name = "total")
 public class CFeInfCFeTotal {
 
@@ -59,4 +57,45 @@ public class CFeInfCFeTotal {
         this.DescAcrEntr = descAcrEntr;
         this.vCFeLei12741 = vCFeLei12741;
     }
+
+	public CFeInfCFeTotalICMSTot getICMSTot() {
+		return ICMSTot;
+	}
+
+	public void setICMSTot(CFeInfCFeTotalICMSTot iCMSTot) {
+		ICMSTot = iCMSTot;
+	}
+
+	public String getvCFe() {
+		return vCFe;
+	}
+
+	public void setvCFe(String vCFe) {
+		this.vCFe = vCFe;
+	}
+
+	public CFeInfCFeTotalISSQNTot getISSQNTot() {
+		return ISSQNTot;
+	}
+
+	public void setISSQNTot(CFeInfCFeTotalISSQNTot iSSQNTot) {
+		ISSQNTot = iSSQNTot;
+	}
+
+	public CFeInfCFeTotalDescAcrEntr getDescAcrEntr() {
+		return DescAcrEntr;
+	}
+
+	public void setDescAcrEntr(CFeInfCFeTotalDescAcrEntr descAcrEntr) {
+		DescAcrEntr = descAcrEntr;
+	}
+
+	public String getvCFeLei12741() {
+		return vCFeLei12741;
+	}
+
+	public void setvCFeLei12741(String vCFeLei12741) {
+		this.vCFeLei12741 = vCFeLei12741;
+	}
+    
 }

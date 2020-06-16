@@ -1,17 +1,18 @@
 package com.github.prbrios.documentofiscal.nfe;
 
-import com.fasterxml.jackson.annotation.*;
-import lombok.Data;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
 
 @JsonRootName("infnfe")
-@Data
 @Root(name = "infNFe")
 public class NFeInfNFe {
 
@@ -155,5 +156,157 @@ public class NFeInfNFe {
         this.cana = cana;
         this.infRespTec = infRespTec;
     }
+
+	public String getVersao() {
+		return versao;
+	}
+
+	public void setVersao(String versao) {
+		this.versao = versao;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public NFeInfNFeIde getIde() {
+		return ide;
+	}
+
+	public void setIde(NFeInfNFeIde ide) {
+		this.ide = ide;
+	}
+
+	public NFeInfNFeEmit getEmit() {
+		return emit;
+	}
+
+	public void setEmit(NFeInfNFeEmit emit) {
+		this.emit = emit;
+	}
+
+	public NFeInfNFeAvulsa getAvulsa() {
+		return avulsa;
+	}
+
+	public void setAvulsa(NFeInfNFeAvulsa avulsa) {
+		this.avulsa = avulsa;
+	}
+
+	public NFeInfNFeDest getDest() {
+		return dest;
+	}
+
+	public void setDest(NFeInfNFeDest dest) {
+		this.dest = dest;
+	}
+
+	public NFeInfNFeRetirada getRetirada() {
+		return retirada;
+	}
+
+	public void setRetirada(NFeInfNFeRetirada retirada) {
+		this.retirada = retirada;
+	}
+
+	public NFeInfNFeEntrega getEntrega() {
+		return entrega;
+	}
+
+	public void setEntrega(NFeInfNFeEntrega entrega) {
+		this.entrega = entrega;
+	}
+
+	public List<NFeInfNFeAutXML> getAutXML() {
+		return autXML;
+	}
+
+	public void setAutXML(List<NFeInfNFeAutXML> autXML) {
+		this.autXML = autXML;
+	}
+
+	public List<NFeInfNFeDet> getDet() {
+		return det;
+	}
+
+	public void setDet(List<NFeInfNFeDet> det) {
+		this.det = det;
+	}
+
+	public NFeInfNFeTotal getTotal() {
+		return total;
+	}
+
+	public void setTotal(NFeInfNFeTotal total) {
+		this.total = total;
+	}
+
+	public NFeInfNFeTransp getTransp() {
+		return transp;
+	}
+
+	public void setTransp(NFeInfNFeTransp transp) {
+		this.transp = transp;
+	}
+
+	public NFeInfNFeCobr getCobr() {
+		return cobr;
+	}
+
+	public void setCobr(NFeInfNFeCobr cobr) {
+		this.cobr = cobr;
+	}
+
+	public NFeInfNFePag getPag() {
+		return pag;
+	}
+
+	public void setPag(NFeInfNFePag pag) {
+		this.pag = pag;
+	}
+
+	public NFeInfNFeInfAdic getInfAdic() {
+		return infAdic;
+	}
+
+	public void setInfAdic(NFeInfNFeInfAdic infAdic) {
+		this.infAdic = infAdic;
+	}
+
+	public NFeInfNFeExporta getExporta() {
+		return exporta;
+	}
+
+	public void setExporta(NFeInfNFeExporta exporta) {
+		this.exporta = exporta;
+	}
+
+	public NFeInfNFeCompra getCompra() {
+		return compra;
+	}
+
+	public void setCompra(NFeInfNFeCompra compra) {
+		this.compra = compra;
+	}
+
+	public NFeInfNFeCana getCana() {
+		return cana;
+	}
+
+	public void setCana(NFeInfNFeCana cana) {
+		this.cana = cana;
+	}
+
+	public NFeInfNFeInfRespTec getInfRespTec() {
+		return infRespTec;
+	}
+
+	public void setInfRespTec(NFeInfNFeInfRespTec infRespTec) {
+		this.infRespTec = infRespTec;
+	}
 
 }

@@ -1,10 +1,8 @@
 package com.github.prbrios.documentofiscal.cte;
 
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Data
 @Root(name = "imp")
 public class CTeInfCteImp {
 
@@ -19,5 +17,37 @@ public class CTeInfCteImp {
 
 	@Element(name = "ICMSUFFim", required = false)
 	private CTeInfCteImpICMSUFFim ICMSUFFim;
+
+	public CTeInfCteImpICMS getICMS() {
+		return ICMS;
+	}
+
+	public void setICMS(CTeInfCteImpICMS iCMS) {
+		ICMS = iCMS;
+	}
+
+	public String getvTotTrib() {
+		return vTotTrib;
+	}
+
+	public void setvTotTrib(String vTotTrib) {
+		this.vTotTrib = vTotTrib;
+	}
+
+	public String getInfAdFisco() {
+		return infAdFisco;
+	}
+
+	public void setInfAdFisco(String infAdFisco) {
+		this.infAdFisco = infAdFisco;
+	}
+
+	public CTeInfCteImpICMSUFFim getICMSUFFim() {
+		return ICMSUFFim;
+	}
+
+	public void setICMSUFFim(CTeInfCteImpICMSUFFim iCMSUFFim) {
+		ICMSUFFim = iCMSUFFim;
+	}
 
 }

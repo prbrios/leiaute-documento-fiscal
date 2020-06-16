@@ -1,11 +1,9 @@
 package com.github.prbrios.documentofiscal.cfe.cancelamento;
 
-import com.github.prbrios.documentofiscal.assinatura.Signature;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
+
+import com.github.prbrios.documentofiscal.assinatura.Signature;
 
 /**
  * TAG raiz do CF-e
@@ -13,7 +11,6 @@ import org.simpleframework.xml.Root;
  * @author prbrios@gmail.com
  * @since 01/10/2019
  */
-@Data
 @Root(name = "CFeCanc")
 public class CFeCanc {
 
@@ -40,4 +37,21 @@ public class CFeCanc {
         this.infCFe = infCFe;
         this.signature = signature;
     }
+
+	public CFeCancInfCFe getInfCFe() {
+		return infCFe;
+	}
+
+	public void setInfCFe(CFeCancInfCFe infCFe) {
+		this.infCFe = infCFe;
+	}
+
+	public Signature getSignature() {
+		return signature;
+	}
+
+	public void setSignature(Signature signature) {
+		this.signature = signature;
+	}
+    
 }

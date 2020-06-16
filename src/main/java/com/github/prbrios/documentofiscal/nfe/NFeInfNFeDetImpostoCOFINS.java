@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("cofins")
-@Data
 @Root(name = "COFINS")
 public class NFeInfNFeDetImpostoCOFINS {
 
@@ -47,5 +45,37 @@ public class NFeInfNFeDetImpostoCOFINS {
         this.COFINSNT = COFINSNT;
         this.COFINSOutr = COFINSOutr;
     }
+
+	public NFeInfNFeDetImpostoCOFINSCOFINSAliq getCOFINSAliq() {
+		return COFINSAliq;
+	}
+
+	public void setCOFINSAliq(NFeInfNFeDetImpostoCOFINSCOFINSAliq cOFINSAliq) {
+		COFINSAliq = cOFINSAliq;
+	}
+
+	public NFeInfNFeDetImpostoCOFINSCOFINSQtde getCOFINSQtde() {
+		return COFINSQtde;
+	}
+
+	public void setCOFINSQtde(NFeInfNFeDetImpostoCOFINSCOFINSQtde cOFINSQtde) {
+		COFINSQtde = cOFINSQtde;
+	}
+
+	public NFeInfNFeDetImpostoCOFINSCOFINSNT getCOFINSNT() {
+		return COFINSNT;
+	}
+
+	public void setCOFINSNT(NFeInfNFeDetImpostoCOFINSCOFINSNT cOFINSNT) {
+		COFINSNT = cOFINSNT;
+	}
+
+	public NFeInfNFeDetImpostoCOFINSCOFINSOutr getCOFINSOutr() {
+		return COFINSOutr;
+	}
+
+	public void setCOFINSOutr(NFeInfNFeDetImpostoCOFINSCOFINSOutr cOFINSOutr) {
+		COFINSOutr = cOFINSOutr;
+	}
 
 }

@@ -1,13 +1,12 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
-import lombok.Data;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Grupo que contém as informações do CF-e
@@ -15,7 +14,6 @@ import java.util.List;
  * @author prbrios@gmail.com
  * @since 01/10/2019
  */
-@Data
 @Root(name = "infCFe")
 public class CFeInfCFe {
 
@@ -128,5 +126,109 @@ public class CFeInfCFe {
         this.pgto = pgto;
         this.infAdic = infAdic;
     }
+
+	public String getVersao() {
+		return versao;
+	}
+
+	public void setVersao(String versao) {
+		this.versao = versao;
+	}
+
+	public String getVersaoDadosEnt() {
+		return versaoDadosEnt;
+	}
+
+	public void setVersaoDadosEnt(String versaoDadosEnt) {
+		this.versaoDadosEnt = versaoDadosEnt;
+	}
+
+	public String getVersaoSB() {
+		return versaoSB;
+	}
+
+	public void setVersaoSB(String versaoSB) {
+		this.versaoSB = versaoSB;
+	}
+
+	public String getId() {
+		return Id;
+	}
+
+	public void setId(String id) {
+		Id = id;
+	}
+
+	public CFeInfCFeIde getIde() {
+		return ide;
+	}
+
+	public void setIde(CFeInfCFeIde ide) {
+		this.ide = ide;
+	}
+
+	public CFeInfCFeEmit getEmit() {
+		return emit;
+	}
+
+	public void setEmit(CFeInfCFeEmit emit) {
+		this.emit = emit;
+	}
+
+	public CFeInfCFeDest getDest() {
+		return dest;
+	}
+
+	public void setDest(CFeInfCFeDest dest) {
+		this.dest = dest;
+	}
+
+	public CFeInfCFeEntrega getEntrega() {
+		return entrega;
+	}
+
+	public void setEntrega(CFeInfCFeEntrega entrega) {
+		this.entrega = entrega;
+	}
+
+	public List<CFeInfCFeDet> getDet() {
+		return det;
+	}
+
+	public void setDet(List<CFeInfCFeDet> det) {
+		this.det = det;
+	}
+
+	public CFeInfCFeTotal getTotal() {
+		return total;
+	}
+
+	public void setTotal(CFeInfCFeTotal total) {
+		this.total = total;
+	}
+
+	public CFeInfCFePgto getPgto() {
+		return pgto;
+	}
+
+	public void setPgto(CFeInfCFePgto pgto) {
+		this.pgto = pgto;
+	}
+
+	public CFeInfCFeInfAdic getInfAdic() {
+		return infAdic;
+	}
+
+	public void setInfAdic(CFeInfCFeInfAdic infAdic) {
+		this.infAdic = infAdic;
+	}
+
+	public List<CFeInfCFeInfAdicObsFisco> getObsFisco() {
+		return obsFisco;
+	}
+
+	public void setObsFisco(List<CFeInfCFeInfAdicObsFisco> obsFisco) {
+		this.obsFisco = obsFisco;
+	}
 
 }

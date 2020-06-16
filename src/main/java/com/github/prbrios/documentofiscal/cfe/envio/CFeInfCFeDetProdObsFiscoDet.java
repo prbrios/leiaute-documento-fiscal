@@ -1,8 +1,5 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
@@ -13,7 +10,6 @@ import org.simpleframework.xml.Root;
  * @author prbrios@gmail.com
  * @since 01/10/2019
  */
-@Data
 @Root(name = "obsFiscoDet")
 public class CFeInfCFeDetProdObsFiscoDet {
 
@@ -40,4 +36,21 @@ public class CFeInfCFeDetProdObsFiscoDet {
         this.xCampoDet = xCampoDet;
         this.xTextoDet = xTextoDet;
     }
+
+	public String getxCampoDet() {
+		return xCampoDet;
+	}
+
+	public void setxCampoDet(String xCampoDet) {
+		this.xCampoDet = xCampoDet;
+	}
+
+	public String getxTextoDet() {
+		return xTextoDet;
+	}
+
+	public void setxTextoDet(String xTextoDet) {
+		this.xTextoDet = xTextoDet;
+	}
+    
 }

@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("icmspart")
-@Data
 @Root(name = "ICMSPart")
 public class NFeInfNFeDetImpostoICMSICMSPart {
 
@@ -124,5 +122,125 @@ public class NFeInfNFeDetImpostoICMSICMSPart {
         this.pBCOp = pBCOp;
         this.UFST = UFST;
     }
+
+	public String getOrig() {
+		return orig;
+	}
+
+	public void setOrig(String orig) {
+		this.orig = orig;
+	}
+
+	public String getCST() {
+		return CST;
+	}
+
+	public void setCST(String cST) {
+		CST = cST;
+	}
+
+	public String getModBC() {
+		return modBC;
+	}
+
+	public void setModBC(String modBC) {
+		this.modBC = modBC;
+	}
+
+	public String getvBC() {
+		return vBC;
+	}
+
+	public void setvBC(String vBC) {
+		this.vBC = vBC;
+	}
+
+	public String getpRedBC() {
+		return pRedBC;
+	}
+
+	public void setpRedBC(String pRedBC) {
+		this.pRedBC = pRedBC;
+	}
+
+	public String getpICMS() {
+		return pICMS;
+	}
+
+	public void setpICMS(String pICMS) {
+		this.pICMS = pICMS;
+	}
+
+	public String getvICMS() {
+		return vICMS;
+	}
+
+	public void setvICMS(String vICMS) {
+		this.vICMS = vICMS;
+	}
+
+	public String getModBCST() {
+		return modBCST;
+	}
+
+	public void setModBCST(String modBCST) {
+		this.modBCST = modBCST;
+	}
+
+	public String getpMVAST() {
+		return pMVAST;
+	}
+
+	public void setpMVAST(String pMVAST) {
+		this.pMVAST = pMVAST;
+	}
+
+	public String getpRedBCST() {
+		return pRedBCST;
+	}
+
+	public void setpRedBCST(String pRedBCST) {
+		this.pRedBCST = pRedBCST;
+	}
+
+	public String getvBCST() {
+		return vBCST;
+	}
+
+	public void setvBCST(String vBCST) {
+		this.vBCST = vBCST;
+	}
+
+	public String getpICMSST() {
+		return pICMSST;
+	}
+
+	public void setpICMSST(String pICMSST) {
+		this.pICMSST = pICMSST;
+	}
+
+	public String getvICMSST() {
+		return vICMSST;
+	}
+
+	public void setvICMSST(String vICMSST) {
+		this.vICMSST = vICMSST;
+	}
+
+	public String getpBCOp() {
+		return pBCOp;
+	}
+
+	public void setpBCOp(String pBCOp) {
+		this.pBCOp = pBCOp;
+	}
+
+	public String getUFST() {
+		return UFST;
+	}
+
+	public void setUFST(String uFST) {
+		UFST = uFST;
+	}
 
 }

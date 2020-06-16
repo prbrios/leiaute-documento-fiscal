@@ -1,10 +1,8 @@
 package com.github.prbrios.documentofiscal.cte;
 
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Data
 @Root(name = "tarifa")
 public class CTeInfCteInfCTeNormInfModalAereoTarifa {
 
@@ -16,5 +14,29 @@ public class CTeInfCteInfCTeNormInfModalAereoTarifa {
 
 	@Element(name = "vTar", required = false)
 	private String vTar;
+
+	public String getCL() {
+		return CL;
+	}
+
+	public void setCL(String cL) {
+		CL = cL;
+	}
+
+	public String getcTar() {
+		return cTar;
+	}
+
+	public void setcTar(String cTar) {
+		this.cTar = cTar;
+	}
+
+	public String getvTar() {
+		return vTar;
+	}
+
+	public void setvTar(String vTar) {
+		this.vTar = vTar;
+	}
 
 }

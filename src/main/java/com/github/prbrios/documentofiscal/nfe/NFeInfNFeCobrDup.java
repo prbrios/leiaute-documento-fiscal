@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("dup")
-@Data
 @Root(name = "dup")
 public class NFeInfNFeCobrDup {
 
@@ -40,5 +38,29 @@ public class NFeInfNFeCobrDup {
         this.dVenc = dVenc;
         this.vDup = vDup;
     }
+
+	public String getnDup() {
+		return nDup;
+	}
+
+	public void setnDup(String nDup) {
+		this.nDup = nDup;
+	}
+
+	public String getdVenc() {
+		return dVenc;
+	}
+
+	public void setdVenc(String dVenc) {
+		this.dVenc = dVenc;
+	}
+
+	public String getvDup() {
+		return vDup;
+	}
+
+	public void setvDup(String vDup) {
+		this.vDup = vDup;
+	}
 
 }

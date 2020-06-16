@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("pisst")
-@Data
 @Root(name = "PISST")
 public class NFeInfNFeDetImpostoPISST {
 
@@ -54,5 +52,45 @@ public class NFeInfNFeDetImpostoPISST {
         this.vAliqProd = vAliqProd;
         this.vPIS = vPIS;
     }
+
+	public String getvBC() {
+		return vBC;
+	}
+
+	public void setvBC(String vBC) {
+		this.vBC = vBC;
+	}
+
+	public String getpPIS() {
+		return pPIS;
+	}
+
+	public void setpPIS(String pPIS) {
+		this.pPIS = pPIS;
+	}
+
+	public String getqBCProd() {
+		return qBCProd;
+	}
+
+	public void setqBCProd(String qBCProd) {
+		this.qBCProd = qBCProd;
+	}
+
+	public String getvAliqProd() {
+		return vAliqProd;
+	}
+
+	public void setvAliqProd(String vAliqProd) {
+		this.vAliqProd = vAliqProd;
+	}
+
+	public String getvPIS() {
+		return vPIS;
+	}
+
+	public void setvPIS(String vPIS) {
+		this.vPIS = vPIS;
+	}
 
 }

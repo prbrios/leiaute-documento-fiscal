@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("fordia")
-@Data
 @Root(name = "forDia")
 public class NFeInfNFeCanaForDia {
 
@@ -33,5 +31,21 @@ public class NFeInfNFeCanaForDia {
         this.qtde = qtde;
         this.dia = dia;
     }
+
+	public String getQtde() {
+		return qtde;
+	}
+
+	public void setQtde(String qtde) {
+		this.qtde = qtde;
+	}
+
+	public String getDia() {
+		return dia;
+	}
+
+	public void setDia(String dia) {
+		this.dia = dia;
+	}
 
 }

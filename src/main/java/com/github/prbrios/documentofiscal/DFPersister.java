@@ -1,6 +1,5 @@
 package com.github.prbrios.documentofiscal;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.simpleframework.xml.core.Persister;
 import org.simpleframework.xml.stream.Format;
 
@@ -13,7 +12,8 @@ public class DFPersister<T> implements IDFPersister<T> {
     private final Persister persister;
     private Class<T> theType;
 
-    public DFPersister() {
+    @SuppressWarnings("unchecked")
+	public DFPersister() {
 
         final ParameterizedType type = (ParameterizedType) getClass().getGenericSuperclass();
         this.theType = (Class<T>) (type).getActualTypeArguments()[0];
@@ -49,24 +49,19 @@ public class DFPersister<T> implements IDFPersister<T> {
         }
     }
 
-    @Override
-    public T readFromJSON(String json) {
-        try {
-            ObjectMapper mapper = new ObjectMapper();
-            return mapper.readValue(json, theType);
-        } catch (Exception e) {
-            throw new IllegalStateException(e.getMessage(), e);
-        }
-    }
+	@Override
+	public T readFromJSON(String json) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
-    @Override
-    public String writeToJSON(T obj) {
-        try {
-            ObjectMapper mapper = new ObjectMapper();
-            return mapper.writeValueAsString(obj);
-        } catch (Exception e) {
-            throw new IllegalStateException(e.getMessage(), e);
-        }
-    }
+	@Override
+	public String writeToJSON(T obj) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
 
 }

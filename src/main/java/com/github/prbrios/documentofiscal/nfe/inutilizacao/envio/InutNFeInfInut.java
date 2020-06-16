@@ -1,11 +1,9 @@
 package com.github.prbrios.documentofiscal.nfe.inutilizacao.envio;
 
-import lombok.Data;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Data
 @Root(name = "infInut")
 public class InutNFeInfInut {
 
@@ -41,4 +39,93 @@ public class InutNFeInfInut {
 
     @Element(name="xJust", required = false)
     private String xJust;
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getTpAmb() {
+		return tpAmb;
+	}
+
+	public void setTpAmb(String tpAmb) {
+		this.tpAmb = tpAmb;
+	}
+
+	public String getxServ() {
+		return xServ;
+	}
+
+	public void setxServ(String xServ) {
+		this.xServ = xServ;
+	}
+
+	public String getcUF() {
+		return cUF;
+	}
+
+	public void setcUF(String cUF) {
+		this.cUF = cUF;
+	}
+
+	public String getAno() {
+		return ano;
+	}
+
+	public void setAno(String ano) {
+		this.ano = ano;
+	}
+
+	public String getCNPJ() {
+		return CNPJ;
+	}
+
+	public void setCNPJ(String cNPJ) {
+		CNPJ = cNPJ;
+	}
+
+	public String getMod() {
+		return mod;
+	}
+
+	public void setMod(String mod) {
+		this.mod = mod;
+	}
+
+	public String getSerie() {
+		return serie;
+	}
+
+	public void setSerie(String serie) {
+		this.serie = serie;
+	}
+
+	public String getnNFIni() {
+		return nNFIni;
+	}
+
+	public void setnNFIni(String nNFIni) {
+		this.nNFIni = nNFIni;
+	}
+
+	public String getnNFFin() {
+		return nNFFin;
+	}
+
+	public void setnNFFin(String nNFFin) {
+		this.nNFFin = nNFFin;
+	}
+
+	public String getxJust() {
+		return xJust;
+	}
+
+	public void setxJust(String xJust) {
+		this.xJust = xJust;
+	}
+
 }

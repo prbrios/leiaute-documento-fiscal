@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("icmsufdest")
-@Data
 @Root(name = "ICMSUFDest")
 public class NFeInfNFeDetImpostoICMSUFDest {
 
@@ -82,5 +80,77 @@ public class NFeInfNFeDetImpostoICMSUFDest {
         this.vICMSUFDest = vICMSUFDest;
         this.vICMSUFRemet = vICMSUFRemet;
     }
+
+	public String getvBCUFDest() {
+		return vBCUFDest;
+	}
+
+	public void setvBCUFDest(String vBCUFDest) {
+		this.vBCUFDest = vBCUFDest;
+	}
+
+	public String getvBCFCPUFDest() {
+		return vBCFCPUFDest;
+	}
+
+	public void setvBCFCPUFDest(String vBCFCPUFDest) {
+		this.vBCFCPUFDest = vBCFCPUFDest;
+	}
+
+	public String getpFCPUFDest() {
+		return pFCPUFDest;
+	}
+
+	public void setpFCPUFDest(String pFCPUFDest) {
+		this.pFCPUFDest = pFCPUFDest;
+	}
+
+	public String getpICMSUFDest() {
+		return pICMSUFDest;
+	}
+
+	public void setpICMSUFDest(String pICMSUFDest) {
+		this.pICMSUFDest = pICMSUFDest;
+	}
+
+	public String getpICMSInter() {
+		return pICMSInter;
+	}
+
+	public void setpICMSInter(String pICMSInter) {
+		this.pICMSInter = pICMSInter;
+	}
+
+	public String getpICMSInterPart() {
+		return pICMSInterPart;
+	}
+
+	public void setpICMSInterPart(String pICMSInterPart) {
+		this.pICMSInterPart = pICMSInterPart;
+	}
+
+	public String getvFCPUFDest() {
+		return vFCPUFDest;
+	}
+
+	public void setvFCPUFDest(String vFCPUFDest) {
+		this.vFCPUFDest = vFCPUFDest;
+	}
+
+	public String getvICMSUFDest() {
+		return vICMSUFDest;
+	}
+
+	public void setvICMSUFDest(String vICMSUFDest) {
+		this.vICMSUFDest = vICMSUFDest;
+	}
+
+	public String getvICMSUFRemet() {
+		return vICMSUFRemet;
+	}
+
+	public void setvICMSUFRemet(String vICMSUFRemet) {
+		this.vICMSUFRemet = vICMSUFRemet;
+	}
 
 }

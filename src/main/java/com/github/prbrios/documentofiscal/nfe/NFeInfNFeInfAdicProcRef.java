@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("procref")
-@Data
 @Root(name = "procRef")
 public class NFeInfNFeInfAdicProcRef {
 
@@ -33,5 +31,21 @@ public class NFeInfNFeInfAdicProcRef {
         this.nProc = nProc;
         this.indProc = indProc;
     }
+
+	public String getnProc() {
+		return nProc;
+	}
+
+	public void setnProc(String nProc) {
+		this.nProc = nProc;
+	}
+
+	public String getIndProc() {
+		return indProc;
+	}
+
+	public void setIndProc(String indProc) {
+		this.indProc = indProc;
+	}
 
 }

@@ -1,7 +1,5 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
-import lombok.Data;
-import lombok.Getter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -11,7 +9,6 @@ import org.simpleframework.xml.Root;
  * @author prbrios@gmail.com
  * @since 01/10/2019
  */
-@Data
 @Root(name = "ISSQNTot")
 public class CFeInfCFeTotalISSQNTot {
 
@@ -70,4 +67,53 @@ public class CFeInfCFeTotalISSQNTot {
         this.vPISST = vPISST;
         this.vCOFINSST = vCOFINSST;
     }
+
+	public String getvBC() {
+		return vBC;
+	}
+
+	public void setvBC(String vBC) {
+		this.vBC = vBC;
+	}
+
+	public String getvISS() {
+		return vISS;
+	}
+
+	public void setvISS(String vISS) {
+		this.vISS = vISS;
+	}
+
+	public String getvPIS() {
+		return vPIS;
+	}
+
+	public void setvPIS(String vPIS) {
+		this.vPIS = vPIS;
+	}
+
+	public String getvCOFINS() {
+		return vCOFINS;
+	}
+
+	public void setvCOFINS(String vCOFINS) {
+		this.vCOFINS = vCOFINS;
+	}
+
+	public String getvPISST() {
+		return vPISST;
+	}
+
+	public void setvPISST(String vPISST) {
+		this.vPISST = vPISST;
+	}
+
+	public String getvCOFINSST() {
+		return vCOFINSST;
+	}
+
+	public void setvCOFINSST(String vCOFINSST) {
+		this.vCOFINSST = vCOFINSST;
+	}
+    
 }

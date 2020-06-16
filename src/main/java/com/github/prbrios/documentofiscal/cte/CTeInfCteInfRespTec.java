@@ -1,10 +1,8 @@
 package com.github.prbrios.documentofiscal.cte;
 
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Data
 @Root(name = "infRespTec")
 public class CTeInfCteInfRespTec {
 
@@ -25,5 +23,53 @@ public class CTeInfCteInfRespTec {
 
 	@Element(name = "hashCSRT", required = false)
 	private String hashCSRT;
+
+	public String getCNPJ() {
+		return CNPJ;
+	}
+
+	public void setCNPJ(String cNPJ) {
+		CNPJ = cNPJ;
+	}
+
+	public String getxContato() {
+		return xContato;
+	}
+
+	public void setxContato(String xContato) {
+		this.xContato = xContato;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getFone() {
+		return fone;
+	}
+
+	public void setFone(String fone) {
+		this.fone = fone;
+	}
+
+	public String getIdCSRT() {
+		return idCSRT;
+	}
+
+	public void setIdCSRT(String idCSRT) {
+		this.idCSRT = idCSRT;
+	}
+
+	public String getHashCSRT() {
+		return hashCSRT;
+	}
+
+	public void setHashCSRT(String hashCSRT) {
+		this.hashCSRT = hashCSRT;
+	}
 
 }

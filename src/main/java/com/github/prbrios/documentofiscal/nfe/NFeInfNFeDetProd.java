@@ -3,7 +3,6 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
@@ -12,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @JsonRootName("prod")
-@Data
 @Root(name = "prod")
 public class NFeInfNFeDetProd {
 
@@ -268,5 +266,285 @@ public class NFeInfNFeDetProd {
         this.comb = comb;
         this.nRECOPI = nRECOPI;
     }
+
+	public String getcProd() {
+		return cProd;
+	}
+
+	public void setcProd(String cProd) {
+		this.cProd = cProd;
+	}
+
+	public String getcEAN() {
+		return cEAN;
+	}
+
+	public void setcEAN(String cEAN) {
+		this.cEAN = cEAN;
+	}
+
+	public String getxProd() {
+		return xProd;
+	}
+
+	public void setxProd(String xProd) {
+		this.xProd = xProd;
+	}
+
+	public String getNCM() {
+		return NCM;
+	}
+
+	public void setNCM(String nCM) {
+		NCM = nCM;
+	}
+
+	public List<String> getNVE() {
+		return NVE;
+	}
+
+	public void setNVE(List<String> nVE) {
+		NVE = nVE;
+	}
+
+	public String getCEST() {
+		return CEST;
+	}
+
+	public void setCEST(String cEST) {
+		CEST = cEST;
+	}
+
+	public String getIndEscala() {
+		return indEscala;
+	}
+
+	public void setIndEscala(String indEscala) {
+		this.indEscala = indEscala;
+	}
+
+	public String getCNPJFab() {
+		return CNPJFab;
+	}
+
+	public void setCNPJFab(String cNPJFab) {
+		CNPJFab = cNPJFab;
+	}
+
+	public String getcBenef() {
+		return cBenef;
+	}
+
+	public void setcBenef(String cBenef) {
+		this.cBenef = cBenef;
+	}
+
+	public String getEXTIPI() {
+		return EXTIPI;
+	}
+
+	public void setEXTIPI(String eXTIPI) {
+		EXTIPI = eXTIPI;
+	}
+
+	public String getCFOP() {
+		return CFOP;
+	}
+
+	public void setCFOP(String cFOP) {
+		CFOP = cFOP;
+	}
+
+	public String getuCom() {
+		return uCom;
+	}
+
+	public void setuCom(String uCom) {
+		this.uCom = uCom;
+	}
+
+	public String getqCom() {
+		return qCom;
+	}
+
+	public void setqCom(String qCom) {
+		this.qCom = qCom;
+	}
+
+	public String getvUnCom() {
+		return vUnCom;
+	}
+
+	public void setvUnCom(String vUnCom) {
+		this.vUnCom = vUnCom;
+	}
+
+	public String getvProd() {
+		return vProd;
+	}
+
+	public void setvProd(String vProd) {
+		this.vProd = vProd;
+	}
+
+	public String getcEANTrib() {
+		return cEANTrib;
+	}
+
+	public void setcEANTrib(String cEANTrib) {
+		this.cEANTrib = cEANTrib;
+	}
+
+	public String getuTrib() {
+		return uTrib;
+	}
+
+	public void setuTrib(String uTrib) {
+		this.uTrib = uTrib;
+	}
+
+	public String getqTrib() {
+		return qTrib;
+	}
+
+	public void setqTrib(String qTrib) {
+		this.qTrib = qTrib;
+	}
+
+	public String getvUnTrib() {
+		return vUnTrib;
+	}
+
+	public void setvUnTrib(String vUnTrib) {
+		this.vUnTrib = vUnTrib;
+	}
+
+	public String getvFrete() {
+		return vFrete;
+	}
+
+	public void setvFrete(String vFrete) {
+		this.vFrete = vFrete;
+	}
+
+	public String getvSeg() {
+		return vSeg;
+	}
+
+	public void setvSeg(String vSeg) {
+		this.vSeg = vSeg;
+	}
+
+	public String getvDesc() {
+		return vDesc;
+	}
+
+	public void setvDesc(String vDesc) {
+		this.vDesc = vDesc;
+	}
+
+	public String getvOutro() {
+		return vOutro;
+	}
+
+	public void setvOutro(String vOutro) {
+		this.vOutro = vOutro;
+	}
+
+	public String getIndTot() {
+		return indTot;
+	}
+
+	public void setIndTot(String indTot) {
+		this.indTot = indTot;
+	}
+
+	public NFeInfNFeDetProdDI getDI() {
+		return DI;
+	}
+
+	public void setDI(NFeInfNFeDetProdDI dI) {
+		DI = dI;
+	}
+
+	public List<NFeInfNFeDetProdDetExport> getDetExport() {
+		return detExport;
+	}
+
+	public void setDetExport(List<NFeInfNFeDetProdDetExport> detExport) {
+		this.detExport = detExport;
+	}
+
+	public String getxPed() {
+		return xPed;
+	}
+
+	public void setxPed(String xPed) {
+		this.xPed = xPed;
+	}
+
+	public String getnItemPed() {
+		return nItemPed;
+	}
+
+	public void setnItemPed(String nItemPed) {
+		this.nItemPed = nItemPed;
+	}
+
+	public String getnFCI() {
+		return nFCI;
+	}
+
+	public void setnFCI(String nFCI) {
+		this.nFCI = nFCI;
+	}
+
+	public List<NFeInfNFeDetProdRastro> getRastro() {
+		return rastro;
+	}
+
+	public void setRastro(List<NFeInfNFeDetProdRastro> rastro) {
+		this.rastro = rastro;
+	}
+
+	public NFeInfNFeDetProdVeicProd getVeicProd() {
+		return veicProd;
+	}
+
+	public void setVeicProd(NFeInfNFeDetProdVeicProd veicProd) {
+		this.veicProd = veicProd;
+	}
+
+	public NFeInfNFeDetProdMed getMed() {
+		return med;
+	}
+
+	public void setMed(NFeInfNFeDetProdMed med) {
+		this.med = med;
+	}
+
+	public List<NFeInfNFeDetProdArma> getArma() {
+		return arma;
+	}
+
+	public void setArma(List<NFeInfNFeDetProdArma> arma) {
+		this.arma = arma;
+	}
+
+	public NFeInfNFeDetProdComb getComb() {
+		return comb;
+	}
+
+	public void setComb(NFeInfNFeDetProdComb comb) {
+		this.comb = comb;
+	}
+
+	public String getnRECOPI() {
+		return nRECOPI;
+	}
+
+	public void setnRECOPI(String nRECOPI) {
+		this.nRECOPI = nRECOPI;
+	}
 
 }

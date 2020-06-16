@@ -1,14 +1,12 @@
 package com.github.prbrios.documentofiscal.nfe.inutilizacao;
 
-import com.github.prbrios.documentofiscal.nfe.inutilizacao.envio.InutNFe;
-import com.github.prbrios.documentofiscal.nfe.inutilizacao.retorno.RetInutNFe;
-import com.github.prbrios.documentofiscal.nfe.inutilizacao.retorno.RetInutNFeInfInut;
-import lombok.Data;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Data
+import com.github.prbrios.documentofiscal.nfe.inutilizacao.envio.InutNFe;
+import com.github.prbrios.documentofiscal.nfe.inutilizacao.retorno.RetInutNFe;
+
 @Root(name = "procInutNFe")
 public class ProcInutNFe {
 
@@ -20,5 +18,29 @@ public class ProcInutNFe {
 
     @Element(name = "retInutNFe", required = false)
     private RetInutNFe retInutNFe;
+
+	public String getVersao() {
+		return versao;
+	}
+
+	public void setVersao(String versao) {
+		this.versao = versao;
+	}
+
+	public InutNFe getInutNFe() {
+		return inutNFe;
+	}
+
+	public void setInutNFe(InutNFe inutNFe) {
+		this.inutNFe = inutNFe;
+	}
+
+	public RetInutNFe getRetInutNFe() {
+		return retInutNFe;
+	}
+
+	public void setRetInutNFe(RetInutNFe retInutNFe) {
+		this.retInutNFe = retInutNFe;
+	}
 
 }

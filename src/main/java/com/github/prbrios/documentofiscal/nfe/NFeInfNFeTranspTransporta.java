@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("transporta")
-@Data
 @Root(name = "transporta")
 public class NFeInfNFeTranspTransporta {
 
@@ -68,5 +66,61 @@ public class NFeInfNFeTranspTransporta {
         this.xMun = xMun;
         this.UF = UF;
     }
+
+	public String getCNPJ() {
+		return CNPJ;
+	}
+
+	public void setCNPJ(String cNPJ) {
+		CNPJ = cNPJ;
+	}
+
+	public String getCPF() {
+		return CPF;
+	}
+
+	public void setCPF(String cPF) {
+		CPF = cPF;
+	}
+
+	public String getxNome() {
+		return xNome;
+	}
+
+	public void setxNome(String xNome) {
+		this.xNome = xNome;
+	}
+
+	public String getIE() {
+		return IE;
+	}
+
+	public void setIE(String iE) {
+		IE = iE;
+	}
+
+	public String getxEnder() {
+		return xEnder;
+	}
+
+	public void setxEnder(String xEnder) {
+		this.xEnder = xEnder;
+	}
+
+	public String getxMun() {
+		return xMun;
+	}
+
+	public void setxMun(String xMun) {
+		this.xMun = xMun;
+	}
+
+	public String getUF() {
+		return UF;
+	}
+
+	public void setUF(String uF) {
+		UF = uF;
+	}
 
 }

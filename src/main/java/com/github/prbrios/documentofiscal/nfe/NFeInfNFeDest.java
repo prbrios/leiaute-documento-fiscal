@@ -1,15 +1,13 @@
 package com.github.prbrios.documentofiscal.nfe;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
+
 @JsonRootName("dest")
-@Data
 @Root(name = "dest")
 public class NFeInfNFeDest {
 
@@ -90,5 +88,85 @@ public class NFeInfNFeDest {
         this.IM = IM;
         this.email = email;
     }
+
+	public String getCNPJ() {
+		return CNPJ;
+	}
+
+	public void setCNPJ(String cNPJ) {
+		CNPJ = cNPJ;
+	}
+
+	public String getCPF() {
+		return CPF;
+	}
+
+	public void setCPF(String cPF) {
+		CPF = cPF;
+	}
+
+	public String getIdEstrangeiro() {
+		return idEstrangeiro;
+	}
+
+	public void setIdEstrangeiro(String idEstrangeiro) {
+		this.idEstrangeiro = idEstrangeiro;
+	}
+
+	public String getxNome() {
+		return xNome;
+	}
+
+	public void setxNome(String xNome) {
+		this.xNome = xNome;
+	}
+
+	public NFeInfNFeDestEnderDest getEnderDest() {
+		return enderDest;
+	}
+
+	public void setEnderDest(NFeInfNFeDestEnderDest enderDest) {
+		this.enderDest = enderDest;
+	}
+
+	public String getIndIEDest() {
+		return indIEDest;
+	}
+
+	public void setIndIEDest(String indIEDest) {
+		this.indIEDest = indIEDest;
+	}
+
+	public String getIE() {
+		return IE;
+	}
+
+	public void setIE(String iE) {
+		IE = iE;
+	}
+
+	public String getISUF() {
+		return ISUF;
+	}
+
+	public void setISUF(String iSUF) {
+		ISUF = iSUF;
+	}
+
+	public String getIM() {
+		return IM;
+	}
+
+	public void setIM(String iM) {
+		IM = iM;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
 }

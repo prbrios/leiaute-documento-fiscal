@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("icms00")
-@Data
 @Root(name = "ICMS00")
 public class NFeInfNFeDetImpostoICMSICMS00 {
 
@@ -75,5 +73,69 @@ public class NFeInfNFeDetImpostoICMSICMS00 {
         this.pFCP = pFCP;
         this.vFCP = vFCP;
     }
+
+	public String getOrig() {
+		return orig;
+	}
+
+	public void setOrig(String orig) {
+		this.orig = orig;
+	}
+
+	public String getCST() {
+		return CST;
+	}
+
+	public void setCST(String cST) {
+		CST = cST;
+	}
+
+	public String getModBC() {
+		return modBC;
+	}
+
+	public void setModBC(String modBC) {
+		this.modBC = modBC;
+	}
+
+	public String getvBC() {
+		return vBC;
+	}
+
+	public void setvBC(String vBC) {
+		this.vBC = vBC;
+	}
+
+	public String getpICMS() {
+		return pICMS;
+	}
+
+	public void setpICMS(String pICMS) {
+		this.pICMS = pICMS;
+	}
+
+	public String getvICMS() {
+		return vICMS;
+	}
+
+	public void setvICMS(String vICMS) {
+		this.vICMS = vICMS;
+	}
+
+	public String getpFCP() {
+		return pFCP;
+	}
+
+	public void setpFCP(String pFCP) {
+		this.pFCP = pFCP;
+	}
+
+	public String getvFCP() {
+		return vFCP;
+	}
+
+	public void setvFCP(String vFCP) {
+		this.vFCP = vFCP;
+	}
 
 }

@@ -1,14 +1,12 @@
 package com.github.prbrios.documentofiscal.cte;
 
-import lombok.Data;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
-import java.util.ArrayList;
-import java.util.List;
-
-@Data
 @Root(name = "indUnidTransp")
 public class CTeInfCteInfCTeNormInfDocInfOutrosInfUnidTransp {
 
@@ -28,5 +26,45 @@ public class CTeInfCteInfCTeNormInfDocInfOutrosInfUnidTransp {
 
 	@Element(name = "qtdRat", required = false)
 	private String qtdRat;
+
+	public String getTpUnidTransp() {
+		return tpUnidTransp;
+	}
+
+	public void setTpUnidTransp(String tpUnidTransp) {
+		this.tpUnidTransp = tpUnidTransp;
+	}
+
+	public String getIdUnidTransp() {
+		return idUnidTransp;
+	}
+
+	public void setIdUnidTransp(String idUnidTransp) {
+		this.idUnidTransp = idUnidTransp;
+	}
+
+	public List<CTeInfCteInfCTeNormInfDocInfOutrosInfUnidTranspLacUnidTransp> getLacUnidTransp() {
+		return lacUnidTransp;
+	}
+
+	public void setLacUnidTransp(List<CTeInfCteInfCTeNormInfDocInfOutrosInfUnidTranspLacUnidTransp> lacUnidTransp) {
+		this.lacUnidTransp = lacUnidTransp;
+	}
+
+	public List<CTeInfCteInfCTeNormInfDocInfOutrosInfUnidTranspInfUnidCarga> getInfUnidCarga() {
+		return infUnidCarga;
+	}
+
+	public void setInfUnidCarga(List<CTeInfCteInfCTeNormInfDocInfOutrosInfUnidTranspInfUnidCarga> infUnidCarga) {
+		this.infUnidCarga = infUnidCarga;
+	}
+
+	public String getQtdRat() {
+		return qtdRat;
+	}
+
+	public void setQtdRat(String qtdRat) {
+		this.qtdRat = qtdRat;
+	}
 
 }

@@ -1,8 +1,5 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -12,7 +9,6 @@ import org.simpleframework.xml.Root;
  * @author prbrios@gmail.com
  * @since 01/10/2019
  */
-@Data
 @Root(name = "DescAcrEntr")
 public class CFeInfCFeTotalDescAcrEntr {
 
@@ -47,4 +43,29 @@ public class CFeInfCFeTotalDescAcrEntr {
         this.vAcresSubtot = vAcresSubtot;
         this.vCFeLei12741 = vCFeLei12741;
     }
+
+	public String getvDescSubtot() {
+		return vDescSubtot;
+	}
+
+	public void setvDescSubtot(String vDescSubtot) {
+		this.vDescSubtot = vDescSubtot;
+	}
+
+	public String getvAcresSubtot() {
+		return vAcresSubtot;
+	}
+
+	public void setvAcresSubtot(String vAcresSubtot) {
+		this.vAcresSubtot = vAcresSubtot;
+	}
+
+	public String getvCFeLei12741() {
+		return vCFeLei12741;
+	}
+
+	public void setvCFeLei12741(String vCFeLei12741) {
+		this.vCFeLei12741 = vCFeLei12741;
+	}
+    
 }

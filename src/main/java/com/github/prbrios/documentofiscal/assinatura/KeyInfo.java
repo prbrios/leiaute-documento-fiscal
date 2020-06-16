@@ -3,7 +3,9 @@ package com.github.prbrios.documentofiscal.assinatura;
 import org.simpleframework.xml.Element;
 
 public class KeyInfo {
-    private static final long serialVersionUID = 7949034334524924221L;
+
+    @SuppressWarnings("unused")
+	private static final long serialVersionUID = 7949034334524924221L;
 
     @Element(name = "X509Data", required = false)
     private X509Data data;

@@ -1,18 +1,11 @@
 package com.github.prbrios.documentofiscal.cte;
 
-import com.github.prbrios.documentofiscal.DFPersister;
-import com.github.prbrios.documentofiscal.assinatura.Signature;
-import lombok.Data;
 import org.simpleframework.xml.Element;
-import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Namespace;
 import org.simpleframework.xml.Root;
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
+import com.github.prbrios.documentofiscal.assinatura.Signature;
 
-@Data
 @Root(name = "CTe")
 @Namespace(reference = "http://www.portalfiscal.inf.br/cte")
 public class CTe {
@@ -25,5 +18,30 @@ public class CTe {
 
 	@Element(name = "Signature", required = false)
 	private Signature signature;
+
+	public CTeInfCte getInfCte() {
+		return infCte;
+	}
+
+	public void setInfCte(CTeInfCte infCte) {
+		this.infCte = infCte;
+	}
+
+	public CTeInfCTeSupl getInfCTeSupl() {
+		return infCTeSupl;
+	}
+
+	public void setInfCTeSupl(CTeInfCTeSupl infCTeSupl) {
+		this.infCTeSupl = infCTeSupl;
+	}
+
+	public Signature getSignature() {
+		return signature;
+	}
+
+	public void setSignature(Signature signature) {
+		this.signature = signature;
+	}
+	
 
 }

@@ -1,7 +1,5 @@
 package com.github.prbrios.documentofiscal.cfe.cancelamento;
 
-import lombok.Data;
-import lombok.Getter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -11,7 +9,6 @@ import org.simpleframework.xml.Root;
  * @author prbrios@gmail.com
  * @since 01/10/2019
  */
-@Data
 @Root(name = "total")
 public class CFeCancInfCFeTotal {
 
@@ -30,4 +27,13 @@ public class CFeCancInfCFeTotal {
     public CFeCancInfCFeTotal(String vCFe) {
         this.vCFe = vCFe;
     }
+
+	public String getvCFe() {
+		return vCFe;
+	}
+
+	public void setvCFe(String vCFe) {
+		this.vCFe = vCFe;
+	}
+    
 }

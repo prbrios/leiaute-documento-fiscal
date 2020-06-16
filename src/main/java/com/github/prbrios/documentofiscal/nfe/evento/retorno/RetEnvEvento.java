@@ -5,9 +5,6 @@ import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Namespace;
 import org.simpleframework.xml.Root;
 
-import lombok.Data;
-
-@Data
 @Root(name = "retEnvEvento")
 @Namespace(reference = "http://www.portalfiscal.inf.br/nfe")
 public class RetEnvEvento {
@@ -35,5 +32,69 @@ public class RetEnvEvento {
 
 	@Element(name = "retEvento", required = false)
 	private RetEnvEventoRetEvento retEvento;
+
+	public String getVersao() {
+		return versao;
+	}
+
+	public void setVersao(String versao) {
+		this.versao = versao;
+	}
+
+	public String getIdLote() {
+		return idLote;
+	}
+
+	public void setIdLote(String idLote) {
+		this.idLote = idLote;
+	}
+
+	public String getTpAmb() {
+		return tpAmb;
+	}
+
+	public void setTpAmb(String tpAmb) {
+		this.tpAmb = tpAmb;
+	}
+
+	public String getVerAplic() {
+		return verAplic;
+	}
+
+	public void setVerAplic(String verAplic) {
+		this.verAplic = verAplic;
+	}
+
+	public String getcOrgao() {
+		return cOrgao;
+	}
+
+	public void setcOrgao(String cOrgao) {
+		this.cOrgao = cOrgao;
+	}
+
+	public String getcStat() {
+		return cStat;
+	}
+
+	public void setcStat(String cStat) {
+		this.cStat = cStat;
+	}
+
+	public String getxMotivo() {
+		return xMotivo;
+	}
+
+	public void setxMotivo(String xMotivo) {
+		this.xMotivo = xMotivo;
+	}
+
+	public RetEnvEventoRetEvento getRetEvento() {
+		return retEvento;
+	}
+
+	public void setRetEvento(RetEnvEventoRetEvento retEvento) {
+		this.retEvento = retEvento;
+	}
 
 }

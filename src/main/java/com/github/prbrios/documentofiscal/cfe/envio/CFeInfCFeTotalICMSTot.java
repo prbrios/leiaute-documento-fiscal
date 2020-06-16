@@ -1,7 +1,5 @@
 package com.github.prbrios.documentofiscal.cfe.envio;
 
-import lombok.Data;
-import lombok.Getter;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -11,7 +9,6 @@ import org.simpleframework.xml.Root;
  * @author prbrios@gmail.com
  * @since 01/10/2019
  */
-@Data
 @Root(name = "ICMSTot")
 public class CFeInfCFeTotalICMSTot {
 
@@ -86,4 +83,69 @@ public class CFeInfCFeTotalICMSTot {
         this.vCOFINSST = vCOFINSST;
         this.vOutro = vOutro;
     }
+
+	public String getvICMS() {
+		return vICMS;
+	}
+
+	public void setvICMS(String vICMS) {
+		this.vICMS = vICMS;
+	}
+
+	public String getvProd() {
+		return vProd;
+	}
+
+	public void setvProd(String vProd) {
+		this.vProd = vProd;
+	}
+
+	public String getvDesc() {
+		return vDesc;
+	}
+
+	public void setvDesc(String vDesc) {
+		this.vDesc = vDesc;
+	}
+
+	public String getvPIS() {
+		return vPIS;
+	}
+
+	public void setvPIS(String vPIS) {
+		this.vPIS = vPIS;
+	}
+
+	public String getvCOFINS() {
+		return vCOFINS;
+	}
+
+	public void setvCOFINS(String vCOFINS) {
+		this.vCOFINS = vCOFINS;
+	}
+
+	public String getvPISST() {
+		return vPISST;
+	}
+
+	public void setvPISST(String vPISST) {
+		this.vPISST = vPISST;
+	}
+
+	public String getvCOFINSST() {
+		return vCOFINSST;
+	}
+
+	public void setvCOFINSST(String vCOFINSST) {
+		this.vCOFINSST = vCOFINSST;
+	}
+
+	public String getvOutro() {
+		return vOutro;
+	}
+
+	public void setvOutro(String vOutro) {
+		this.vOutro = vOutro;
+	}
+    
 }

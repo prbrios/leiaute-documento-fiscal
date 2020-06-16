@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("issqn")
-@Data
 @Root(name = "ISSQN")
 public class NFeInfNFeDetImpostoISSQN {
 
@@ -131,5 +129,133 @@ public class NFeInfNFeDetImpostoISSQN {
         this.nProcesso = nProcesso;
         this.indIncentivo = indIncentivo;
     }
+
+	public String getvBC() {
+		return vBC;
+	}
+
+	public void setvBC(String vBC) {
+		this.vBC = vBC;
+	}
+
+	public String getvAliq() {
+		return vAliq;
+	}
+
+	public void setvAliq(String vAliq) {
+		this.vAliq = vAliq;
+	}
+
+	public String getvISSQN() {
+		return vISSQN;
+	}
+
+	public void setvISSQN(String vISSQN) {
+		this.vISSQN = vISSQN;
+	}
+
+	public String getcMunFG() {
+		return cMunFG;
+	}
+
+	public void setcMunFG(String cMunFG) {
+		this.cMunFG = cMunFG;
+	}
+
+	public String getcListServ() {
+		return cListServ;
+	}
+
+	public void setcListServ(String cListServ) {
+		this.cListServ = cListServ;
+	}
+
+	public String getvDeducao() {
+		return vDeducao;
+	}
+
+	public void setvDeducao(String vDeducao) {
+		this.vDeducao = vDeducao;
+	}
+
+	public String getvOutro() {
+		return vOutro;
+	}
+
+	public void setvOutro(String vOutro) {
+		this.vOutro = vOutro;
+	}
+
+	public String getvDescIncond() {
+		return vDescIncond;
+	}
+
+	public void setvDescIncond(String vDescIncond) {
+		this.vDescIncond = vDescIncond;
+	}
+
+	public String getvDescCond() {
+		return vDescCond;
+	}
+
+	public void setvDescCond(String vDescCond) {
+		this.vDescCond = vDescCond;
+	}
+
+	public String getvISSRet() {
+		return vISSRet;
+	}
+
+	public void setvISSRet(String vISSRet) {
+		this.vISSRet = vISSRet;
+	}
+
+	public String getIndISS() {
+		return indISS;
+	}
+
+	public void setIndISS(String indISS) {
+		this.indISS = indISS;
+	}
+
+	public String getcServico() {
+		return cServico;
+	}
+
+	public void setcServico(String cServico) {
+		this.cServico = cServico;
+	}
+
+	public String getcMun() {
+		return cMun;
+	}
+
+	public void setcMun(String cMun) {
+		this.cMun = cMun;
+	}
+
+	public String getcPais() {
+		return cPais;
+	}
+
+	public void setcPais(String cPais) {
+		this.cPais = cPais;
+	}
+
+	public String getnProcesso() {
+		return nProcesso;
+	}
+
+	public void setnProcesso(String nProcesso) {
+		this.nProcesso = nProcesso;
+	}
+
+	public String getIndIncentivo() {
+		return indIncentivo;
+	}
+
+	public void setIndIncentivo(String indIncentivo) {
+		this.indIncentivo = indIncentivo;
+	}
 
 }

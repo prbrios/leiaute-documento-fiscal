@@ -3,12 +3,10 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("ipi")
-@Data
 @Root(name = "IPI")
 public class NFeInfNFeDetImpostoDevolIPI {
 
@@ -26,5 +24,13 @@ public class NFeInfNFeDetImpostoDevolIPI {
     public NFeInfNFeDetImpostoDevolIPI(String vIPIDevol) {
         this.vIPIDevol = vIPIDevol;
     }
+
+	public String getvIPIDevol() {
+		return vIPIDevol;
+	}
+
+	public void setvIPIDevol(String vIPIDevol) {
+		this.vIPIDevol = vIPIDevol;
+	}
 
 }

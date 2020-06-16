@@ -3,7 +3,6 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
-import lombok.Data;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
@@ -12,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @JsonRootName("infadic")
-@Data
 @Root(name = "infAdic")
 public class NFeInfNFeInfAdic {
 
@@ -58,5 +56,45 @@ public class NFeInfNFeInfAdic {
         this.obsFisco = obsFisco;
         this.procRef = procRef;
     }
+
+	public String getInfAdFisco() {
+		return infAdFisco;
+	}
+
+	public void setInfAdFisco(String infAdFisco) {
+		this.infAdFisco = infAdFisco;
+	}
+
+	public String getInfCpl() {
+		return infCpl;
+	}
+
+	public void setInfCpl(String infCpl) {
+		this.infCpl = infCpl;
+	}
+
+	public List<NFeInfNFeInfAdicObsCont> getObsCont() {
+		return obsCont;
+	}
+
+	public void setObsCont(List<NFeInfNFeInfAdicObsCont> obsCont) {
+		this.obsCont = obsCont;
+	}
+
+	public List<NFeInfNFeInfAdicObsFisco> getObsFisco() {
+		return obsFisco;
+	}
+
+	public void setObsFisco(List<NFeInfNFeInfAdicObsFisco> obsFisco) {
+		this.obsFisco = obsFisco;
+	}
+
+	public List<NFeInfNFeInfAdicProcRef> getProcRef() {
+		return procRef;
+	}
+
+	public void setProcRef(List<NFeInfNFeInfAdicProcRef> procRef) {
+		this.procRef = procRef;
+	}
 
 }
