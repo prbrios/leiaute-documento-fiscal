@@ -16,7 +16,7 @@ public class NFeInfNFePagDetPag {
     private String indPag;
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
-    @JsonProperty("tpg")
+    @JsonProperty("tpag")
     @Element(name = "tPag", required = false)
     private String tPag;
 

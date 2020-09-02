@@ -15,11 +15,7 @@ public class Chave {
     private String cNf;
     private String tpEmis;
 
-    public Chave(String cUF, String cnpj, String mod, String serie, String nnf, String tpEmis, String cnf) {
-
-        Date now = new Date();
-        SimpleDateFormat format = new SimpleDateFormat("yyMM");
-        String aamm = format.format(now);
+    public Chave(String cUF, String aamm, String cnpj, String mod, String serie, String nnf, String tpEmis, String cnf) {
 
         while (cUF.length()<2) { cUF = "0" + cUF; }
         this.cUf = cUF;
