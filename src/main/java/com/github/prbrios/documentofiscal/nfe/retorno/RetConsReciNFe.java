@@ -1,67 +1,48 @@
 package com.github.prbrios.documentofiscal.nfe.retorno;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
+import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonRootName;
+@Root(name = "retConsReciNFe")
+public class RetConsReciNFe {
 
-@JsonRootName("retenvinfe")
-@Root(name = "retEnviNFe")
-public class RetEnviNFe {
-
-	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	@JsonProperty("versao")
-	@Attribute(name="versao", required = false)
+	@Attribute(name = "versao", required = false)
 	private String versao;
-
-	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	@JsonProperty("tpamb")
+	
 	@Element(name = "tpAmb", required = false)
 	private String tpAmb;
-
-	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	@JsonProperty("veraplic")
+	
 	@Element(name = "verAplic", required = false)
 	private String verAplic;
-
-	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	@JsonProperty("cstat")
+	
+	@Element(name = "nRec", required = false)
+	private String nRec;
+	
 	@Element(name = "cStat", required = false)
 	private String cStat;
-
-	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	@JsonProperty("xmotivo")
+	
 	@Element(name = "xMotivo", required = false)
 	private String xMotivo;
-
-	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	@JsonProperty("cuf")
+	
 	@Element(name = "cUF", required = false)
 	private String cUF;
-
-	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	@JsonProperty("dhrecbto")
+	
 	@Element(name = "dhRecbto", required = false)
 	private String dhRecbto;
-
-	@Element(name = "infRec", required = false)
-	private RetEnviNFeInfRec infRec;
-
-	@JsonInclude(JsonInclude.Include.NON_EMPTY)
-	@JsonProperty("protnfe")
-	@Element(name = "protNFe", required = false)
-	private RetEnviNFeProtNFe protNFe;
-
-	public RetEnviNFeInfRec getInfRec() {
-		return infRec;
-	}
-
-	public void setInfRec(RetEnviNFeInfRec infRec) {
-		this.infRec = infRec;
-	}
+	
+	@Element(name = "cMsg", required = false)
+	private String cMsg;
+	
+	@Element(name = "xMsg", required = false)
+	private String xMsg;
+	
+	@ElementList(name = "protNFe", required = false, inline = true)
+	private List<RetEnviNFeProtNFe> protNFe = new ArrayList<RetEnviNFeProtNFe>();
 
 	public String getVersao() {
 		return versao;
@@ -85,6 +66,14 @@ public class RetEnviNFe {
 
 	public void setVerAplic(String verAplic) {
 		this.verAplic = verAplic;
+	}
+
+	public String getnRec() {
+		return nRec;
+	}
+
+	public void setnRec(String nRec) {
+		this.nRec = nRec;
 	}
 
 	public String getcStat() {
@@ -119,12 +108,28 @@ public class RetEnviNFe {
 		this.dhRecbto = dhRecbto;
 	}
 
-	public RetEnviNFeProtNFe getProtNFe() {
+	public String getcMsg() {
+		return cMsg;
+	}
+
+	public void setcMsg(String cMsg) {
+		this.cMsg = cMsg;
+	}
+
+	public String getxMsg() {
+		return xMsg;
+	}
+
+	public void setxMsg(String xMsg) {
+		this.xMsg = xMsg;
+	}
+
+	public List<RetEnviNFeProtNFe> getProtNFe() {
 		return protNFe;
 	}
 
-	public void setProtNFe(RetEnviNFeProtNFe protNFe) {
+	public void setProtNFe(List<RetEnviNFeProtNFe> protNFe) {
 		this.protNFe = protNFe;
 	}
-
+	
 }

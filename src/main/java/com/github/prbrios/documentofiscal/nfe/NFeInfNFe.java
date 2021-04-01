@@ -87,6 +87,11 @@ public class NFeInfNFe {
     private NFeInfNFePag pag;
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("infintermed")
+    @Element(name = "infIntermed", required = false)
+    private NFeInfNFeInfIntermed infIntermed;
+    
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("infadic")
     @Element(name = "infAdic", required = false)
     private NFeInfNFeInfAdic infAdic;
@@ -135,7 +140,7 @@ public class NFeInfNFe {
      * @param cana
      * @param infRespTec
      */
-    public NFeInfNFe(String versao, String id, NFeInfNFeIde ide, NFeInfNFeEmit emit, NFeInfNFeAvulsa avulsa, NFeInfNFeDest dest, NFeInfNFeRetirada retirada, NFeInfNFeEntrega entrega, List<NFeInfNFeAutXML> autXML, List<NFeInfNFeDet> det, NFeInfNFeTotal total, NFeInfNFeTransp transp, NFeInfNFeCobr cobr, NFeInfNFePag pag, NFeInfNFeInfAdic infAdic, NFeInfNFeExporta exporta, NFeInfNFeCompra compra, NFeInfNFeCana cana, NFeInfNFeInfRespTec infRespTec) {
+    public NFeInfNFe(String versao, String id, NFeInfNFeIde ide, NFeInfNFeEmit emit, NFeInfNFeAvulsa avulsa, NFeInfNFeDest dest, NFeInfNFeRetirada retirada, NFeInfNFeEntrega entrega, List<NFeInfNFeAutXML> autXML, List<NFeInfNFeDet> det, NFeInfNFeTotal total, NFeInfNFeTransp transp, NFeInfNFeCobr cobr, NFeInfNFePag pag, NFeInfNFeInfIntermed infIntermed, NFeInfNFeInfAdic infAdic, NFeInfNFeExporta exporta, NFeInfNFeCompra compra, NFeInfNFeCana cana, NFeInfNFeInfRespTec infRespTec) {
         this.versao = versao;
         this.id = id;
         this.ide = ide;
@@ -150,6 +155,7 @@ public class NFeInfNFe {
         this.transp = transp;
         this.cobr = cobr;
         this.pag = pag;
+        this.infIntermed = infIntermed;
         this.infAdic = infAdic;
         this.exporta = exporta;
         this.compra = compra;
@@ -267,6 +273,14 @@ public class NFeInfNFe {
 
 	public void setPag(NFeInfNFePag pag) {
 		this.pag = pag;
+	}
+
+	public NFeInfNFeInfIntermed getInfIntermed() {
+		return infIntermed;
+	}
+
+	public void setInfIntermed(NFeInfNFeInfIntermed infIntermed) {
+		this.infIntermed = infIntermed;
 	}
 
 	public NFeInfNFeInfAdic getInfAdic() {

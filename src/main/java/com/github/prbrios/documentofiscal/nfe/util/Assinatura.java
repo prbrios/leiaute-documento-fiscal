@@ -15,6 +15,7 @@ import javax.xml.crypto.dsig.spec.TransformParameterSpec;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
@@ -43,8 +44,13 @@ public class Assinatura {
     
     // Elementos do Reinf
     // - evtInfoContri
-    
-    private static final String[] ELEMENTOS_ASSINAVEIS = new String[]{"infEvento", "infCanc", "infNFe", "infInut", "infMDFe", "infCte", "evtInfoContri"};
+
+    // Elementos NFS-e
+    // - InfRps
+    // - LoteRps
+    // - ConsultarSituacaoLoteRpsEnvio
+
+    private static final String[] ELEMENTOS_ASSINAVEIS = new String[]{"infEvento", "infCanc", "infNFe", "infInut", "infMDFe", "infCte", "evtInfoContri", "InfRps", "LoteRps", "ConsultarSituacaoLoteRpsEnvio"};
 
     public String assinar(final String conteudoXml) throws Exception {
         return this.assinar(conteudoXml, Assinatura.ELEMENTOS_ASSINAVEIS);
@@ -100,6 +106,38 @@ public class Assinatura {
 
         final KeyStore.PasswordProtection passwordProtection = new KeyStore.PasswordProtection(this.senha.toCharArray());
         return (KeyStore.PrivateKeyEntry) keyStoreCertificado.getEntry(keyStoreCertificado.aliases().nextElement(), passwordProtection);
+    }
+    
+    public String assinarRaiz(final String xmlReader) throws Exception {
+    	
+    	final KeyStore.PrivateKeyEntry keyEntry = this.getPrivateKeyEntry();
+        final XMLSignatureFactory signatureFactory = XMLSignatureFactory.getInstance("DOM");
+        
+        final List<Transform> transforms = new ArrayList<>(2);
+        transforms.add(signatureFactory.newTransform(Transform.ENVELOPED, (TransformParameterSpec) null));
+        transforms.add(signatureFactory.newTransform(Assinatura.C14N_TRANSFORM_METHOD, (TransformParameterSpec) null));
+        
+        final KeyInfoFactory keyInfoFactory = signatureFactory.getKeyInfoFactory();
+        final X509Data x509Data = keyInfoFactory.newX509Data(Collections.singletonList((X509Certificate) keyEntry.getCertificate()));
+        final KeyInfo keyInfo = keyInfoFactory.newKeyInfo(Collections.singletonList(x509Data));
+        final DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
+        documentBuilderFactory.setNamespaceAware(true);
+        final Document document = documentBuilderFactory.newDocumentBuilder().parse(new InputSource(new StringReader(xmlReader)));
+
+        
+        Reference ref = signatureFactory.newReference("", signatureFactory.newDigestMethod(DigestMethod.SHA1, null),transforms, null, null);
+        SignedInfo si = signatureFactory.newSignedInfo(signatureFactory.newCanonicalizationMethod(CanonicalizationMethod.INCLUSIVE,(C14NMethodParameterSpec) null),signatureFactory.newSignatureMethod(SignatureMethod.RSA_SHA1,null),Collections.singletonList(ref));
+        DOMSignContext dsc = new DOMSignContext(keyEntry.getPrivateKey(), document.getDocumentElement());
+        XMLSignature signature = signatureFactory.newXMLSignature(si, keyInfo);
+        signature.sign(dsc);
+        
+        StringWriter sw = new StringWriter();
+        final Transformer transformer = TransformerFactory.newInstance().newTransformer();
+        transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
+        transformer.setOutputProperty(OutputKeys.ENCODING, "ISO-8859-1");
+        transformer.transform(new DOMSource(document), new StreamResult(sw));
+        
+        return sw.toString();
     }
 
 }

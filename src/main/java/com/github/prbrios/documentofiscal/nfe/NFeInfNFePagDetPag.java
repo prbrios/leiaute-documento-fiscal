@@ -21,6 +21,11 @@ public class NFeInfNFePagDetPag {
     private String tPag;
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("xpag")
+    @Element(name = "xPag", required = false)
+    private String xPag;
+    
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("vpag")
     @Element(name = "vPag", required = false)
     private String vPag;
@@ -60,6 +65,14 @@ public class NFeInfNFePagDetPag {
 
 	public void settPag(String tPag) {
 		this.tPag = tPag;
+	}
+
+	public String getxPag() {
+		return xPag;
+	}
+
+	public void setxPag(String xPag) {
+		this.xPag = xPag;
 	}
 
 	public String getvPag() {

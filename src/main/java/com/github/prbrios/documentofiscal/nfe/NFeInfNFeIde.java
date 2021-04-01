@@ -105,6 +105,11 @@ public class NFeInfNFeIde {
     private String indPres;
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("indintermed")
+    @Element(name = "indIntermed", required = false)
+    private String indIntermed;
+
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("procemi")
     @Element(name = "procEmi", required = false)
     private String procEmi;
@@ -157,7 +162,7 @@ public class NFeInfNFeIde {
      * @param xJust
      * @param nFref
      */
-    public NFeInfNFeIde(String cUF, String cNF, String natOp, String mod, String serie, String nNF, String dhEmi, String dhSaiEnt, String tpNF, String idDest, String cMunFG, String tpImp, String tpEmis, String cDV, String tpAmb, String finNFe, String indFinal, String indPres, String procEmi, String verProc, String dhCont, String xJust, List<NFeInfNFeIdeNFref> nFref) {
+    public NFeInfNFeIde(String cUF, String cNF, String natOp, String mod, String serie, String nNF, String dhEmi, String dhSaiEnt, String tpNF, String idDest, String cMunFG, String tpImp, String tpEmis, String cDV, String tpAmb, String finNFe, String indFinal, String indPres, String indIntermed, String procEmi, String verProc, String dhCont, String xJust, List<NFeInfNFeIdeNFref> nFref) {
         this.cUF = cUF;
         this.cNF = cNF;
         this.natOp = natOp;
@@ -176,6 +181,7 @@ public class NFeInfNFeIde {
         this.finNFe = finNFe;
         this.indFinal = indFinal;
         this.indPres = indPres;
+        this.indIntermed = indIntermed;
         this.procEmi = procEmi;
         this.verProc = verProc;
         this.dhCont = dhCont;
@@ -325,6 +331,14 @@ public class NFeInfNFeIde {
 
 	public void setIndPres(String indPres) {
 		this.indPres = indPres;
+	}
+
+	public String getIndIntermed() {
+		return indIntermed;
+	}
+
+	public void setIndIntermed(String indIntermed) {
+		this.indIntermed = indIntermed;
 	}
 
 	public String getProcEmi() {
