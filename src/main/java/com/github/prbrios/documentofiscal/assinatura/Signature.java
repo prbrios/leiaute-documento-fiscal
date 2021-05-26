@@ -1,11 +1,15 @@
 package com.github.prbrios.documentofiscal.assinatura;
 
+import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Namespace;
 
 @Namespace(reference = "http://www.w3.org/2000/09/xmldsig#")
 public class Signature {
-
+	
+	@Attribute(name = "Id", required = false)
+	private String id;
+	
     @Element(name = "SignedInfo", required = false)
     private SignedInfo signedInfo;
 
@@ -14,6 +18,14 @@ public class Signature {
 
     @Element(name = "KeyInfo", required = false)
     private KeyInfo keyInfo;
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
 
 	public SignedInfo getSignedInfo() {
 		return signedInfo;
