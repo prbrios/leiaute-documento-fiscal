@@ -26,7 +26,7 @@ public class NFeInfNFeEntrega {
     private String xNome;
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
-    @JsonProperty("xlogr")
+    @JsonProperty("xlgr")
     @Element(name = "xLgr", required = false)
     private String xLgr;
 
