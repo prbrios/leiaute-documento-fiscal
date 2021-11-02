@@ -75,6 +75,21 @@ public class NFeInfNFeDetImpostoICMSICMS51 {
     @Element(name = "vFCP", required = false)
     private String vFCP;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("pfcpdif")
+    @Element(name = "pFCPDif", required = false)
+    private String pFCPDif;
+    
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("vfcpdif")
+    @Element(name = "vFCPDif", required = false)
+    private String vFCPDif;
+    
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("vfcpefet")
+    @Element(name = "vFCPEfet", required = false)
+    private String vFCPEfet;
+    
     public NFeInfNFeDetImpostoICMSICMS51() {}
 
     /**
@@ -93,6 +108,7 @@ public class NFeInfNFeDetImpostoICMSICMS51 {
      * @param pFCP
      * @param vFCP
      */
+    @Deprecated
     public NFeInfNFeDetImpostoICMSICMS51(String orig, String CST, String modBC, String pRedBC, String vBC, String pICMS, String vICMSOp, String pDif, String vICMSDif, String vICMS, String vBCFCP, String pFCP, String vFCP) {
         this.orig = orig;
         this.CST = CST;
@@ -108,6 +124,44 @@ public class NFeInfNFeDetImpostoICMSICMS51 {
         this.pFCP = pFCP;
         this.vFCP = vFCP;
     }
+    
+    /**
+     * 
+     * @param orig
+     * @param cST
+     * @param modBC
+     * @param pRedBC
+     * @param vBC
+     * @param pICMS
+     * @param vICMSOp
+     * @param pDif
+     * @param vICMSDif
+     * @param vICMS
+     * @param vBCFCP
+     * @param pFCP
+     * @param vFCP
+     * @param pFCPDif
+     * @param vFCPDif
+     * @param vFCPEfet
+     */
+	public NFeInfNFeDetImpostoICMSICMS51(String orig, String cST, String modBC, String pRedBC, String vBC, String pICMS, String vICMSOp, String pDif, String vICMSDif, String vICMS, String vBCFCP, String pFCP, String vFCP, String pFCPDif, String vFCPDif, String vFCPEfet) {
+		this.orig = orig;
+		this.CST = cST;
+		this.modBC = modBC;
+		this.pRedBC = pRedBC;
+		this.vBC = vBC;
+		this.pICMS = pICMS;
+		this.vICMSOp = vICMSOp;
+		this.pDif = pDif;
+		this.vICMSDif = vICMSDif;
+		this.vICMS = vICMS;
+		this.vBCFCP = vBCFCP;
+		this.pFCP = pFCP;
+		this.vFCP = vFCP;
+		this.pFCPDif = pFCPDif;
+		this.vFCPDif = vFCPDif;
+		this.vFCPEfet = vFCPEfet;
+	}
 
 	public String getOrig() {
 		return orig;
@@ -211,6 +265,30 @@ public class NFeInfNFeDetImpostoICMSICMS51 {
 
 	public void setvFCP(String vFCP) {
 		this.vFCP = vFCP;
+	}
+
+	public String getpFCPDif() {
+		return pFCPDif;
+	}
+
+	public void setpFCPDif(String pFCPDif) {
+		this.pFCPDif = pFCPDif;
+	}
+
+	public String getvFCPDif() {
+		return vFCPDif;
+	}
+
+	public void setvFCPDif(String vFCPDif) {
+		this.vFCPDif = vFCPDif;
+	}
+
+	public String getvFCPEfet() {
+		return vFCPEfet;
+	}
+
+	public void setvFCPEfet(String vFCPEfet) {
+		this.vFCPEfet = vFCPEfet;
 	}
 
 }

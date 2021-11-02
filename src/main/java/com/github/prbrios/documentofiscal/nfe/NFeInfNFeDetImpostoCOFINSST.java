@@ -34,6 +34,11 @@ public class NFeInfNFeDetImpostoCOFINSST {
     @JsonProperty("vcofins")
     @Element(name = "vCOFINS", required = false)
     private String vCOFINS;
+    
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("indsomacofinsst")
+    @Element(name = "indSomaCOFINSST", required = false)
+    private String indSomaCOFINSST;
 
     public NFeInfNFeDetImpostoCOFINSST() {}
 
@@ -45,6 +50,7 @@ public class NFeInfNFeDetImpostoCOFINSST {
      * @param vAliqProd
      * @param vCOFINS
      */
+    @Deprecated
     public NFeInfNFeDetImpostoCOFINSST(String vBC, String pCOFINS, String qBCProd, String vAliqProd, String vCOFINS) {
         this.vBC = vBC;
         this.pCOFINS = pCOFINS;
@@ -52,6 +58,24 @@ public class NFeInfNFeDetImpostoCOFINSST {
         this.vAliqProd = vAliqProd;
         this.vCOFINS = vCOFINS;
     }
+
+    /**
+     * 
+     * @param vBC
+     * @param pCOFINS
+     * @param qBCProd
+     * @param vAliqProd
+     * @param vCOFINS
+     * @param indSomaCOFINSST
+     */
+	public NFeInfNFeDetImpostoCOFINSST(String vBC, String pCOFINS, String qBCProd, String vAliqProd, String vCOFINS, String indSomaCOFINSST) {
+		this.vBC = vBC;
+		this.pCOFINS = pCOFINS;
+		this.qBCProd = qBCProd;
+		this.vAliqProd = vAliqProd;
+		this.vCOFINS = vCOFINS;
+		this.indSomaCOFINSST = indSomaCOFINSST;
+	}
 
 	public String getvBC() {
 		return vBC;
@@ -91,6 +115,14 @@ public class NFeInfNFeDetImpostoCOFINSST {
 
 	public void setvCOFINS(String vCOFINS) {
 		this.vCOFINS = vCOFINS;
+	}
+
+	public String getIndSomaCOFINSST() {
+		return indSomaCOFINSST;
+	}
+
+	public void setIndSomaCOFINSST(String indSomaCOFINSST) {
+		this.indSomaCOFINSST = indSomaCOFINSST;
 	}
 
 }

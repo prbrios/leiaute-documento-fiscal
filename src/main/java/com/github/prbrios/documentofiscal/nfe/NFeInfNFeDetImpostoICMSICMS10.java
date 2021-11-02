@@ -99,6 +99,16 @@ public class NFeInfNFeDetImpostoICMSICMS10 {
     @JsonProperty("vfcpst")
     @Element(name = "vFCPST", required = false)
     private String vFCPST;
+    
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("vicmsstdeson")
+    @Element(name = "vICMSSTDeson", required = false)
+    private String vICMSSTDeson;
+    
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("motdesicmsst")
+    @Element(name = "motDesICMSST", required = false)
+    private String motDesICMSST;
 
     public NFeInfNFeDetImpostoICMSICMS10() {}
 
@@ -123,6 +133,7 @@ public class NFeInfNFeDetImpostoICMSICMS10 {
      * @param pFCPST
      * @param vFCPST
      */
+    @Deprecated
     public NFeInfNFeDetImpostoICMSICMS10(String orig, String CST, String modBC, String vBC, String pICMS, String vICMS, String vBCFCP, String pFCP, String vFCP, String modBCST, String pMVAST, String pRedBCST, String vBCST, String pICMSST, String vICMSST, String vBCFCPST, String pFCPST, String vFCPST) {
         this.orig = orig;
         this.CST = CST;
@@ -143,6 +154,52 @@ public class NFeInfNFeDetImpostoICMSICMS10 {
         this.pFCPST = pFCPST;
         this.vFCPST = vFCPST;
     }
+    
+    /**
+     * 
+     * @param orig
+     * @param cST
+     * @param modBC
+     * @param vBC
+     * @param pICMS
+     * @param vICMS
+     * @param vBCFCP
+     * @param pFCP
+     * @param vFCP
+     * @param modBCST
+     * @param pMVAST
+     * @param pRedBCST
+     * @param vBCST
+     * @param pICMSST
+     * @param vICMSST
+     * @param vBCFCPST
+     * @param pFCPST
+     * @param vFCPST
+     * @param vICMSSTDeson
+     * @param motDesICMSST
+     */
+	public NFeInfNFeDetImpostoICMSICMS10(String orig, String cST, String modBC, String vBC, String pICMS, String vICMS, String vBCFCP, String pFCP, String vFCP, String modBCST, String pMVAST, String pRedBCST, String vBCST, String pICMSST, String vICMSST, String vBCFCPST, String pFCPST, String vFCPST, String vICMSSTDeson, String motDesICMSST) {
+		this.orig = orig;
+		this.CST = cST;
+		this.modBC = modBC;
+		this.vBC = vBC;
+		this.pICMS = pICMS;
+		this.vICMS = vICMS;
+		this.vBCFCP = vBCFCP;
+		this.pFCP = pFCP;
+		this.vFCP = vFCP;
+		this.modBCST = modBCST;
+		this.pMVAST = pMVAST;
+		this.pRedBCST = pRedBCST;
+		this.vBCST = vBCST;
+		this.pICMSST = pICMSST;
+		this.vICMSST = vICMSST;
+		this.vBCFCPST = vBCFCPST;
+		this.pFCPST = pFCPST;
+		this.vFCPST = vFCPST;
+		this.vICMSSTDeson = vICMSSTDeson;
+		this.motDesICMSST = motDesICMSST;
+	}
 
 	public String getOrig() {
 		return orig;
@@ -286,6 +343,22 @@ public class NFeInfNFeDetImpostoICMSICMS10 {
 
 	public void setvFCPST(String vFCPST) {
 		this.vFCPST = vFCPST;
+	}
+
+	public String getvICMSSTDeson() {
+		return vICMSSTDeson;
+	}
+
+	public void setvICMSSTDeson(String vICMSSTDeson) {
+		this.vICMSSTDeson = vICMSSTDeson;
+	}
+
+	public String getMotDesICMSST() {
+		return motDesICMSST;
+	}
+
+	public void setMotDesICMSST(String motDesICMSST) {
+		this.motDesICMSST = motDesICMSST;
 	}
 
 }

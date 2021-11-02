@@ -25,6 +25,11 @@ public class NFeInfNFeDetProd {
     private String cEAN;
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("cbarra")
+    @Element(name = "cBarra", required = false)
+    private String cBarra;
+    
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("xprod")
     @Element(name = "xProd", required = false)
     private String xProd;
@@ -94,6 +99,11 @@ public class NFeInfNFeDetProd {
     @Element(name = "cEANTrib", required = false)
     private String cEANTrib;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("cbarratrib")
+    @Element(name = "cBarraTrib", required = false)
+    private String cBarraTrib;
+    
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("utrib")
     @Element(name = "uTrib", required = false)
@@ -229,6 +239,7 @@ public class NFeInfNFeDetProd {
      * @param comb
      * @param nRECOPI
      */
+    @Deprecated
     public NFeInfNFeDetProd(String cProd, String cEAN, String xProd, String NCM, List<String> NVE, String CEST, String indEscala, String CNPJFab, String cBenef, String EXTIPI, String CFOP, String uCom, String qCom, String vUnCom, String vProd, String cEANTrib, String uTrib, String qTrib, String vUnTrib, String vFrete, String vSeg, String vDesc, String vOutro, String indTot, NFeInfNFeDetProdDI DI, List<NFeInfNFeDetProdDetExport> detExport, String xPed, String nItemPed, String nFCI, List<NFeInfNFeDetProdRastro> rastro, NFeInfNFeDetProdVeicProd veicProd, NFeInfNFeDetProdMed med, List<NFeInfNFeDetProdArma> arma, NFeInfNFeDetProdComb comb, String nRECOPI) {
         this.cProd = cProd;
         this.cEAN = cEAN;
@@ -267,6 +278,86 @@ public class NFeInfNFeDetProd {
         this.nRECOPI = nRECOPI;
     }
 
+    /**
+     * 
+     * @param cProd
+     * @param cEAN
+     * @param cBarra
+     * @param xProd
+     * @param nCM
+     * @param nVE
+     * @param cEST
+     * @param indEscala
+     * @param cNPJFab
+     * @param cBenef
+     * @param eXTIPI
+     * @param cFOP
+     * @param uCom
+     * @param qCom
+     * @param vUnCom
+     * @param vProd
+     * @param cEANTrib
+     * @param cBarraTrib
+     * @param uTrib
+     * @param qTrib
+     * @param vUnTrib
+     * @param vFrete
+     * @param vSeg
+     * @param vDesc
+     * @param vOutro
+     * @param indTot
+     * @param dI
+     * @param detExport
+     * @param xPed
+     * @param nItemPed
+     * @param nFCI
+     * @param rastro
+     * @param veicProd
+     * @param med
+     * @param arma
+     * @param comb
+     * @param nRECOPI
+     */
+	public NFeInfNFeDetProd(String cProd, String cEAN, String cBarra, String xProd, String nCM, List<String> nVE, String cEST, String indEscala, String cNPJFab, String cBenef, String eXTIPI, String cFOP, String uCom, String qCom, String vUnCom, String vProd, String cEANTrib, String cBarraTrib, String uTrib, String qTrib, String vUnTrib, String vFrete, String vSeg, String vDesc, String vOutro, String indTot, NFeInfNFeDetProdDI dI, List<NFeInfNFeDetProdDetExport> detExport, String xPed, String nItemPed, String nFCI, List<NFeInfNFeDetProdRastro> rastro, NFeInfNFeDetProdVeicProd veicProd, NFeInfNFeDetProdMed med, List<NFeInfNFeDetProdArma> arma, NFeInfNFeDetProdComb comb, String nRECOPI) {
+		this.cProd = cProd;
+		this.cEAN = cEAN;
+		this.cBarra = cBarra;
+		this.xProd = xProd;
+		this.NCM = nCM;
+		this.NVE = nVE;
+		this.CEST = cEST;
+		this.indEscala = indEscala;
+		this.CNPJFab = cNPJFab;
+		this.cBenef = cBenef;
+		this.EXTIPI = eXTIPI;
+		this.CFOP = cFOP;
+		this.uCom = uCom;
+		this.qCom = qCom;
+		this.vUnCom = vUnCom;
+		this.vProd = vProd;
+		this.cEANTrib = cEANTrib;
+		this.cBarraTrib = cBarraTrib;
+		this.uTrib = uTrib;
+		this.qTrib = qTrib;
+		this.vUnTrib = vUnTrib;
+		this.vFrete = vFrete;
+		this.vSeg = vSeg;
+		this.vDesc = vDesc;
+		this.vOutro = vOutro;
+		this.indTot = indTot;
+		this.DI = dI;
+		this.detExport = detExport;
+		this.xPed = xPed;
+		this.nItemPed = nItemPed;
+		this.nFCI = nFCI;
+		this.rastro = rastro;
+		this.veicProd = veicProd;
+		this.med = med;
+		this.arma = arma;
+		this.comb = comb;
+		this.nRECOPI = nRECOPI;
+	}
+
 	public String getcProd() {
 		return cProd;
 	}
@@ -281,6 +372,14 @@ public class NFeInfNFeDetProd {
 
 	public void setcEAN(String cEAN) {
 		this.cEAN = cEAN;
+	}
+
+	public String getcBarra() {
+		return cBarra;
+	}
+
+	public void setcBarra(String cBarra) {
+		this.cBarra = cBarra;
 	}
 
 	public String getxProd() {
@@ -393,6 +492,14 @@ public class NFeInfNFeDetProd {
 
 	public void setcEANTrib(String cEANTrib) {
 		this.cEANTrib = cEANTrib;
+	}
+
+	public String getcBarraTrib() {
+		return cBarraTrib;
+	}
+
+	public void setcBarraTrib(String cBarraTrib) {
+		this.cBarraTrib = cBarraTrib;
 	}
 
 	public String getuTrib() {

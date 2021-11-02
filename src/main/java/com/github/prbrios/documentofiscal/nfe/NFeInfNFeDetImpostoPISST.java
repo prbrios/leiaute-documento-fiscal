@@ -34,6 +34,11 @@ public class NFeInfNFeDetImpostoPISST {
     @JsonProperty("vpis")
     @Element(name = "vPIS", required = false)
     private String vPIS;
+    
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("indsomapisst")
+    @Element(name = "indSomaPISST", required = false)
+    private String indSomaPISST;
 
     public NFeInfNFeDetImpostoPISST() {}
 
@@ -45,6 +50,7 @@ public class NFeInfNFeDetImpostoPISST {
      * @param vAliqProd
      * @param vPIS
      */
+    @Deprecated
     public NFeInfNFeDetImpostoPISST(String vBC, String pPIS, String qBCProd, String vAliqProd, String vPIS) {
         this.vBC = vBC;
         this.pPIS = pPIS;
@@ -52,6 +58,24 @@ public class NFeInfNFeDetImpostoPISST {
         this.vAliqProd = vAliqProd;
         this.vPIS = vPIS;
     }
+
+    /**
+     * 
+     * @param vBC
+     * @param pPIS
+     * @param qBCProd
+     * @param vAliqProd
+     * @param vPIS
+     * @param indSomaPISST
+     */
+	public NFeInfNFeDetImpostoPISST(String vBC, String pPIS, String qBCProd, String vAliqProd, String vPIS, String indSomaPISST) {
+		this.vBC = vBC;
+		this.pPIS = pPIS;
+		this.qBCProd = qBCProd;
+		this.vAliqProd = vAliqProd;
+		this.vPIS = vPIS;
+		this.indSomaPISST = indSomaPISST;
+	}
 
 	public String getvBC() {
 		return vBC;
@@ -91,6 +115,14 @@ public class NFeInfNFeDetImpostoPISST {
 
 	public void setvPIS(String vPIS) {
 		this.vPIS = vPIS;
+	}
+
+	public String getIndSomaPISST() {
+		return indSomaPISST;
+	}
+
+	public void setIndSomaPISST(String indSomaPISST) {
+		this.indSomaPISST = indSomaPISST;
 	}
 
 }
