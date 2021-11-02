@@ -25,6 +25,11 @@ public class NFeInfNFeDetProd {
     private String cEAN;
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("cbarra")
+    @Element(name = "cBarra", required = false)
+    private String cBarra;
+    
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("xprod")
     @Element(name = "xProd", required = false)
     private String xProd;
@@ -94,6 +99,11 @@ public class NFeInfNFeDetProd {
     @Element(name = "cEANTrib", required = false)
     private String cEANTrib;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("cbarratrib")
+    @Element(name = "cBarraTrib", required = false)
+    private String cBarraTrib;
+    
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("utrib")
     @Element(name = "uTrib", required = false)
@@ -283,6 +293,14 @@ public class NFeInfNFeDetProd {
 		this.cEAN = cEAN;
 	}
 
+	public String getcBarra() {
+		return cBarra;
+	}
+
+	public void setcBarra(String cBarra) {
+		this.cBarra = cBarra;
+	}
+
 	public String getxProd() {
 		return xProd;
 	}
@@ -393,6 +411,14 @@ public class NFeInfNFeDetProd {
 
 	public void setcEANTrib(String cEANTrib) {
 		this.cEANTrib = cEANTrib;
+	}
+
+	public String getcBarraTrib() {
+		return cBarraTrib;
+	}
+
+	public void setcBarraTrib(String cBarraTrib) {
+		this.cBarraTrib = cBarraTrib;
 	}
 
 	public String getuTrib() {
