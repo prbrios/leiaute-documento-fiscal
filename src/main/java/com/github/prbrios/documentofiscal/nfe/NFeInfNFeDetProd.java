@@ -146,8 +146,8 @@ public class NFeInfNFeDetProd {
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("di")
-    @Element(name = "DI", required = false)
-    private NFeInfNFeDetProdDI DI;
+    @ElementList(name = "DI", required = false, inline = true)
+    private List<NFeInfNFeDetProdDI> DI = new ArrayList<NFeInfNFeDetProdDI>();
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("detexport")
@@ -240,7 +240,7 @@ public class NFeInfNFeDetProd {
      * @param nRECOPI
      */
     @Deprecated
-    public NFeInfNFeDetProd(String cProd, String cEAN, String xProd, String NCM, List<String> NVE, String CEST, String indEscala, String CNPJFab, String cBenef, String EXTIPI, String CFOP, String uCom, String qCom, String vUnCom, String vProd, String cEANTrib, String uTrib, String qTrib, String vUnTrib, String vFrete, String vSeg, String vDesc, String vOutro, String indTot, NFeInfNFeDetProdDI DI, List<NFeInfNFeDetProdDetExport> detExport, String xPed, String nItemPed, String nFCI, List<NFeInfNFeDetProdRastro> rastro, NFeInfNFeDetProdVeicProd veicProd, NFeInfNFeDetProdMed med, List<NFeInfNFeDetProdArma> arma, NFeInfNFeDetProdComb comb, String nRECOPI) {
+    public NFeInfNFeDetProd(String cProd, String cEAN, String xProd, String NCM, List<String> NVE, String CEST, String indEscala, String CNPJFab, String cBenef, String EXTIPI, String CFOP, String uCom, String qCom, String vUnCom, String vProd, String cEANTrib, String uTrib, String qTrib, String vUnTrib, String vFrete, String vSeg, String vDesc, String vOutro, String indTot, List<NFeInfNFeDetProdDI> DI, List<NFeInfNFeDetProdDetExport> detExport, String xPed, String nItemPed, String nFCI, List<NFeInfNFeDetProdRastro> rastro, NFeInfNFeDetProdVeicProd veicProd, NFeInfNFeDetProdMed med, List<NFeInfNFeDetProdArma> arma, NFeInfNFeDetProdComb comb, String nRECOPI) {
         this.cProd = cProd;
         this.cEAN = cEAN;
         this.xProd = xProd;
@@ -318,7 +318,7 @@ public class NFeInfNFeDetProd {
      * @param comb
      * @param nRECOPI
      */
-	public NFeInfNFeDetProd(String cProd, String cEAN, String cBarra, String xProd, String nCM, List<String> nVE, String cEST, String indEscala, String cNPJFab, String cBenef, String eXTIPI, String cFOP, String uCom, String qCom, String vUnCom, String vProd, String cEANTrib, String cBarraTrib, String uTrib, String qTrib, String vUnTrib, String vFrete, String vSeg, String vDesc, String vOutro, String indTot, NFeInfNFeDetProdDI dI, List<NFeInfNFeDetProdDetExport> detExport, String xPed, String nItemPed, String nFCI, List<NFeInfNFeDetProdRastro> rastro, NFeInfNFeDetProdVeicProd veicProd, NFeInfNFeDetProdMed med, List<NFeInfNFeDetProdArma> arma, NFeInfNFeDetProdComb comb, String nRECOPI) {
+	public NFeInfNFeDetProd(String cProd, String cEAN, String cBarra, String xProd, String nCM, List<String> nVE, String cEST, String indEscala, String cNPJFab, String cBenef, String eXTIPI, String cFOP, String uCom, String qCom, String vUnCom, String vProd, String cEANTrib, String cBarraTrib, String uTrib, String qTrib, String vUnTrib, String vFrete, String vSeg, String vDesc, String vOutro, String indTot, List<NFeInfNFeDetProdDI> dI, List<NFeInfNFeDetProdDetExport> detExport, String xPed, String nItemPed, String nFCI, List<NFeInfNFeDetProdRastro> rastro, NFeInfNFeDetProdVeicProd veicProd, NFeInfNFeDetProdMed med, List<NFeInfNFeDetProdArma> arma, NFeInfNFeDetProdComb comb, String nRECOPI) {
 		this.cProd = cProd;
 		this.cEAN = cEAN;
 		this.cBarra = cBarra;
@@ -566,11 +566,11 @@ public class NFeInfNFeDetProd {
 		this.indTot = indTot;
 	}
 
-	public NFeInfNFeDetProdDI getDI() {
+	public List<NFeInfNFeDetProdDI> getDI() {
 		return DI;
 	}
 
-	public void setDI(NFeInfNFeDetProdDI dI) {
+	public void setDI(List<NFeInfNFeDetProdDI> dI) {
 		DI = dI;
 	}
 
