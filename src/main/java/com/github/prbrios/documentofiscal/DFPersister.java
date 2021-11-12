@@ -1,5 +1,6 @@
 package com.github.prbrios.documentofiscal;
 
+import org.simpleframework.xml.convert.AnnotationStrategy;
 import org.simpleframework.xml.core.Persister;
 import org.simpleframework.xml.stream.Format;
 
@@ -18,7 +19,7 @@ public class DFPersister<T> implements IDFPersister<T> {
         final ParameterizedType type = (ParameterizedType) getClass().getGenericSuperclass();
         this.theType = (Class<T>) (type).getActualTypeArguments()[0];
 
-        this.persister = new Persister(new Format(0));
+        this.persister = new Persister(new AnnotationStrategy(), new Format(0));
     }
 
     @Override

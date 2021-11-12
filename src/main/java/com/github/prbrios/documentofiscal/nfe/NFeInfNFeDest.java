@@ -2,10 +2,12 @@ package com.github.prbrios.documentofiscal.nfe;
 
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
+import org.simpleframework.xml.convert.Convert;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
+import com.github.prbrios.documentofiscal.EmptyElementConverter;
 
 @JsonRootName("dest")
 @Root(name = "dest")
@@ -24,6 +26,7 @@ public class NFeInfNFeDest {
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("idestrangeiro")
     @Element(name = "idEstrangeiro", required = false)
+    @Convert(value = EmptyElementConverter.class)
     private String idEstrangeiro;
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
