@@ -101,11 +101,15 @@ public class Assinatura {
     private KeyStore.PrivateKeyEntry getPrivateKeyEntry() throws KeyStoreException, NoSuchAlgorithmException, UnrecoverableEntryException, IOException, CertificateException {
 
         KeyStore keyStoreCertificado = KeyStore.getInstance("PKCS12");
-        InputStream certificadoStream = new FileInputStream(this.certificado);
-        keyStoreCertificado.load(certificadoStream, this.senha.toCharArray());
+        try (InputStream certificadoStream = new FileInputStream(this.certificado)) {
+	        keyStoreCertificado.load(certificadoStream, this.senha.toCharArray());
+	
+	        final KeyStore.PasswordProtection passwordProtection = new KeyStore.PasswordProtection(this.senha.toCharArray());
+	        return (KeyStore.PrivateKeyEntry) keyStoreCertificado.getEntry(keyStoreCertificado.aliases().nextElement(), passwordProtection);
 
-        final KeyStore.PasswordProtection passwordProtection = new KeyStore.PasswordProtection(this.senha.toCharArray());
-        return (KeyStore.PrivateKeyEntry) keyStoreCertificado.getEntry(keyStoreCertificado.aliases().nextElement(), passwordProtection);
+        } catch (KeyStoreException| NoSuchAlgorithmException| UnrecoverableEntryException| IOException| CertificateException e) {
+        	throw e;
+        }
     }
     
     public String assinarRaiz(final String xmlReader) throws Exception {
