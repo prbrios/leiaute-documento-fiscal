@@ -76,6 +76,21 @@ public class NFeInfNFeDetImpostoICMSICMSPart {
     private String vICMSST;
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("vbcfcpst")
+    @Element(name = "vBCFCPST", required = false)
+    private String vBCFCPST;
+
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("pfcpst")
+    @Element(name = "pFCPST", required = false)
+    private String pFCPST;
+
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("vfcpst")
+    @Element(name = "vFCPST", required = false)
+    private String vFCPST;
+
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("pbcop")
     @Element(name = "pBCOp", required = false)
     private String pBCOp;
@@ -119,6 +134,27 @@ public class NFeInfNFeDetImpostoICMSICMSPart {
         this.vBCST = vBCST;
         this.pICMSST = pICMSST;
         this.vICMSST = vICMSST;
+        this.pBCOp = pBCOp;
+        this.UFST = UFST;
+    }
+
+    public NFeInfNFeDetImpostoICMSICMSPart(String orig, String CST, String modBC, String vBC, String pRedBC, String pICMS, String vICMS, String modBCST, String pMVAST, String pRedBCST, String vBCST, String pICMSST, String vICMSST, String vBCFCPST, String pFCPST, String vFCPST, String pBCOp, String UFST) {
+        this.orig = orig;
+        this.CST = CST;
+        this.modBC = modBC;
+        this.vBC = vBC;
+        this.pRedBC = pRedBC;
+        this.pICMS = pICMS;
+        this.vICMS = vICMS;
+        this.modBCST = modBCST;
+        this.pMVAST = pMVAST;
+        this.pRedBCST = pRedBCST;
+        this.vBCST = vBCST;
+        this.pICMSST = pICMSST;
+        this.vICMSST = vICMSST;
+        this.vBCFCPST = vBCFCPST;
+        this.pFCPST = pFCPST;
+        this.vFCPST = vFCPST;
         this.pBCOp = pBCOp;
         this.UFST = UFST;
     }
@@ -225,6 +261,30 @@ public class NFeInfNFeDetImpostoICMSICMSPart {
 
 	public void setvICMSST(String vICMSST) {
 		this.vICMSST = vICMSST;
+	}
+
+	public String getvBCFCPST() {
+		return this.vBCFCPST;
+	} 
+
+	public void setvBCFCPST(String vBCFCPST){
+		this.vBCFCPST = vBCFCPST;
+	}
+
+	public String getpFCPST() {
+		return this.pFCPST;
+	}
+
+	public void setpFCPST(String pFCPST){
+		this.pFCPST = pFCPST;
+	}
+
+	public String getvFCPST() {
+		return this.vFCPST;
+	}
+
+	public void setvFCPST(String vFCPST) {
+		this.vFCPST = vFCPST;
 	}
 
 	public String getpBCOp() {

@@ -36,6 +36,11 @@ public class NFeInfNFeDet {
     @Element(name = "infAdProd", required = false)
     private String infAdProd;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("obsitem")
+    @Element(name = "obsItem", required = false)
+    private NFeInfNFeDetObsItem obsItem;
+
     public NFeInfNFeDet() {}
 
     /**
@@ -53,6 +58,15 @@ public class NFeInfNFeDet {
         this.impostoDevol = impostoDevol;
         this.infAdProd = infAdProd;
     }
+
+	public NFeInfNFeDet(String nItem, NFeInfNFeDetProd prod, NFeInfNFeDetImposto imposto, NFeInfNFeDetImpostoDevol impostoDevol, String infAdProd, NFeInfNFeDetObsItem obsItem) {
+		this.nItem = nItem;
+		this.prod = prod;
+		this.imposto = imposto;
+		this.impostoDevol = impostoDevol;
+		this.infAdProd = infAdProd;
+		this.obsItem = obsItem;
+	}
 
 	public String getnItem() {
 		return nItem;
@@ -92,6 +106,14 @@ public class NFeInfNFeDet {
 
 	public void setInfAdProd(String infAdProd) {
 		this.infAdProd = infAdProd;
+	}
+
+	public NFeInfNFeDetObsItem getObsItem() {
+		return obsItem;
+	}
+
+	public void setObsItem(NFeInfNFeDetObsItem obsItem) {
+		this.obsItem = obsItem;
 	}
 
 }

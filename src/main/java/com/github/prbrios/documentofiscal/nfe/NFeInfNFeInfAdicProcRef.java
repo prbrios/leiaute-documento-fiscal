@@ -20,6 +20,11 @@ public class NFeInfNFeInfAdicProcRef {
     @Element(name = "indProc", required = false)
     private String indProc;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("tpato")
+    @Element(name = "tpAto", required = false)
+    private String tpAto;
+
     public NFeInfNFeInfAdicProcRef() {}
 
     /**
@@ -30,6 +35,12 @@ public class NFeInfNFeInfAdicProcRef {
     public NFeInfNFeInfAdicProcRef(String nProc, String indProc) {
         this.nProc = nProc;
         this.indProc = indProc;
+    }
+
+    public NFeInfNFeInfAdicProcRef(String nProc, String indProc, String tpAto) {
+        this.nProc = nProc;
+        this.indProc = indProc;
+        this.tpAto = tpAto;
     }
 
 	public String getnProc() {
@@ -47,5 +58,13 @@ public class NFeInfNFeInfAdicProcRef {
 	public void setIndProc(String indProc) {
 		this.indProc = indProc;
 	}
+
+    public String getTpAto() {
+        return tpAto;
+    }
+
+    public void setTpAto(String tpAto) {
+        this.tpAto = tpAto;
+    }
 
 }
