@@ -1,0 +1,349 @@
+{
+	"infnfe": {
+		"versao": "4.00",
+		"id":"NFe00000000000000000000000000000000000000001234",
+		"ide":{
+			"cuf": "23",
+			"cnf": "00000000",
+			"natop": "Venda de mercadoria adquirida de terceiros",
+			"___indpag___": "",
+			"mod": "55",
+			"serie": "1",
+			"nnf": "1",
+			"dhemi": "2022-01-01T10:00:00-03:00",
+			"dhsaient": "2022-01-01T10:00:00-03:00",
+			"tpnf": "1",
+			"iddest": "1",
+			"cmunfg": "2304400",
+			"tpimp": "1",
+			"tpemis": "1",
+			"cdv": "4",
+			"tpamb": "2",
+			"finnfe": "1",
+			"indfinal": "1",
+			"indpres": "1",
+			"procemi": "0",
+			"verproc": "1.0",
+			"dhcont": "2022-01-01T10:00:00-03:00",
+			"xjust": "PROBLEMAS TECNICOS NA SEFAZ",
+			"nfref": [
+				{
+					"refnfe": "11111111111111111111111111111111111111112222"
+				},
+				{
+					"refnfe": "22222222222222222222222222222222222222223333"
+				},
+				{
+					"refnf": {
+						"cuf": "23",
+						"aamm": "2201",
+						"cnpj": "11222333000122",
+						"mod": "55",
+						"serie": "1",
+						"nnf": "1"
+					}
+				},
+				{
+					"refnf": {
+						"cuf": "23",
+						"aamm": "2201",
+						"cnpj": "22333444000566",
+						"mod": "55",
+						"serie": "1",
+						"nnf": "1"
+					}
+				},
+				{
+					"refnfp": {
+						"cuf": "23",
+						"aamm": "2201",
+						"cnpj": "33444555000677",
+						"cpf": "33344455566",
+						"ie": "1122334455",
+						"mod": "55",
+						"serie": "1",
+						"nnf": "1",
+						"refcte": "33333333333333333333333333333333333333334444"
+					}
+				},
+				{
+					"refnfp": {
+						"cuf": "23",
+						"aamm": "2201",
+						"cnpj": "33444555000678",
+						"cpf": "33344455567",
+						"ie": "1122334456",
+						"mod": "55",
+						"serie": "1",
+						"nnf": "1",
+						"refcte": "44444444444444444444444444444444444444445555"
+					}
+				},
+				{
+					"refecf": {
+						"mod": "55",
+						"necf": "1",
+						"ncoo": "1"
+					}
+				},
+				{
+					"refecf": {
+						"mod": "55",
+						"necf": "2",
+						"ncoo": "2"
+					}
+				}
+			]
+		},
+		"emit":{
+			"cnpj": "33222111000477",
+			"cpf": "99955511122",
+			"xnome": "PLUTAO LTDA",
+			"xfant": "PLUTAO",
+			"ie": "5522887744",
+			"iest": "22336655",
+			"im": "55889911",
+			"cnae": "22997766",
+			"crt": "3",
+			"enderemit": {
+				"xlgr": "RUA 1",
+				"nro": "10",
+				"xcpl": "SALA 3",
+				"xbairro": "CENTRO",
+				"cmun": "2304400",
+				"xmun": "FORTALEZA",
+				"uf": "CE",
+				"cep": "60000100",
+				"cpais": "1058",
+				"xpais": "BRASIL",
+				"fone": "85999998888"
+			}
+		},
+		"avulsa": {
+			"cnpj": "55666777000899",
+			"xorgao": "orgao",
+			"matr": "matr",
+			"xagente": "agente",
+			"fone": "85988887777",
+			"uf": "ce",
+			"ndar": "123456",
+			"demi": "2022-01-01",
+			"vdar": "0.00",
+			"repemi": "repemi",
+			"dpag": "2021-01-01"
+		},
+		"dest":{
+			"cnpj": "99888777000655",
+			"cpf": "99988877766",
+			"idestrangeiro": "654321",
+			"xnome": "NFE EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL",
+			"indiedest": "9",
+			"ie": "999999",
+			"isuf": "888888",
+			"im": "777777",
+			"email": "eu@tu.com.br",
+			"enderdest":{
+				"xlgr": "RUA J",
+				"nro": "5",
+				"xcpl": "APARTAMENTO 2",
+				"xbairro": "CENTRO",
+				"cmun": "2304400",
+				"xmun": "FORTALEZA",
+				"uf": "CE",
+				"cep": "60000100",
+				"cpais": "1058",
+				"xpais": "BRASIL",
+				"fone": "85977776666"
+			}
+		},
+		"retirada": {
+			"cnpj": "33444555000677",
+			"cpf": "88822244412",
+			"xlgr": "RUA X",
+			"nro": "100",
+			"xcpl": "CASA 20",
+			"xbairro": "CENTRO",
+			"cmun": "2304400",
+			"xmun": "FORTALEZA",
+			"uf": "CE"
+		},
+		"entrega": {
+			"cnpj": "33444555000677",
+			"cpf": "88822244412",
+			"xlgr": "RUA X",
+			"nro": "100",
+			"xcpl": "CASA 20",
+			"xbairro": "CENTRO",
+			"cmun": "2304400",
+			"xmun": "FORTALEZA",
+			"uf": "CE"
+		},
+		"autxml": [
+			{
+				"cnpj": "9988877700065",
+				"cpf": "66655544412"
+			},
+			{
+				"cnpj": "00999888000766",
+				"cpf": "00099988877"
+			}
+		],
+		"det": [
+			{
+				"nitem": "1",
+				"prod": {
+					"cprod": "P00001",
+					"cean": "98798798",
+                    "cbarra": "12345678",
+					"xprod": "PRODUTO X",
+					"ncm": "99999999",
+					"nve": ["123456", "654321"],
+                    "cest": "7777777",
+                    "indescala": "A",
+                    "cnpjfab": "44555666000788",
+                    "cbenef": "ABCDEFGH",
+					"extipi": "1",
+					"cfop": "1253",
+					"ucom": "UND",
+					"qcom": "1.0000",
+					"vuncom": "1.0000",
+					"vprod": "1.00",
+					"ceantrib": "98798798",
+                    "cbarratrib": "12345678",
+					"utrib": "UND",
+					"qtrib": "1.0000",
+					"vuntrib": "1.0000",
+					"vfrete": "0.00",
+					"vseg": "0.00",
+					"vdesc": "0.00",
+					"voutro": "0.00",
+					"indtot": "0",
+					"di":[
+						{
+							"ndi": "1",
+							"ddi": "2022-01-01",
+							"xlocdesemb": "AEROPORTO",
+							"ufdesemb": "CE",
+							"ddesemb": "2022-01-01",
+							"tpviatransp": "4",
+							"vafrmm": "1.00",
+							"tpintermedio": "1",
+							"cnpj": "11222333000455",
+							"ufterceiro": "CE",
+							"cexportador": "12345",
+							"adi":[
+								{
+									"nadicao": "1",
+									"nseqadic": "1",
+									"cfabricante": "C001",
+									"vdescdi": "0.00",
+									"ndraw": "012345678"
+								},
+                                {
+									"nadicao": "2",
+									"nseqadic": "2",
+									"cfabricante": "C001",
+									"vdescdi": "0.00",
+									"ndraw": "012345678"
+								}
+							]
+						}
+					],
+					"detexport":[
+						{
+							"ndraw": "012345678",
+							"exportind":{
+								"nre": "012345678901",
+								"chnfe": "00000000000000000000000000000000000000001234",
+								"qexport": "1.0000"
+							}
+						},
+                        {
+							"ndraw": "876543210",
+							"exportind":{
+								"nre": "012345678901",
+								"chnfe": "00000000000000000000000000000000000000001235",
+								"qexport": "2.0000"
+							}
+						}
+					],
+					"xped": "PED001",
+					"nitemped": "1",
+					"nfci": "A",
+					"veicprod": {
+						"tpop": "",
+						"chassi": "",
+						"ccor": "",
+						"xcor": "",
+						"pot": "",
+						"cilin": "",
+						"pesol": "",
+						"pesob": "",
+						"nserie": "",
+						"tpcomb": "",
+						"nmotor": "",
+						"cmt": "",
+						"dist": "",
+						"anomod": "",
+						"anofab": "",
+						"tppint": "",
+						"tpveic": "",
+						"espveic": "",
+						"vin": "",
+						"condveic": "",
+						"cmod": "",
+						"ccordenatran": "",
+						"iota": "",
+						"tprest": ""
+					},
+					"med": {
+						"nlote": "",
+						"qlote": "",
+						"dfab": "",
+						"dval": "",
+						"vpmc": ""
+					},
+					"arma": [
+                        {
+                            "tparma": "0",
+                            "nserie": "1",
+                            "ncano": "123",
+                            "descr": "pistola .40"
+					    },
+                        {
+                            "tparma": "0",
+                            "nserie": "1",
+                            "ncano": "123",
+                            "descr": "pistola .40"
+					    }
+                    ],
+					"comb": {
+						"cprodanp": "012345678",
+						"pmixgn": null,
+                        "descanp": "DESC ANP",
+                        "pglp": "0.1234",
+                        "pgnn": "0.1234",
+                        "pgni": "0.1234",
+                        "vpart": "1.00",
+						"codif": "12345",
+						"qtemp": "1.0000",
+						"ufcons": "CE",
+						"cide": {
+							"qbcprod": "1.0000",
+							"valiqprod": "1.0000",
+							"vcide": "1.00"
+						},
+                        "encerrante": {
+                            "nbico": "1",
+                            "nbomba": "1",
+                            "ntanque": "1",
+                            "vencini": "1.000",
+                            "vencfin": "1.000"
+                        }
+					},
+                    "nrecopi": "012345678901234567890"
+				}
+			}
+		]
+	}
+}
