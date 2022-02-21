@@ -1,7 +1,10 @@
 package com.github.prbrios.documentofiscal.nfe.evento.envio;
 
+import java.util.List;
+
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
+import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
 @Root(name = "detEvento")
@@ -12,7 +15,22 @@ public class EnvEventoEventoInfEventoDetEvento {
 
     @Element(name = "descEvento", required = false)
     private String descEvento;
-
+    
+    @Element(name = "cOrgaoAutor", required = false)
+    private String cOrgaoAutor;
+    
+    @Element(name = "tpAutor", required = false)
+    private String tpAutor;
+    
+    @Element(name = "verAplic", required = false)
+    private String verAplic;
+    
+    @ElementList(name = "autXML", required = false, inline = true)
+    private List<EnvEventoEventoInfEventoDetEventoAutXML> autXML;
+    
+    @Element(name = "tpAutorizacao", required = false)
+    private String tpAutorizacao;
+    
     @Element(name = "nProt", required = false)
     private String nProt;
 
@@ -58,6 +76,36 @@ public class EnvEventoEventoInfEventoDetEvento {
         this.xCorrecao = xCorrecao;
         this.xCondUso = xCondUso;
     }
+    
+    /**
+     * 
+     * @param versao
+     * @param descEvento
+     * @param cOrgaoAutor
+     * @param tpAutor
+     * @param verAplic
+     * @param autXML
+     * @param tpAutorizacao
+     * @param nProt
+     * @param xJust
+     * @param xCorrecao
+     * @param xCondUso
+     */
+	public EnvEventoEventoInfEventoDetEvento(String versao, String descEvento, String cOrgaoAutor, String tpAutor,
+			String verAplic, List<EnvEventoEventoInfEventoDetEventoAutXML> autXML, String tpAutorizacao, String nProt,
+			String xJust, String xCorrecao, String xCondUso) {
+		this.versao = versao;
+		this.descEvento = descEvento;
+		this.cOrgaoAutor = cOrgaoAutor;
+		this.tpAutor = tpAutor;
+		this.verAplic = verAplic;
+		this.autXML = autXML;
+		this.tpAutorizacao = tpAutorizacao;
+		this.nProt = nProt;
+		this.xJust = xJust;
+		this.xCorrecao = xCorrecao;
+		this.xCondUso = xCondUso;
+	}
 
 	public String getVersao() {
 		return versao;
@@ -105,6 +153,46 @@ public class EnvEventoEventoInfEventoDetEvento {
 
 	public void setxCondUso(String xCondUso) {
 		this.xCondUso = xCondUso;
+	}
+
+	public String getcOrgaoAutor() {
+		return cOrgaoAutor;
+	}
+
+	public void setcOrgaoAutor(String cOrgaoAutor) {
+		this.cOrgaoAutor = cOrgaoAutor;
+	}
+
+	public String getTpAutor() {
+		return tpAutor;
+	}
+
+	public void setTpAutor(String tpAutor) {
+		this.tpAutor = tpAutor;
+	}
+
+	public String getVerAplic() {
+		return verAplic;
+	}
+
+	public void setVerAplic(String verAplic) {
+		this.verAplic = verAplic;
+	}
+
+	public List<EnvEventoEventoInfEventoDetEventoAutXML> getAutXML() {
+		return autXML;
+	}
+
+	public void setAutXML(List<EnvEventoEventoInfEventoDetEventoAutXML> autXML) {
+		this.autXML = autXML;
+	}
+
+	public String getTpAutorizacao() {
+		return tpAutorizacao;
+	}
+
+	public void setTpAutorizacao(String tpAutorizacao) {
+		this.tpAutorizacao = tpAutorizacao;
 	}
 
 }

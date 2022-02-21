@@ -4,6 +4,8 @@ import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
+import com.github.prbrios.documentofiscal.assinatura.Signature;
+
 @Root(name = "retEvento")
 public class RetEnvEventoRetEvento {
 
@@ -12,6 +14,9 @@ public class RetEnvEventoRetEvento {
 
     @Element(name = "infEvento", required = false)
     private RetEnvEventoRetEventoInfEvento infEvento;
+
+    @Element(name = "Signature", required = false)
+    private Signature signature;
 
 	public String getVersao() {
 		return versao;
@@ -27,6 +32,14 @@ public class RetEnvEventoRetEvento {
 
 	public void setInfEvento(RetEnvEventoRetEventoInfEvento infEvento) {
 		this.infEvento = infEvento;
+	}
+
+	public Signature getSignature() {
+		return signature;
+	}
+
+	public void setSignature(Signature signature) {
+		this.signature = signature;
 	}
 
 }

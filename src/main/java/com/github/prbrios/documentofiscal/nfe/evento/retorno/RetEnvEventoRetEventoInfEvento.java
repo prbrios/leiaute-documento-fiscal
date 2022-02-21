@@ -36,6 +36,9 @@ public class RetEnvEventoRetEventoInfEvento {
 
     @Element(name = "nSeqEvento", required = false)
     private String nSeqEvento;
+    
+    @Element(name = "cOrgaoAutor", required = false)
+    private String cOrgaoAutor;
 
     @Element(name = "CNPJDest", required = false)
     private String CNPJDest;
@@ -130,6 +133,14 @@ public class RetEnvEventoRetEventoInfEvento {
 
 	public void setnSeqEvento(String nSeqEvento) {
 		this.nSeqEvento = nSeqEvento;
+	}
+
+	public String getcOrgaoAutor() {
+		return cOrgaoAutor;
+	}
+
+	public void setcOrgaoAutor(String cOrgaoAutor) {
+		this.cOrgaoAutor = cOrgaoAutor;
 	}
 
 	public String getCNPJDest() {
