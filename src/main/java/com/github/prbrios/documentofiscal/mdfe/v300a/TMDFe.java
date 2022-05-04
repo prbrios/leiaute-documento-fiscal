@@ -1320,7 +1320,7 @@ public class TMDFe {
 			@Transient
 			private List<String> nAverTemp = new ArrayList<String>();
 			
-			@ElementList(inline = true)
+			@ElementList(inline = true, required = false)
 			protected List<TMDFe.InfMDFe.Seg.nAver> nAver = new ArrayList<TMDFe.InfMDFe.Seg.nAver>();
 			
 			public TMDFe.InfMDFe.Seg.InfResp getInfResp() {
