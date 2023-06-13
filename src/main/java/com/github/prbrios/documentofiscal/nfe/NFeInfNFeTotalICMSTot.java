@@ -66,6 +66,21 @@ public class NFeInfNFeTotalICMSTot {
     private String vFCPSTRet;
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("vicmsmono")
+    @Element(name = "vICMSMono", required = false)
+    private String vICMSMono;
+
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("vicmsmonoreten")
+    @Element(name = "vICMSMonoReten", required = false)
+    private String vICMSMonoReten;
+
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("vicmsmonoret")
+    @Element(name = "vICMSMonoRet", required = false)
+    private String vICMSMonoRet;
+
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("vprod")
     @Element(name = "vProd", required = false)
     private String vProd;
@@ -178,8 +193,70 @@ public class NFeInfNFeTotalICMSTot {
         this.vNF = vNF;
         this.vTotTrib = vTotTrib;
     }
+    
+    /**
+     * 
+     * @param vBC
+     * @param vICMS
+     * @param vICMSDeson
+     * @param vFCPUFDest
+     * @param vICMSUFDest
+     * @param vICMSUFRemet
+     * @param vFCP
+     * @param vBCST
+     * @param vST
+     * @param vFCPST
+     * @param vFCPSTRet
+     * @param vICMSMono
+     * @param vICMSMonoReten
+     * @param vICMSMonoRet
+     * @param vProd
+     * @param vFrete
+     * @param vSeg
+     * @param vDesc
+     * @param vII
+     * @param vIPI
+     * @param vIPIDevol
+     * @param vPIS
+     * @param vCOFINS
+     * @param vOutro
+     * @param vNF
+     * @param vTotTrib
+     */
+	public NFeInfNFeTotalICMSTot(String vBC, String vICMS, String vICMSDeson, String vFCPUFDest, String vICMSUFDest,
+            String vICMSUFRemet, String vFCP, String vBCST, String vST, String vFCPST, String vFCPSTRet,
+            String vICMSMono, String vICMSMonoReten, String vICMSMonoRet, String vProd, String vFrete, String vSeg,
+            String vDesc, String vII, String vIPI, String vIPIDevol, String vPIS, String vCOFINS, String vOutro,
+            String vNF, String vTotTrib) {
+        this.vBC = vBC;
+        this.vICMS = vICMS;
+        this.vICMSDeson = vICMSDeson;
+        this.vFCPUFDest = vFCPUFDest;
+        this.vICMSUFDest = vICMSUFDest;
+        this.vICMSUFRemet = vICMSUFRemet;
+        this.vFCP = vFCP;
+        this.vBCST = vBCST;
+        this.vST = vST;
+        this.vFCPST = vFCPST;
+        this.vFCPSTRet = vFCPSTRet;
+        this.vICMSMono = vICMSMono;
+        this.vICMSMonoReten = vICMSMonoReten;
+        this.vICMSMonoRet = vICMSMonoRet;
+        this.vProd = vProd;
+        this.vFrete = vFrete;
+        this.vSeg = vSeg;
+        this.vDesc = vDesc;
+        this.vII = vII;
+        this.vIPI = vIPI;
+        this.vIPIDevol = vIPIDevol;
+        this.vPIS = vPIS;
+        this.vCOFINS = vCOFINS;
+        this.vOutro = vOutro;
+        this.vNF = vNF;
+        this.vTotTrib = vTotTrib;
+    }
 
-	public String getvBC() {
+    public String getvBC() {
 		return vBC;
 	}
 
@@ -362,5 +439,30 @@ public class NFeInfNFeTotalICMSTot {
 	public void setvTotTrib(String vTotTrib) {
 		this.vTotTrib = vTotTrib;
 	}
+
+    public String getvICMSMono() {
+        return vICMSMono;
+    }
+
+    public void setvICMSMono(String vICMSMono) {
+        this.vICMSMono = vICMSMono;
+    }
+
+    public String getvICMSMonoReten() {
+        return vICMSMonoReten;
+    }
+
+    public void setvICMSMonoReten(String vICMSMonoReten) {
+        this.vICMSMonoReten = vICMSMonoReten;
+    }
+
+    public String getvICMSMonoRet() {
+        return vICMSMonoRet;
+    }
+
+    public void setvICMSMonoRet(String vICMSMonoRet) {
+        this.vICMSMonoRet = vICMSMonoRet;
+    }
+    
 
 }

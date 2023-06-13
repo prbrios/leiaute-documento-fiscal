@@ -3,7 +3,11 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
+
+import java.util.List;
+
 import org.simpleframework.xml.Element;
+import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Root;
 
 @JsonRootName("comb")
@@ -65,6 +69,16 @@ public class NFeInfNFeDetProdComb {
     @Element(name = "encerrante", required = false)
     private NFeInfNFeDetProdCombEncerrante encerrante;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("pbio")
+    @Element(name = "pBio", required = false)
+    private String pBio;
+
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("origcomb")
+    @ElementList(name = "origComb", inline = true, required = false)
+    private List<NFeInfNFeDetProdCombOrigComb> origComb;
+
     public NFeInfNFeDetProdComb() {}
 
     /**
@@ -82,6 +96,35 @@ public class NFeInfNFeDetProdComb {
      * @param encerrante
      */
     public NFeInfNFeDetProdComb(String cProdANP, String descANP, String pGLP, String pGNn, String pGNi, String vPart, String CODIF, String qTemp, String UFCons, NFeInfNFeDetProdCombCIDE CIDE, NFeInfNFeDetProdCombEncerrante encerrante) {
+        this.cProdANP = cProdANP;
+        this.descANP = descANP;
+        this.pGLP = pGLP;
+        this.pGNn = pGNn;
+        this.pGNi = pGNi;
+        this.vPart = vPart;
+        this.CODIF = CODIF;
+        this.qTemp = qTemp;
+        this.UFCons = UFCons;
+        this.CIDE = CIDE;
+        this.encerrante = encerrante;
+    }
+
+    /**
+     * 
+     * @param cProdANP
+     * @param descANP
+     * @param pGLP
+     * @param pGNn
+     * @param pGNi
+     * @param vPart
+     * @param CODIF
+     * @param qTemp
+     * @param UFCons
+     * @param CIDE
+     * @param encerrante
+     * @param pBio
+     */
+    public NFeInfNFeDetProdComb(String cProdANP, String descANP, String pGLP, String pGNn, String pGNi, String vPart, String CODIF, String qTemp, String UFCons, NFeInfNFeDetProdCombCIDE CIDE, NFeInfNFeDetProdCombEncerrante encerrante, String pBio) {
         this.cProdANP = cProdANP;
         this.descANP = descANP;
         this.pGLP = pGLP;
@@ -182,5 +225,21 @@ public class NFeInfNFeDetProdComb {
 	public void setEncerrante(NFeInfNFeDetProdCombEncerrante encerrante) {
 		this.encerrante = encerrante;
 	}
+
+    public String getpBio() {
+        return pBio;
+    }
+
+    public void setpBio(String pBio) {
+        this.pBio = pBio;
+    }
+
+    public List<NFeInfNFeDetProdCombOrigComb> getOrigComb() {
+        return origComb;
+    }
+
+    public void setOrigComb(List<NFeInfNFeDetProdCombOrigComb> origComb) {
+        this.origComb = origComb;
+    }
 
 }

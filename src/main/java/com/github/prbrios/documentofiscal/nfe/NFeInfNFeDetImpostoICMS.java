@@ -16,9 +16,19 @@ public class NFeInfNFeDetImpostoICMS {
     private NFeInfNFeDetImpostoICMSICMS00 ICMS00;
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("icms02")
+    @Element(name = "ICMS02", required = false)
+    private NFeInfNFeDetImpostoICMSICMS02 ICMS02;
+
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("icms10")
     @Element(name = "ICMS10", required = false)
     private NFeInfNFeDetImpostoICMSICMS10 ICMS10;
+
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("icms15")
+    @Element(name = "ICMS15", required = false)
+    private NFeInfNFeDetImpostoICMSICMS15 ICMS15;
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("icms20")
@@ -41,9 +51,19 @@ public class NFeInfNFeDetImpostoICMS {
     private NFeInfNFeDetImpostoICMSICMS51 ICMS51;
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("icms53")
+    @Element(name = "ICMS53", required = false)
+    private NFeInfNFeDetImpostoICMSICMS53 ICMS53;
+
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("icms60")
     @Element(name = "ICMS60", required = false)
     private NFeInfNFeDetImpostoICMSICMS60 ICMS60;
+
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("icms61")
+    @Element(name = "ICMS61", required = false)
+    private NFeInfNFeDetImpostoICMSICMS61 ICMS61;
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("icms70")
@@ -137,7 +157,55 @@ public class NFeInfNFeDetImpostoICMS {
         this.ICMSSN900 = ICMSSN900;
     }
 
-	public NFeInfNFeDetImpostoICMSICMS00 getICMS00() {
+    /**
+     * 
+     * @param iCMS00
+     * @param iCMS02
+     * @param iCMS10
+     * @param iCMS15
+     * @param iCMS20
+     * @param iCMS30
+     * @param iCMS40
+     * @param iCMS51
+     * @param iCMS53
+     * @param iCMS60
+     * @param iCMS61
+     * @param iCMS70
+     * @param iCMS90
+     * @param iCMSPart
+     * @param iCMSST
+     * @param iCMSSN101
+     * @param iCMSSN102
+     * @param iCMSSN201
+     * @param iCMSSN202
+     * @param iCMSSN500
+     * @param iCMSSN900
+     */
+	public NFeInfNFeDetImpostoICMS(NFeInfNFeDetImpostoICMSICMS00 iCMS00, NFeInfNFeDetImpostoICMSICMS02 iCMS02, NFeInfNFeDetImpostoICMSICMS10 iCMS10, NFeInfNFeDetImpostoICMSICMS15 iCMS15, NFeInfNFeDetImpostoICMSICMS20 iCMS20, NFeInfNFeDetImpostoICMSICMS30 iCMS30, NFeInfNFeDetImpostoICMSICMS40 iCMS40, NFeInfNFeDetImpostoICMSICMS51 iCMS51, NFeInfNFeDetImpostoICMSICMS53 iCMS53, NFeInfNFeDetImpostoICMSICMS60 iCMS60, NFeInfNFeDetImpostoICMSICMS61 iCMS61, NFeInfNFeDetImpostoICMSICMS70 iCMS70, NFeInfNFeDetImpostoICMSICMS90 iCMS90, NFeInfNFeDetImpostoICMSICMSPart iCMSPart, NFeInfNFeDetImpostoICMSICMSST iCMSST, NFeInfNFeDetImpostoICMSICMSSN101 iCMSSN101, NFeInfNFeDetImpostoICMSICMSSN102 iCMSSN102, NFeInfNFeDetImpostoICMSICMSSN201 iCMSSN201, NFeInfNFeDetImpostoICMSICMSSN202 iCMSSN202, NFeInfNFeDetImpostoICMSICMSSN500 iCMSSN500, NFeInfNFeDetImpostoICMSICMSSN900 iCMSSN900) {
+        this.ICMS00 = iCMS00;
+        this.ICMS02 = iCMS02;
+        this.ICMS10 = iCMS10;
+        this.ICMS15 = iCMS15;
+        this.ICMS20 = iCMS20;
+        this.ICMS30 = iCMS30;
+        this.ICMS40 = iCMS40;
+        this.ICMS51 = iCMS51;
+        this.ICMS53 = iCMS53;
+        this.ICMS60 = iCMS60;
+        this.ICMS61 = iCMS61;
+        this.ICMS70 = iCMS70;
+        this.ICMS90 = iCMS90;
+        this.ICMSPart = iCMSPart;
+        this.ICMSST = iCMSST;
+        this.ICMSSN101 = iCMSSN101;
+        this.ICMSSN102 = iCMSSN102;
+        this.ICMSSN201 = iCMSSN201;
+        this.ICMSSN202 = iCMSSN202;
+        this.ICMSSN500 = iCMSSN500;
+        this.ICMSSN900 = iCMSSN900;
+    }
+
+    public NFeInfNFeDetImpostoICMSICMS00 getICMS00() {
 		return ICMS00;
 	}
 
@@ -272,5 +340,37 @@ public class NFeInfNFeDetImpostoICMS {
 	public void setICMSSN900(NFeInfNFeDetImpostoICMSICMSSN900 iCMSSN900) {
 		ICMSSN900 = iCMSSN900;
 	}
+
+    public NFeInfNFeDetImpostoICMSICMS02 getICMS02() {
+        return ICMS02;
+    }
+
+    public void setICMS02(NFeInfNFeDetImpostoICMSICMS02 iCMS02) {
+        ICMS02 = iCMS02;
+    }
+
+    public NFeInfNFeDetImpostoICMSICMS15 getICMS15() {
+        return ICMS15;
+    }
+
+    public void setICMS15(NFeInfNFeDetImpostoICMSICMS15 iCMS15) {
+        ICMS15 = iCMS15;
+    }
+
+    public NFeInfNFeDetImpostoICMSICMS53 getICMS53() {
+        return ICMS53;
+    }
+
+    public void setICMS53(NFeInfNFeDetImpostoICMSICMS53 iCMS53) {
+        ICMS53 = iCMS53;
+    }
+
+    public NFeInfNFeDetImpostoICMSICMS61 getICMS61() {
+        return ICMS61;
+    }
+
+    public void setICMS61(NFeInfNFeDetImpostoICMSICMS61 iCMS61) {
+        ICMS61 = iCMS61;
+    }
 
 }
