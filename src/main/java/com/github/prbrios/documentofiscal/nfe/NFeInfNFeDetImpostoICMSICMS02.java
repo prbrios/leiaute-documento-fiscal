@@ -22,6 +22,11 @@ public class NFeInfNFeDetImpostoICMSICMS02 {
     private String CST;
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("qbcmono")
+    @Element(name = "qBCMono", required = false)
+    private String qBCMono;
+
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("adremicms")
     @Element(name = "adRemICMS", required = false)
     private String adRemICMS;
@@ -34,9 +39,10 @@ public class NFeInfNFeDetImpostoICMSICMS02 {
     public NFeInfNFeDetImpostoICMSICMS02() {
     }
 
-    public NFeInfNFeDetImpostoICMSICMS02(String orig, String cST, String adRemICMS, String vICMSMono) {
+    public NFeInfNFeDetImpostoICMSICMS02(String orig, String cST, String qBCMono, String adRemICMS, String vICMSMono) {
         this.orig = orig;
         this.CST = cST;
+        this.qBCMono = qBCMono;
         this.adRemICMS = adRemICMS;
         this.vICMSMono = vICMSMono;
     }
@@ -50,11 +56,19 @@ public class NFeInfNFeDetImpostoICMSICMS02 {
     }
 
     public String getCST() {
-        return CST;
+        return this.CST;
     }
 
     public void setCST(String cST) {
-        CST = cST;
+        this.CST = cST;
+    }
+
+    public String getqBCMono() {
+        return qBCMono;
+    }
+
+    public void setqBCMono(String qBCMono) {
+        this.qBCMono = qBCMono;
     }
 
     public String getAdRemICMS() {

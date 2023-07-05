@@ -22,23 +22,59 @@ public class NFeInfNFeDetImpostoICMSICMS53 {
     private String CST;
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
-    @JsonProperty("adremicmsdif")
-    @Element(name = "adRemICMSDif", required = false)
-    private String adRemICMSDif;
+    @JsonProperty("qbcmono")
+    @Element(name = "qBCMono", required = false)
+    private String qBCMono;
+
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("adremicms")
+    @Element(name = "adRemICMS", required = false)
+    private String adRemICMS;
+
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("vicmsmonoop")
+    @Element(name = "vICMSMonoOp", required = false)
+    private String vICMSMonoOp;
+
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("pdif")
+    @Element(name = "pDif", required = false)
+    private String pDif;
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("vicmsmonodif")
     @Element(name = "vICMSMonoDif", required = false)
     private String vICMSMonoDif;
 
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("vicmsmono")
+    @Element(name = "vICMSMono", required = false)
+    private String vICMSMono;
+
     public NFeInfNFeDetImpostoICMSICMS53() {
     }
 
-    public NFeInfNFeDetImpostoICMSICMS53(String orig, String cST, String adRemICMSDif, String vICMSMonoDif) {
+    /**
+     * 
+     * @param orig
+     * @param cST
+     * @param qBCMono
+     * @param adRemICMS
+     * @param vICMSMonoOp
+     * @param pDif
+     * @param vICMSMonoDif
+     * @param vICMSMono
+     */
+    public NFeInfNFeDetImpostoICMSICMS53(String orig, String cST, String qBCMono, String adRemICMS, String vICMSMonoOp,
+            String pDif, String vICMSMonoDif, String vICMSMono) {
         this.orig = orig;
-        this.CST = cST;
-        this.adRemICMSDif = adRemICMSDif;
+        CST = cST;
+        this.qBCMono = qBCMono;
+        this.adRemICMS = adRemICMS;
+        this.vICMSMonoOp = vICMSMonoOp;
+        this.pDif = pDif;
         this.vICMSMonoDif = vICMSMonoDif;
+        this.vICMSMono = vICMSMono;
     }
 
     public String getOrig() {
@@ -57,12 +93,36 @@ public class NFeInfNFeDetImpostoICMSICMS53 {
         CST = cST;
     }
 
-    public String getAdRemICMSDif() {
-        return adRemICMSDif;
+    public String getqBCMono() {
+        return qBCMono;
     }
 
-    public void setAdRemICMSDif(String adRemICMSDif) {
-        this.adRemICMSDif = adRemICMSDif;
+    public void setqBCMono(String qBCMono) {
+        this.qBCMono = qBCMono;
+    }
+
+    public String getAdRemICMS() {
+        return adRemICMS;
+    }
+
+    public void setAdRemICMS(String adRemICMS) {
+        this.adRemICMS = adRemICMS;
+    }
+
+    public String getvICMSMonoOp() {
+        return vICMSMonoOp;
+    }
+
+    public void setvICMSMonoOp(String vICMSMonoOp) {
+        this.vICMSMonoOp = vICMSMonoOp;
+    }
+
+    public String getpDif() {
+        return pDif;
+    }
+
+    public void setpDif(String pDif) {
+        this.pDif = pDif;
     }
 
     public String getvICMSMonoDif() {
@@ -71,6 +131,14 @@ public class NFeInfNFeDetImpostoICMSICMS53 {
 
     public void setvICMSMonoDif(String vICMSMonoDif) {
         this.vICMSMonoDif = vICMSMonoDif;
+    }
+
+    public String getvICMSMono() {
+        return vICMSMono;
+    }
+
+    public void setvICMSMono(String vICMSMono) {
+        this.vICMSMono = vICMSMono;
     }
 
 }

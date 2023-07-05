@@ -66,14 +66,29 @@ public class NFeInfNFeTotalICMSTot {
     private String vFCPSTRet;
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("qbcmono")
+    @Element(name = "qBCMono", required = false)
+    private String qBCMono;
+
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("vicmsmono")
     @Element(name = "vICMSMono", required = false)
     private String vICMSMono;
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("qbcmonoreten")
+    @Element(name = "qBCMonoReten", required = false)
+    private String qBCMonoReten;
+
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("vicmsmonoreten")
     @Element(name = "vICMSMonoReten", required = false)
     private String vICMSMonoReten;
+
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("qbcmonoret")
+    @Element(name = "qBCMonoRet", required = false)
+    private String qBCMonoRet;
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("vicmsmonoret")
@@ -207,8 +222,11 @@ public class NFeInfNFeTotalICMSTot {
      * @param vST
      * @param vFCPST
      * @param vFCPSTRet
+     * @param qBCMono
      * @param vICMSMono
+     * @param qBCMonoReten
      * @param vICMSMonoReten
+     * @param qBCMonoRet
      * @param vICMSMonoRet
      * @param vProd
      * @param vFrete
@@ -223,11 +241,11 @@ public class NFeInfNFeTotalICMSTot {
      * @param vNF
      * @param vTotTrib
      */
-	public NFeInfNFeTotalICMSTot(String vBC, String vICMS, String vICMSDeson, String vFCPUFDest, String vICMSUFDest,
-            String vICMSUFRemet, String vFCP, String vBCST, String vST, String vFCPST, String vFCPSTRet,
-            String vICMSMono, String vICMSMonoReten, String vICMSMonoRet, String vProd, String vFrete, String vSeg,
-            String vDesc, String vII, String vIPI, String vIPIDevol, String vPIS, String vCOFINS, String vOutro,
-            String vNF, String vTotTrib) {
+    public NFeInfNFeTotalICMSTot(String vBC, String vICMS, String vICMSDeson, String vFCPUFDest, String vICMSUFDest,
+            String vICMSUFRemet, String vFCP, String vBCST, String vST, String vFCPST, String vFCPSTRet, String qBCMono,
+            String vICMSMono, String qBCMonoReten, String vICMSMonoReten, String qBCMonoRet, String vICMSMonoRet,
+            String vProd, String vFrete, String vSeg, String vDesc, String vII, String vIPI, String vIPIDevol,
+            String vPIS, String vCOFINS, String vOutro, String vNF, String vTotTrib) {
         this.vBC = vBC;
         this.vICMS = vICMS;
         this.vICMSDeson = vICMSDeson;
@@ -239,8 +257,11 @@ public class NFeInfNFeTotalICMSTot {
         this.vST = vST;
         this.vFCPST = vFCPST;
         this.vFCPSTRet = vFCPSTRet;
+        this.qBCMono = qBCMono;
         this.vICMSMono = vICMSMono;
+        this.qBCMonoReten = qBCMonoReten;
         this.vICMSMonoReten = vICMSMonoReten;
+        this.qBCMonoRet = qBCMonoRet;
         this.vICMSMonoRet = vICMSMonoRet;
         this.vProd = vProd;
         this.vFrete = vFrete;
@@ -462,6 +483,30 @@ public class NFeInfNFeTotalICMSTot {
 
     public void setvICMSMonoRet(String vICMSMonoRet) {
         this.vICMSMonoRet = vICMSMonoRet;
+    }
+
+    public String getqBCMono() {
+        return qBCMono;
+    }
+
+    public void setqBCMono(String qBCMono) {
+        this.qBCMono = qBCMono;
+    }
+
+    public String getqBCMonoReten() {
+        return qBCMonoReten;
+    }
+
+    public void setqBCMonoReten(String qBCMonoReten) {
+        this.qBCMonoReten = qBCMonoReten;
+    }
+
+    public String getqBCMonoRet() {
+        return qBCMonoRet;
+    }
+
+    public void setqBCMonoRet(String qBCMonoRet) {
+        this.qBCMonoRet = qBCMonoRet;
     }
     
 

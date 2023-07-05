@@ -22,6 +22,11 @@ public class NFeInfNFeDetImpostoICMSICMS61 {
     private String CST;
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("qbcmonoret")
+    @Element(name = "qBCMonoRet", required = false)
+    private String qBCMonoRet;
+
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("adremicmsret")
     @Element(name = "adRemICMSRet", required = false)
     private String adRemICMSRet;
@@ -34,9 +39,19 @@ public class NFeInfNFeDetImpostoICMSICMS61 {
     public NFeInfNFeDetImpostoICMSICMS61() {
     }
 
-    public NFeInfNFeDetImpostoICMSICMS61(String orig, String cST, String adRemICMSRet, String vICMSMonoRet) {
+    /**
+     * 
+     * @param orig
+     * @param cST
+     * @param qBCMonoRet
+     * @param adRemICMSRet
+     * @param vICMSMonoRet
+     */
+    public NFeInfNFeDetImpostoICMSICMS61(String orig, String cST, String qBCMonoRet, String adRemICMSRet,
+            String vICMSMonoRet) {
         this.orig = orig;
         this.CST = cST;
+        this.qBCMonoRet = qBCMonoRet;
         this.adRemICMSRet = adRemICMSRet;
         this.vICMSMonoRet = vICMSMonoRet;
     }
@@ -71,6 +86,14 @@ public class NFeInfNFeDetImpostoICMSICMS61 {
 
     public void setvICMSMonoRet(String vICMSMonoRet) {
         this.vICMSMonoRet = vICMSMonoRet;
+    }
+
+    public String getqBCMonoRet() {
+        return qBCMonoRet;
+    }
+
+    public void setqBCMonoRet(String qBCMonoRet) {
+        this.qBCMonoRet = qBCMonoRet;
     }
 
 }
