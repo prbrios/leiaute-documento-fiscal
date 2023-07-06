@@ -24,6 +24,9 @@ public class CTeInfCteEmit {
 	@Element(name = "enderEmit", required = false)
 	private CTeInfCteEmitEnderEmit enderEmit;
 
+	@Element(name = "CRT", required = false)
+	private String CRT;
+
 	public String getCNPJ() {
 		return CNPJ;
 	}
@@ -70,6 +73,14 @@ public class CTeInfCteEmit {
 
 	public void setEnderEmit(CTeInfCteEmitEnderEmit enderEmit) {
 		this.enderEmit = enderEmit;
+	}
+
+	public String getCRT() {
+		return CRT;
+	}
+
+	public void setCRT(String cRT) {
+		CRT = cRT;
 	}
 
 }
