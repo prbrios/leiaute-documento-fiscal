@@ -7,7 +7,7 @@
 
 	<groupId>com.github.prbrios</groupId>
 	<artifactId>leiaute-documento-fiscal</artifactId>
-	<version>21.0-SNAPSHOT</version>
+	<version>21.0</version>
 
 	<name>leiaute-documento-fiscal</name>
 	<url>https://github.com/prbrios/leiaute-documento-fiscal</url>
@@ -18,19 +18,19 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
-	<distributionManagement>
 
-		<snapshotRepository>
-			<id>mavenunigex-bucket-snapshot</id>
-			<url>gs://mavenunigex/snapshot</url>
-		</snapshotRepository>
 
-		<repository>
-			<id>mavenunigex-bucket-release</id>
-			<url>gs://mavenunigex/release</url>
-		</repository>
 
-	</distributionManagement>
+
+
+
+
+
+
+
+
+
+
 
 	<dependencies>
 
@@ -55,14 +55,14 @@
 
 	</dependencies>
 
-	<build>
-		<extensions>
-			<extension>
-				<groupId>com.gkatzioura.maven.cloud</groupId>
-				<artifactId>google-storage-wagon</artifactId>
-				<version>1.0</version>
-			</extension>
-		</extensions>
-	</build>
+
+
+
+
+
+
+
+
+
 
 </project>
