@@ -3,6 +3,8 @@ package com.github.prbrios.documentofiscal.nfe;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
+
+import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
@@ -17,7 +19,7 @@ public class NFeInfNFeInfAdicObsCont {
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("xcampo")
-    @Element(name = "xCampo", required = false)
+    @Attribute(name = "xCampo", required = false)
     private String xCampo;
 
     public NFeInfNFeInfAdicObsCont() {}
