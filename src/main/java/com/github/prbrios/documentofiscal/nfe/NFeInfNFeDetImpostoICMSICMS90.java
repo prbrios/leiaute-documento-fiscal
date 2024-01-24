@@ -20,21 +20,20 @@ public class NFeInfNFeDetImpostoICMSICMS90 {
     @Element(name = "CST", required = false)
     private String CST;
 
-
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("modbc")
     @Element(name = "modBC", required = false)
     private String modBC;
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
-    @JsonProperty("predbc")
-    @Element(name = "pRedBC", required = false)
-    private String pRedBC;
-
-    @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("vbc")
     @Element(name = "vBC", required = false)
     private String vBC;
+
+    @JsonInclude(JsonInclude.Include.NON_EMPTY)
+    @JsonProperty("predbc")
+    @Element(name = "pRedBC", required = false)
+    private String pRedBC;
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("picms")
@@ -45,7 +44,6 @@ public class NFeInfNFeDetImpostoICMSICMS90 {
     @JsonProperty("vicms")
     @Element(name = "vICMS", required = false)
     private String vICMS;
-
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("vbcfcp")
@@ -61,7 +59,6 @@ public class NFeInfNFeDetImpostoICMSICMS90 {
     @JsonProperty("vfcp")
     @Element(name = "vFCP", required = false)
     private String vFCP;
-
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("modbcst")
@@ -93,7 +90,6 @@ public class NFeInfNFeDetImpostoICMSICMS90 {
     @Element(name = "vICMSST", required = false)
     private String vICMSST;
 
-
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("vbcfcpst")
     @Element(name = "vBCFCPST", required = false)
@@ -108,7 +104,6 @@ public class NFeInfNFeDetImpostoICMSICMS90 {
     @JsonProperty("vfcpst")
     @Element(name = "vFCPST", required = false)
     private String vFCPST;
-
 
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
     @JsonProperty("vicmsdeson")
